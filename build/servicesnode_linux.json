@@ -1,0 +1,30 @@
+{
+	"Librarys" :
+	[
+		"plugin/linuxfilesystem"
+		,"plugin/fileconsolelogsystem"
+		,"plugin/jsonconfiguresystem"
+		,"plugin/flatserializesystem"
+		,"plugin/pthreadsystem"
+		,"plugin/hadesmessagesystem"
+		,"plugin/mulitlibeventserversystem"
+		,"plugin/luascritpsystem"
+		,"plugin/libeventtimersystem"
+		,"plugin/remoteservicessystem"
+		,"plugin/libeventsocketsystem"		
+		
+		,"function/mathfunction"
+		,"function/recastnavigation"
+		,"function/libeventmulithttpserver"
+	]
+	
+	,"RPCOptimization":true
+	,"Logsize":8388608
+	,"Logfile":"root:centrcenode.log"
+	,"Maxnetbuffersize":1048576
+	,"Servicecachesize":5000
+	,"Workthreadcount" : 4
+	,"Documentspath":"root:centrcenode/documents/"
+	,"Scriptpath":"root:centrcenode/script/"
+	,"Scriptmain":"scrs:main.lua"
+}

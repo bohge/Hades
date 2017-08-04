@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{eaee5cd5-dbe7-4739-8ced-b45b9c1f5710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalKeeperSystem">
+      <UniqueIdentifier>{ec72744c-829b-4105-a9f4-1f87b328fa0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalKeeperSystem\Accessor">
+      <UniqueIdentifier>{b67d6aed-044f-4cef-ab1c-c17693fc4555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalKeeperSystem\Holder">
+      <UniqueIdentifier>{641f2cc7-6f8f-43a7-a979-d2e36bcb655e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalKeeperSystem\Holder\Thread">
+      <UniqueIdentifier>{40a3d289-4ff0-4cde-9197-b2930f2f8389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LocalKeeperSystem\AccessPackage">
+      <UniqueIdentifier>{01b6b764-27e2-410a-9d24-1c925d18cf84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalKeeperSystem.cpp">
+      <Filter>LocalKeeperSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Accessorpool.cpp">
+      <Filter>LocalKeeperSystem\Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectHolder.cpp">
+      <Filter>LocalKeeperSystem\Holder</Filter>
+    </ClCompile>
+    <ClCompile Include="HolderThread.cpp">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyJob.cpp">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveJob.cpp">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalAccessPackage.cpp">
+      <Filter>LocalKeeperSystem\AccessPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="NoneJob.cpp">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LocalKeeperSystem.h">
+      <Filter>LocalKeeperSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Accessorpool.h">
+      <Filter>LocalKeeperSystem\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectHolder.h">
+      <Filter>LocalKeeperSystem\Holder</Filter>
+    </ClInclude>
+    <ClInclude Include="HolderThread.h">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="CopyJob.h">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveJob.h">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalAccessPackage.h">
+      <Filter>LocalKeeperSystem\AccessPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="NoneJob.h">
+      <Filter>LocalKeeperSystem\Holder\Thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

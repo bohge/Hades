@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{2377ca6c-0a91-47da-87b1-5315084542af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket">
+      <UniqueIdentifier>{848382f5-e023-41f7-98c9-b7494ffac899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SocketSystem">
+      <UniqueIdentifier>{6eb746ec-e4d0-498d-8e6f-ad28824a0faa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientJob.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventClient.cpp">
+      <Filter>Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventClientSystem.cpp">
+      <Filter>SocketSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientJob.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventClient.h">
+      <Filter>Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventClientSystem.h">
+      <Filter>SocketSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

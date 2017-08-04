@@ -1,0 +1,7 @@
+In order to build OpenBLAS on Windows you will need:
+
+MSYS (a collection of Unix tools, including "make"). We recommend this distribution: http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/
+MinGW-w64 (GCC for Windows). Either of these work well: (1) mingw-builds or (2) its successor mingw-w64. (It is unclear if the earlier set of rubenvb's Personal Builds of (2): 32-bit or 64-bit that used to be recommended here are still maintained).
+Simply download, unzip, add to the PATH environment variable.
+
+make BINARY=64 CC=gcc FC=gfortran NO_AFFINITY=1 USE_OPENMP=1

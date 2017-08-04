@@ -1,0 +1,24 @@
+{
+	"Librarys" :
+	[
+		"plugin/windowsfilesystem"
+		,"plugin/fileconsolelogsystem"
+		,"plugin/jsonconfiguresystem"
+		,"plugin/flatserializesystem"
+		,"plugin/pthreadsystem"
+		,"plugin/hadesmessagesystem"
+		,"plugin/mulitlibeventserversystem"
+		,"plugin/luascritpsystem"
+		,"plugin/libeventtimersystem"
+		,"plugin/remoteservicessystem"
+		,"plugin/libeventsocketsystem"
+	]
+	
+	,"RPCOptimization":true
+	,"Logfile":"root:centrcenode.log"
+	,"Servicecachesize":5000
+	,"Workthreadcount" : 4
+	,"Documentspath":"root:centrcenode/documents/"
+	,"Scriptpath":"root:centrcenode/script/"
+	,"Scriptmain":"scrs:main.lua"
+}

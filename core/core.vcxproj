@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\CreateCore.h" />
+    <ClInclude Include="core\DelegateImplement.hpp" />
+    <ClInclude Include="core\ICore.h" />
+    <ClInclude Include="core\IPluginLoader.h" />
+    <ClInclude Include="include\application\IApplication.h" />
+    <ClInclude Include="include\configure\IConfigSystem.h" />
+    <ClInclude Include="include\configure\IConfigure.h" />
+    <ClInclude Include="include\core\Bufferpool.h" />
+    <ClInclude Include="include\core\Configure.h" />
+    <ClInclude Include="include\core\Delegate.hpp" />
+    <ClInclude Include="include\core\IFunction.h" />
+    <ClInclude Include="include\core\IPlugin.h" />
+    <ClInclude Include="include\core\Log.h" />
+    <ClInclude Include="include\core\Nonclearvector.hpp" />
+    <ClInclude Include="include\core\Object.hpp" />
+    <ClInclude Include="include\core\ObjectPool.hpp" />
+    <ClInclude Include="include\core\Recycleablevector.hpp" />
+    <ClInclude Include="include\core\Plugindefine.h" />
+    <ClInclude Include="include\core\Predefine.h" />
+    <ClInclude Include="include\core\Rtti.hpp" />
+    <ClInclude Include="include\core\Singleton.hpp" />
+    <ClInclude Include="include\core\SmartPtr.hpp" />
+    <ClInclude Include="include\core\ThreadSafeOprator.h" />
+    <ClInclude Include="include\core\Track.h" />
+    <ClInclude Include="include\core\Types.h" />
+    <ClInclude Include="include\core\type\Bool.h" />
+    <ClInclude Include="include\core\type\Buffer.h" />
+    <ClInclude Include="include\core\type\Double.h" />
+    <ClInclude Include="include\core\type\Float.h" />
+    <ClInclude Include="include\core\type\FloatArray.h" />
+    <ClInclude Include="include\core\type\Function.h" />
+    <ClInclude Include="include\core\type\Instance.h" />
+    <ClInclude Include="include\core\type\Int.h" />
+    <ClInclude Include="include\core\type\Int64.h" />
+    <ClInclude Include="include\core\type\Short.h" />
+    <ClInclude Include="include\core\type\String.h" />
+    <ClInclude Include="include\core\type\StringBuffer.h" />
+    <ClInclude Include="include\core\type\Type.h" />
+    <ClInclude Include="include\core\type\UInt.h" />
+    <ClInclude Include="include\core\type\UInt64.h" />
+    <ClInclude Include="include\core\type\UShort.h" />
+    <ClInclude Include="include\core\Utility.hpp" />
+    <ClInclude Include="include\core\Volatileintpool.h" />
+    <ClInclude Include="include\file\IFile.h" />
+    <ClInclude Include="include\file\IFileSystem.h" />
+    <ClInclude Include="include\keeper\Accessinfo.h" />
+    <ClInclude Include="include\keeper\Accessor.h" />
+    <ClInclude Include="include\keeper\IAccessPackage.h" />
+    <ClInclude Include="include\keeper\IKeeperSystem.h" />
+    <ClInclude Include="include\log\ILogSystem.h" />
+    <ClInclude Include="include\memory\Allocator.h" />
+    <ClInclude Include="include\memory\IMemorySystem.h" />
+    <ClInclude Include="include\network\message\IMessage.h" />
+    <ClInclude Include="include\network\message\IMessageSystem.h" />
+    <ClInclude Include="include\network\message\IRawbuffer.h" />
+    <ClInclude Include="include\network\RequestHandle.h" />
+    <ClInclude Include="include\network\RequestPool.h" />
+    <ClInclude Include="include\network\server\IServer.h" />
+    <ClInclude Include="include\network\server\IServerSystem.h" />
+    <ClInclude Include="include\network\server\ServerProxy.h" />
+    <ClInclude Include="include\network\socket\ISocket.h" />
+    <ClInclude Include="include\network\socket\ISocketSystem.h" />
+    <ClInclude Include="include\network\socket\SocketProxy.h" />
+    <ClInclude Include="include\network\SpecificDefined.h" />
+    <ClInclude Include="include\script\ClassRegister.h" />
+    <ClInclude Include="include\script\FunctionRegister.h" />
+    <ClInclude Include="include\script\ICoroutineInvoker.h" />
+    <ClInclude Include="include\script\IFunctionInvoker.h" />
+    <ClInclude Include="include\script\IFunctionIterator.h" />
+    <ClInclude Include="include\script\IMemberIterator.h" />
+    <ClInclude Include="include\script\IArguments.h" />
+    <ClInclude Include="include\script\IScriptInstance.h" />
+    <ClInclude Include="include\script\IScriptSystem.h" />
+    <ClInclude Include="include\script\IVirtualMachine.h" />
+    <ClInclude Include="include\script\ScriptObjectpool.h" />
+    <ClInclude Include="include\script\ScriptProperty.h" />
+    <ClInclude Include="include\script\ScriptUtility.h" />
+    <ClInclude Include="include\script\ScriptValue.h" />
+    <ClInclude Include="include\script\Syncdata.h" />
+    <ClInclude Include="include\script\warp\file\IFileSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\log\ILogSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\ScriptRegister.hpp" />
+    <ClInclude Include="include\script\warp\script\IFunctionInvokerWarp.hpp" />
+    <ClInclude Include="include\script\warp\script\IScriptInstanceWarp.hpp" />
+    <ClInclude Include="include\script\warp\script\IScriptSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\script\IVirtualMachineWarp.hpp" />
+    <ClInclude Include="include\script\warp\server\IServerSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\server\ServerProxyWarp.hpp" />
+    <ClInclude Include="include\script\warp\server\MessageWarp.hpp" />
+    <ClInclude Include="include\script\warp\services\ContextWarp.hpp" />
+    <ClInclude Include="include\script\warp\services\IResumerWarp.hpp" />
+    <ClInclude Include="include\script\warp\services\IServicesSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\socket\ISocketSystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\socket\SocketProxyWarp.hpp" />
+    <ClInclude Include="include\script\warp\timer\ITimersystemWarp.hpp" />
+    <ClInclude Include="include\script\warp\utility\UtilityWarp.hpp" />
+    <ClInclude Include="include\serialize\DataType.h" />
+    <ClInclude Include="include\serialize\FactorConfigure.h" />
+    <ClInclude Include="include\serialize\IDecoder.h" />
+    <ClInclude Include="include\serialize\IEncoder.h" />
+    <ClInclude Include="include\serialize\ISerializable.h" />
+    <ClInclude Include="include\serialize\ISerializeSystem.h" />
+    <ClInclude Include="include\serialize\ISerializer.h" />
+    <ClInclude Include="include\services\ExecuteJob.h" />
+    <ClInclude Include="include\services\IAgent.h" />
+    <ClInclude Include="include\services\IResumer.h" />
+    <ClInclude Include="include\services\IServices.h" />
+    <ClInclude Include="include\services\IServicesSystem.h" />
+    <ClInclude Include="include\services\Protocol.h" />
+    <ClInclude Include="include\services\ScriptServices.h" />
+    <ClInclude Include="include\services\ISession.h" />
+    <ClInclude Include="include\thread\IJob.h" />
+    <ClInclude Include="include\thread\IJobDispatcher.h" />
+    <ClInclude Include="include\thread\IJobResume.h" />
+    <ClInclude Include="include\thread\IJobThreadArray.h" />
+    <ClInclude Include="include\thread\IJobWokerBase.h" />
+    <ClInclude Include="include\thread\IThreadEntity.h" />
+    <ClInclude Include="include\thread\IThreadEvent.h" />
+    <ClInclude Include="include\thread\IThreadMutex.h" />
+    <ClInclude Include="include\thread\IThreadRWLock.h" />
+    <ClInclude Include="include\thread\IThreadSpecific.h" />
+    <ClInclude Include="include\thread\IThreadSystem.h" />
+    <ClInclude Include="include\thread\ThreadProperty.h" />
+    <ClInclude Include="include\timer\ITimerSystem.h" />
+    <ClInclude Include="plugin\script\SaveInstance.hpp" />
+    <ClInclude Include="plugin\script\SetInstance.hpp" />
+    <ClInclude Include="plugin\services\ThreadData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\Bufferpool.cpp" />
+    <ClCompile Include="core\IApplication.cpp" />
+    <ClCompile Include="core\ICore.cpp" />
+    <ClCompile Include="core\IFunction.cpp" />
+    <ClCompile Include="core\IPlugin.cpp" />
+    <ClCompile Include="core\IPluginLoader.cpp" />
+    <ClCompile Include="core\Object.cpp" />
+    <ClCompile Include="core\Rtti.cpp" />
+    <ClCompile Include="core\Track.cpp" />
+    <ClCompile Include="core\Type.cpp" />
+    <ClCompile Include="core\Volatileintpool.cpp" />
+    <ClCompile Include="plugin\configure\IConfigSystem.cpp" />
+    <ClCompile Include="plugin\file\IFileSystem.cpp" />
+    <ClCompile Include="plugin\keeper\Accessinfo.cpp" />
+    <ClCompile Include="plugin\keeper\Accessor.cpp" />
+    <ClCompile Include="plugin\keeper\IAccessPackage.cpp" />
+    <ClCompile Include="plugin\keeper\IKeeperSystem.cpp" />
+    <ClCompile Include="plugin\log\ILogSystem.cpp" />
+    <ClCompile Include="plugin\memory\Allocator.cpp" />
+    <ClCompile Include="plugin\memory\IMemorySystem.cpp" />
+    <ClCompile Include="plugin\network\message\IMessage.cpp" />
+    <ClCompile Include="plugin\network\message\IMessageSystem.cpp" />
+    <ClCompile Include="plugin\network\message\IRawbuffer.cpp" />
+    <ClCompile Include="plugin\network\RequestHandle.cpp" />
+    <ClCompile Include="plugin\network\RequestPool.cpp" />
+    <ClCompile Include="plugin\network\server\IServer.cpp" />
+    <ClCompile Include="plugin\network\server\IServerSystem.cpp" />
+    <ClCompile Include="plugin\network\server\ServerProxy.cpp" />
+    <ClCompile Include="plugin\network\socket\ISocket.cpp" />
+    <ClCompile Include="plugin\network\socket\ISocketSystem.cpp" />
+    <ClCompile Include="plugin\network\socket\SocketProxy.cpp" />
+    <ClCompile Include="plugin\script\ClassRegister.cpp" />
+    <ClCompile Include="plugin\script\FunctionRegister.cpp" />
+    <ClCompile Include="plugin\script\ICoroutineInvoker.cpp" />
+    <ClCompile Include="plugin\script\IFunctionInvoker.cpp" />
+    <ClCompile Include="plugin\script\IFunctionIterator.cpp" />
+    <ClCompile Include="plugin\script\IMemberIterator.cpp" />
+    <ClCompile Include="plugin\script\IArguments.cpp" />
+    <ClCompile Include="plugin\script\IScriptInstance.cpp" />
+    <ClCompile Include="plugin\script\IScriptSystem.cpp" />
+    <ClCompile Include="plugin\script\IVirtualMachine.cpp" />
+    <ClCompile Include="plugin\script\ScriptObjectpool.cpp" />
+    <ClCompile Include="plugin\script\ScriptValue.cpp" />
+    <ClCompile Include="plugin\serialize\IDecoder.cpp" />
+    <ClCompile Include="plugin\serialize\IEncoder.cpp" />
+    <ClCompile Include="plugin\serialize\ISerializable.cpp" />
+    <ClCompile Include="plugin\serialize\ISerializeSystem.cpp" />
+    <ClCompile Include="plugin\serialize\ISerializer.cpp" />
+    <ClCompile Include="plugin\services\ExecuteJob.cpp" />
+    <ClCompile Include="plugin\services\IAgent.cpp" />
+    <ClCompile Include="plugin\services\IResumer.cpp" />
+    <ClCompile Include="plugin\services\IServices.cpp" />
+    <ClCompile Include="plugin\services\IServicesSystem.cpp" />
+    <ClCompile Include="plugin\services\Protocol.cpp" />
+    <ClCompile Include="plugin\services\ScriptServices.cpp" />
+    <ClCompile Include="plugin\services\ISession.cpp" />
+    <ClCompile Include="plugin\services\ThreadData.cpp" />
+    <ClCompile Include="plugin\thread\IJob.cpp" />
+    <ClCompile Include="plugin\thread\IJobWokerBase.cpp" />
+    <ClCompile Include="plugin\thread\IThreadSystem.cpp" />
+    <ClCompile Include="plugin\timer\ITimerSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\platform\windows\windows.vcxproj">
+      <Project>{e31c4664-2264-4c1d-9de5-79fd55f9f4c0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\third\EASTL\win\eastl.vcxproj">
+      <Project>{5b220262-f0fc-42a4-84ff-51e41f5a9481}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{013465D7-C8CB-4EAE-99A0-832A76C6595F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\build\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>..\build\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\build\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\build\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_FRAMEWORK_EXPORT;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\third\EASTL\include;.\include;..\third\concurrentqueue\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_FRAMEWORK_EXPORT;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\third\EASTL\include;.\include;..\third\concurrentqueue\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_FRAMEWORK_EXPORT;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\third\EASTL\include;.\include;..\third\concurrentqueue\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_FRAMEWORK_EXPORT;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\third\EASTL\include;.\include;..\third\concurrentqueue\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

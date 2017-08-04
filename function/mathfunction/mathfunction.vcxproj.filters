@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{cc873c44-013c-4cfd-ac76-a624fff72489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\math">
+      <UniqueIdentifier>{0916134d-3cfc-4e8d-a6e6-b23ebda8d2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\warp">
+      <UniqueIdentifier>{96058484-abee-437c-a142-f829c0c5230e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="MathFunctionPlugin.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MathFunctionPlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="Aabrect.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Aabround.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Aabsphere.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMathDeclaration.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMathImplement.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="3DMath.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Aabbox.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeMathDeclaration.h">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeMathImplement.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="vector4.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix22.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix44.hpp">
+      <Filter>source\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33Wrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix44Wrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="QuaternionWrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Wrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3Wrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4Wrap.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="AllRegister.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="RayWrap.h">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneWrap.h">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="AabboxWarp.h">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

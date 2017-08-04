@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{fbbe9e34-0442-44d5-a3f4-2c7bdca495f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileEntity">
+      <UniqueIdentifier>{e0091a95-f80a-4c3a-8ba8-4fa40ee5c339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem">
+      <UniqueIdentifier>{084f1d5a-77f9-461c-9912-ab051ea28eaf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseFile.cpp">
+      <Filter>FileEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="UsualFile.cpp">
+      <Filter>FileEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsFileSystem.cpp">
+      <Filter>FileSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UsualFile.h">
+      <Filter>FileEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseFile.h">
+      <Filter>FileEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsFileSystem.h">
+      <Filter>FileSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

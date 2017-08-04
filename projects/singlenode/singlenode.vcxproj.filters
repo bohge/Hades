@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SinglenodeApplication.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="main_win.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestHandle.cpp">
+      <Filter>request</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestUserData.cpp">
+      <Filter>request</Filter>
+    </ClCompile>
+    <ClCompile Include="BalanceHandle.cpp">
+      <Filter>balance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{8124f450-3728-4fef-a519-950d080031e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{6c0af24a-db8d-4404-a1f4-670c3c73b430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scriptwarp">
+      <UniqueIdentifier>{53367b62-43ba-4453-8b05-03a541ceec57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="request">
+      <UniqueIdentifier>{327d883e-7483-43a0-bc7e-559c346ed24c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="balance">
+      <UniqueIdentifier>{d3d1bc6b-bb0a-4e3b-95a5-ab093bacacaa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SinglenodeApplication.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandle.h">
+      <Filter>request</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestUserData.h">
+      <Filter>request</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandleWarp.h">
+      <Filter>scriptwarp</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLibraryRegister.h">
+      <Filter>scriptwarp</Filter>
+    </ClInclude>
+    <ClInclude Include="SinglenodeApplicationWarp.h">
+      <Filter>scriptwarp</Filter>
+    </ClInclude>
+    <ClInclude Include="BalanceHandle.h">
+      <Filter>balance</Filter>
+    </ClInclude>
+    <ClInclude Include="BalanceUserData.h">
+      <Filter>balance</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

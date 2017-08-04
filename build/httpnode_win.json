@@ -1,0 +1,30 @@
+{
+	"Librarys" :
+	[
+		"plugin/windowsfilesystem"
+		,"plugin/fileconsolelogsystem"
+		,"plugin/jsonconfiguresystem"
+		,"plugin/flatserializesystem"
+		,"plugin/pthreadsystem"
+		,"plugin/hadesmessagesystem"
+		,"plugin/mulitlibeventserversystem"
+		,"plugin/luascritpsystem"
+		,"plugin/libeventtimersystem"
+		,"plugin/localservicessystem"
+		,"plugin/libeventsocketsystem"
+		
+		,"function/mathfunction"
+		,"function/machinestatus"
+		,"function/recastnavigation"
+		,"function/libeventhttpserver"
+	]
+	
+	,"RPCOptimization":true
+	,"Logsize":8388608
+	,"Logfile":"root:httpnode.log"
+	,"Servicecachesize":5000
+	,"Workthreadcount" : 4
+	,"Documentspath":"root:httpnode/documents/"
+	,"Scriptpath":"root:httpnode/script/"
+	,"Scriptmain":"scrs:main.lua"
+}

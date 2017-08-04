@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{c798980a-00c8-48ed-afec-7306f9b966af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{5444a2d3-d489-45be-8f0b-7dfe227dbfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="warp">
+      <UniqueIdentifier>{bcc6480d-1268-4d3b-9685-b2387543d35a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{35b99987-756c-49d2-8c01-18d4f5563bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{05c63489-9eb4-40d8-afca-aa29959c75de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteServicesSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptiveAgent.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalServices.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteServices.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCache.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptiveSession.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteResumer.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RemoteServicesSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteServicesSystemWarp.hpp">
+      <Filter>warp</Filter>
+    </ClInclude>
+    <ClInclude Include="AllRegister.hpp">
+      <Filter>warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure.h">
+      <Filter>PluginEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptiveAgent.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalServices.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteServices.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCache.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Serviceshelper.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptiveSession.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentData.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteResumer.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteResumerWarp.hpp">
+      <Filter>warp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

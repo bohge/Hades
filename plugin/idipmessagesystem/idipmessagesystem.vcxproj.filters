@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{c798980a-00c8-48ed-afec-7306f9b966af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{5444a2d3-d489-45be-8f0b-7dfe227dbfae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="IDIPMessageSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="IDIPMessage.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="IDIPRawbuffer.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IDIPMessageSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="IDIPHeadStruct.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="IDIPMessage.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="IDIPRawbuffer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="tlbbsy_idip.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="IDIPMessageWarp.hpp">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

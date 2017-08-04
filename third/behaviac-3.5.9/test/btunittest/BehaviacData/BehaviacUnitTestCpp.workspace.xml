@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="BehaviacUnitTestCpp" xmlmetafolder="xmlmeta" folder="..\..\..\integration\unity\Assets\behaviac\workspace\behaviors" export="exported">
+  <xmlmeta>UnitTestCppMeta.xml</xmlmeta>
+  <export>
+    <cs>
+      <isexported>False</isexported>
+      <exportunifiedfile>True</exportunifiedfile>
+    </cs>
+    <cpp>
+      <isexported>True</isexported>
+      <exportunifiedfile>True</exportunifiedfile>
+      <folder>../..</folder>
+    </cpp>
+    <xml>
+      <isexported>True</isexported>
+    </xml>
+    <bson>
+      <isexported>True</isexported>
+    </bson>
+  </export>
+</workspace>

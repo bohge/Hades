@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{9390dd6b-a0df-4142-8f42-76970bbc85e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptSystem">
+      <UniqueIdentifier>{5982c958-f4ea-4961-bd39-cae4c22fe522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualMachine">
+      <UniqueIdentifier>{001e57f9-34e4-4b91-a5d2-7575319c7027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FunctionInvoker">
+      <UniqueIdentifier>{b8c4d15a-916a-4862-a21d-58bd930d8c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{1ccf3cef-f010-4bda-b0c1-1147873cbe72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Instance">
+      <UniqueIdentifier>{df1f86e0-1c26-4bfc-a664-6c2ec2525a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Iterator">
+      <UniqueIdentifier>{b6cbb8c1-3172-4426-a39e-b4e06e85d47b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Coroutine">
+      <UniqueIdentifier>{c072efa8-aa12-4fa2-8e0b-06472c908d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Iterator\Function">
+      <UniqueIdentifier>{593b3e1b-f5db-4662-97f7-5c6707ea7346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Iterator\Member">
+      <UniqueIdentifier>{9a7047a4-6195-4052-895b-473bb23e4888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arguments">
+      <UniqueIdentifier>{8871891c-208a-4278-95d3-44f75c005f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{805a5330-c31d-4c6e-adda-18ca2ce369bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScriptSystem.cpp">
+      <Filter>ScriptSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaVirtualMachine.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaFunctionInvoker.cpp">
+      <Filter>FunctionInvoker</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptOutPut.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaInstance.cpp">
+      <Filter>Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaRootInstance.cpp">
+      <Filter>Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaChieldInstance.cpp">
+      <Filter>Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_tinker.cpp">
+      <Filter>ScriptSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaCoroutineInvoker.cpp">
+      <Filter>Coroutine</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaFunctionIterator.cpp">
+      <Filter>Iterator\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaBaseFunctionIterator.cpp">
+      <Filter>Iterator\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaChiledIterator.cpp">
+      <Filter>Iterator\Member</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaMemberIterator.cpp">
+      <Filter>Iterator\Member</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaArguments.cpp">
+      <Filter>Arguments</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaArgumentTableIterator.cpp">
+      <Filter>Iterator\Member</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaArgumentInstance.cpp">
+      <Filter>Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="Scriptfilecache.cpp">
+      <Filter>VirtualMachine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LuaScriptSystem.h">
+      <Filter>ScriptSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaVirtualMachine.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaFunctionInvoker.h">
+      <Filter>FunctionInvoker</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaDobufferHelp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaInstance.h">
+      <Filter>Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaRootInstance.h">
+      <Filter>Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaChieldInstance.h">
+      <Filter>Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintScriptClassInfo.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaCoroutineInvoker.h">
+      <Filter>Coroutine</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaFunctionIterator.h">
+      <Filter>Iterator\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaBaseFunctionIterator.h">
+      <Filter>Iterator\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaChiledIterator.h">
+      <Filter>Iterator\Member</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMemberIterator.h">
+      <Filter>Iterator\Member</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaArguments.h">
+      <Filter>Arguments</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaArgumentTableIterator.h">
+      <Filter>Iterator\Member</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaArgumentInstance.h">
+      <Filter>Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptCallBridge.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="PushScriptArgumentFunction.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GetScriptReturnFunctions.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GetScriptArgumenFunctions.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GetNativeResultFunction.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Scriptfilecache.h">
+      <Filter>VirtualMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="NativePushHelper.hpp">
+      <Filter>Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

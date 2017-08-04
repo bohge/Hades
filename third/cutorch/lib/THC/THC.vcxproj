@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="THCCachingAllocator.cpp" />
+    <ClCompile Include="THCCachingHostAllocator.cpp" />
+    <ClCompile Include="THCGeneral.c" />
+    <ClCompile Include="THCStorageCopy.c" />
+    <ClCompile Include="THCStream.c" />
+    <ClCompile Include="THCTensor.c" />
+    <ClCompile Include="THCTensorCopy.c" />
+    <ClCompile Include="THCTensorRandom.cpp" />
+    <ClCompile Include="THCThreadLocal.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="generated\THCTensorMaskedByte.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedChar.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedDouble.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedFloat.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedHalf.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedInt.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedLong.cu" />
+    <CudaCompile Include="generated\THCTensorMaskedShort.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareByte.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareChar.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareDouble.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareFloat.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareHalf.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareInt.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareLong.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareShort.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTByte.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTChar.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTDouble.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTFloat.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTHalf.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTInt.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTLong.cu" />
+    <CudaCompile Include="generated\THCTensorMathCompareTShort.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseByte.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseChar.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseDouble.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseFloat.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseHalf.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseInt.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseLong.cu" />
+    <CudaCompile Include="generated\THCTensorMathPointwiseShort.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceByte.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceChar.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceDouble.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceFloat.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceHalf.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceInt.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceLong.cu" />
+    <CudaCompile Include="generated\THCTensorMathReduceShort.cu" />
+    <CudaCompile Include="generated\THCTensorSortByte.cu" />
+    <CudaCompile Include="generated\THCTensorSortChar.cu" />
+    <CudaCompile Include="generated\THCTensorSortDouble.cu" />
+    <CudaCompile Include="generated\THCTensorSortFloat.cu" />
+    <CudaCompile Include="generated\THCTensorSortHalf.cu" />
+    <CudaCompile Include="generated\THCTensorSortInt.cu" />
+    <CudaCompile Include="generated\THCTensorSortLong.cu" />
+    <CudaCompile Include="generated\THCTensorSortShort.cu" />
+    <CudaCompile Include="THCBlas.cu" />
+    <CudaCompile Include="THCHalf.cu" />
+    <CudaCompile Include="THCReduceApplyUtils.cu" />
+    <CudaCompile Include="THCSleep.cu" />
+    <CudaCompile Include="THCStorage.cu" />
+    <CudaCompile Include="THCStorageCopy.cu" />
+    <CudaCompile Include="THCTensor.cu" />
+    <CudaCompile Include="THCTensorConv.cu" />
+    <CudaCompile Include="THCTensorCopy.cu" />
+    <CudaCompile Include="THCTensorIndex.cu" />
+    <CudaCompile Include="THCTensorMath.cu" />
+    <CudaCompile Include="THCTensorMath2.cu" />
+    <CudaCompile Include="THCTensorMathBlas.cu" />
+    <CudaCompile Include="THCTensorMathMagma.cu" />
+    <CudaCompile Include="THCTensorMathPairwise.cu" />
+    <CudaCompile Include="THCTensorMathReduce.cu" />
+    <CudaCompile Include="THCTensorMathScan.cu" />
+    <CudaCompile Include="THCTensorRandom.cu" />
+    <CudaCompile Include="THCTensorScatterGather.cu" />
+    <CudaCompile Include="THCTensorSort.cu" />
+    <CudaCompile Include="THCTensorTopK.cu" />
+    <CudaCompile Include="THCTensorTypeUtils.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\torch7\lib\TH\TH.vcxproj">
+      <Project>{dcef8e68-a003-4d7a-8a66-14b60c0c48e9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C38669CB-1953-4447-BEEC-05ABF56A3E85}</ProjectGuid>
+    <RootNamespace>THC</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\build\dependency\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\build\dependency\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\build\dependency\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\build\dependency\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;THC_EXPORTS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CUDA_ROOT)\include;..\..\..\torch7\lib\TH\;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cublas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CUDA_ROOT)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;THC_EXPORTS;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CUDA_ROOT)\include;..\..\..\torch7\lib\TH\;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cublas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CUDA_ROOT)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;THC_EXPORTS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CUDA_ROOT)\include;..\..\..\torch7\lib\TH\;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cublas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CUDA_ROOT)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;THC_EXPORTS;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CUDA_ROOT)\include;..\..\..\torch7\lib\TH\;%(AdditionalIncludeDirectories);$(CudaToolkitIncludeDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cublas.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CUDA_ROOT)\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+</Project>

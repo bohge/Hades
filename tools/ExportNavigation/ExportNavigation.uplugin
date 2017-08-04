@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ExportNavigation",
+	"Description": "Export the navigation mesh data",
+	"Category": "Hades",
+	"CreatedBy": "Bohge",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ExportNavigation",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}

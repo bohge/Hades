@@ -1,0 +1,8 @@
+{
+	"MAXSIZE" : 16777216
+	,"TEMPDIR" : "docs:temp/"
+	,"HTTPROOT" : "docs:http/"
+	,"HANDLER" : "scrs:http.lua"
+	,"OPENSSL_CRT" : "root:server.crt"
+	,"OPENSSL_KEY" : "root:private.key"
+}

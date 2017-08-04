@@ -1,0 +1,24 @@
+1.关于脚本的使用规则
+	1.1Table中的变量以'_'开头的都为内部变量，不会被序列化保存，也不要尝试修改，会引起bug
+	1.2被加载的脚本实际上将脚本引用起来，即便在代码中设置为nil，该脚本的引用依然生效。例如以下示例：
+		request = {}
+		request.Test = 1;
+		function request:OnReciveRequest(issucces, buffer)
+			Self.Test;
+			request = nil;
+		end
+		如果request被系统加载，则Self.Test数值为1，并不受到request = nil的影响。
+	1.3表被注册后，我们实际上保存的是表的引用，并不是变量。例如以下示例：
+		Testtable = {}
+		Testtable2 = Testtable;
+		Testtable.Test = 0;	
+		function request:Initialize(machine, instance)
+			self.HandleTestSpec = machine:RegisteInstance(Testtable);
+		end
+		function request:OnReciveRequest(issucces, buffer)
+			Testtable = {};
+			request = nil;
+		end
+		这里的Testtable会指向一个新表，而Testtable2与self.HandleTestSpec指向同一个表
+2.关于服务器的限制
+	2.1可以接受的最大的Message的ID为50000，在这个数字之后都是系统自定义的消息，不会被脚本拦截和接收，如果尝试发送这个数字的消息可能会造成问题

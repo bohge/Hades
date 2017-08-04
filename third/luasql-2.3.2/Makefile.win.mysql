@@ -1,0 +1,30 @@
+LUA_INC="E:\hades\third\LuaJIT-2.1.0-beta2\src"
+LUA_LIBDIR="E:\hades\third\LuaJIT-2.1.0-beta2\src"
+LUA_LIB="E:\hades\third\LuaJIT-2.1.0-beta2\src\lua51.lib"
+
+T=mysql
+
+DRIVER_INCLUDE=/I"C:\Program Files\MySQL\MySQL Server 5.6\include"
+DRIVER_LIBS="C:\Program Files\MySQL\MySQL Server 5.6\lib\libmySQL.lib" "C:\Program Files\MySQL\MySQL Server 5.6\lib\mysqlclient.lib" 
+
+OUTPUT_DIR="E:\hades\build\dependency\luasql\"
+
+OBJS= src\luasql.obj src\ls_$T.obj
+
+.c.obj:
+	cl /c /Fo$@ /O2 /I$(LUA_INC) /DWIN32 /D_CRT_SECURE_NO_DEPRECATE $(DRIVER_INCLUDE) $<
+
+src\$T.dll: $(OBJS)
+	link /dll /def:src\$T.def /out:$@ $(OBJS) $(DRIVER_LIBS) $(LUA_LIB) 
+	copy src\$T.dll $(OUTPUT_DIR)
+
+install:
+	IF NOT EXIST $(LUA_LIBDIR)\luasql mkdir $(LUA_LIBDIR)\luasql
+	copy src\$T.dll $(LUA_LIBDIR)\luasql
+
+clean:
+	del src\$T.dll
+	del src\$T.exp
+	del src\$T.lib
+	del $(OBJS)
+

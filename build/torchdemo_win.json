@@ -1,0 +1,27 @@
+{
+	"Librarys" :
+	[
+		"plugin/windowsfilesystem"
+		,"plugin/fileconsolelogsystem"
+		,"plugin/jsonconfiguresystem"
+		,"plugin/flatserializesystem"
+		,"plugin/pthreadsystem"
+		,"plugin/mulitlibeventserversystem"
+		,"plugin/luascritpsystem"
+		,"plugin/libeventtimersystem"
+		,"plugin/localservicessystem"
+		,"plugin/libeventsocketsystem"
+		
+		,"function/mathfunction"
+		,"function/recastnavigation"
+	]
+	
+	,"RPCOptimization":true
+	,"Logsize":8388608
+	,"Logfile":"root:torchnode.log"
+	,"Servicecachesize":5000
+	,"Workthreadcount" : 4
+	,"Documentspath":"root:torchnode/torchdocument/"
+	,"Scriptpath":"root:torchnode/script/"
+	,"Scriptmain":"scrs:main.lua"
+}

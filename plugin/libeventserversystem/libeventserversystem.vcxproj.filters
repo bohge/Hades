@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{ab532fa2-b179-4558-a668-f666542289e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerSystem">
+      <UniqueIdentifier>{cc50068f-b0cc-4575-9104-6a48e9f08484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{892964ed-f193-4a96-b418-894ea56db196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Server">
+      <UniqueIdentifier>{98b49142-a9c5-4b66-a30e-6ff54bbe9c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Client">
+      <UniqueIdentifier>{b41f1a9d-ea86-4b51-b85d-5b42ab9ddcb6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventServerSystem.cpp">
+      <Filter>ServerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerJob.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventConnection.cpp">
+      <Filter>Server\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventServer.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibeventServerSystem.h">
+      <Filter>ServerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerJob.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventConnection.h">
+      <Filter>Server\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventServer.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

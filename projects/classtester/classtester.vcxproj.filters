@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{ce7b9e46-e6c6-40c3-8cb5-6be4f5917f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="testfunction">
+      <UniqueIdentifier>{4aa4b477-0727-40bb-915f-63e4243dadef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\application">
+      <UniqueIdentifier>{49d40769-dd87-43aa-8932-73c22fb2a2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\caller">
+      <UniqueIdentifier>{6b504f3d-9693-499b-b9ca-be7a90d266ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{93e8d517-e17a-4981-8096-3235ed6fead6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="TesterApplication.cpp">
+      <Filter>main\application</Filter>
+    </ClCompile>
+    <ClCompile Include="RawbufferMessageTester.cpp">
+      <Filter>testfunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Functionpool.cpp">
+      <Filter>main\caller</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFunctionRegister.cpp">
+      <Filter>main\caller</Filter>
+    </ClCompile>
+    <ClCompile Include="LockFreeQueue.cpp">
+      <Filter>testfunction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TesterApplication.h">
+      <Filter>main\application</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="Functionpool.h">
+      <Filter>main\caller</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunctionRegister.h">
+      <Filter>main\caller</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferUtility.hpp">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

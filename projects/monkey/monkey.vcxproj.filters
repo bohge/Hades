@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{929290c2-7807-465a-adbe-c4a10cf349a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{f132fe74-4ab8-466b-9b16-552f53b57b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="request">
+      <UniqueIdentifier>{a8867480-4c45-4762-ad7b-79311b75ff57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scriptwarp">
+      <UniqueIdentifier>{611d527d-9077-460c-86dc-11c54cb0dc2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main_win.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="MonkeyApplication.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="MonkeyHandle.cpp">
+      <Filter>request</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configure.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="MonkeyApplication.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="MonkeyHandle.h">
+      <Filter>request</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHandleWarp.h">
+      <Filter>scriptwarp</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLibraryRegister.h">
+      <Filter>scriptwarp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

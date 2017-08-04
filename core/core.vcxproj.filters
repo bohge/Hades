@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="core\CreateCore.h">
+      <Filter>ICore</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ICore.h">
+      <Filter>ICore</Filter>
+    </ClInclude>
+    <ClInclude Include="core\IPluginLoader.h">
+      <Filter>ICore\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Delegate.hpp">
+      <Filter>Define\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="core\DelegateImplement.hpp">
+      <Filter>Define\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Rtti.hpp">
+      <Filter>Define\Rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Object.hpp">
+      <Filter>Define\Rtti</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Log.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Utility.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Plugindefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Predefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Singleton.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\IPlugin.h">
+      <Filter>ICore\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configure\IConfigSystem.h">
+      <Filter>Plugin\Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="include\configure\IConfigure.h">
+      <Filter>Plugin\Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="include\memory\Allocator.h">
+      <Filter>Plugin\Memory\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\memory\IMemorySystem.h">
+      <Filter>Plugin\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IJobDispatcher.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadEntity.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadEvent.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadMutex.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadRWLock.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadSpecific.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IThreadSystem.h">
+      <Filter>Plugin\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IJob.h">
+      <Filter>Plugin\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\ThreadProperty.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\SmartPtr.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\ThreadSafeOprator.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\IFileSystem.h">
+      <Filter>Plugin\File</Filter>
+    </ClInclude>
+    <ClInclude Include="include\application\IApplication.h">
+      <Filter>IApplication</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keeper\IKeeperSystem.h">
+      <Filter>Plugin\Keeper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keeper\Accessor.h">
+      <Filter>Plugin\Keeper\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Recycleablevector.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IVirtualMachine.h">
+      <Filter>Plugin\Script\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\FunctionRegister.h">
+      <Filter>Plugin\Script\Register</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ClassRegister.h">
+      <Filter>Plugin\Script\Register</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ScriptValue.h">
+      <Filter>Plugin\Script\Value</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ScriptUtility.h">
+      <Filter>Plugin\Script\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IFunctionInvoker.h">
+      <Filter>Plugin\Script\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IScriptInstance.h">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log\ILogSystem.h">
+      <Filter>Plugin\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\ISerializeSystem.h">
+      <Filter>Plugin\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\IDecoder.h">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\IEncoder.h">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\DataType.h">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IMemberIterator.h">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IJobResume.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keeper\IAccessPackage.h">
+      <Filter>Plugin\Keeper\AccessPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keeper\Accessinfo.h">
+      <Filter>Plugin\Keeper\AccessPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Track.h">
+      <Filter>Define\Track</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\script\IVirtualMachineWarp.hpp">
+      <Filter>Warp\script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\script\IFunctionInvokerWarp.hpp">
+      <Filter>Warp\script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\script\IScriptInstanceWarp.hpp">
+      <Filter>Warp\script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\ScriptRegister.hpp">
+      <Filter>Warp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\IFunction.h">
+      <Filter>ICore\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\ISerializable.h">
+      <Filter>Plugin\Serialize\ISerializable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\ISerializer.h">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize\FactorConfigure.h">
+      <Filter>Plugin\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IScriptSystem.h">
+      <Filter>Plugin\Script\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ScriptProperty.h">
+      <Filter>Plugin\Script\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\script\IScriptSystemWarp.hpp">
+      <Filter>Warp\script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\timer\ITimerSystem.h">
+      <Filter>Plugin\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Nonclearvector.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\IFile.h">
+      <Filter>Plugin\File</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Types.h">
+      <Filter>Define\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Bool.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Double.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Float.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Function.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Instance.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Int.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Short.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Type.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\UInt.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\UShort.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\String.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Configure.h" />
+    <ClInclude Include="include\script\warp\server\MessageWarp.hpp">
+      <Filter>Warp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\timer\ITimersystemWarp.hpp">
+      <Filter>Warp\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Int64.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\UInt64.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\utility\UtilityWarp.hpp">
+      <Filter>Warp\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ICoroutineInvoker.h">
+      <Filter>Plugin\Script\Coroutine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\FloatArray.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\file\IFileSystemWarp.hpp">
+      <Filter>Warp\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\server\IServer.h">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\server\IServerSystem.h">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\socket\ISocket.h">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\socket\ISocketSystem.h">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IJobThreadArray.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\log\ILogSystemWarp.hpp">
+      <Filter>Warp\log</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread\IJobWokerBase.h">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\IServicesSystem.h">
+      <Filter>Plugin\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IFunctionIterator.h">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\IArguments.h">
+      <Filter>Plugin\Script\Arguments</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\IAgent.h">
+      <Filter>Plugin\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\Protocol.h">
+      <Filter>Plugin\Services\Protocal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\services\IServicesSystemWarp.hpp">
+      <Filter>Warp\services</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\script\SetInstance.hpp">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\script\SaveInstance.hpp">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\IServices.h">
+      <Filter>Plugin\Services\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\services\ThreadData.h">
+      <Filter>Plugin\Services\Internal\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\Syncdata.h">
+      <Filter>Plugin\Script\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\ExecuteJob.h">
+      <Filter>Plugin\Services\Internal\Job</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Bufferpool.h">
+      <Filter>ICore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\ScriptObjectpool.h">
+      <Filter>Plugin\Script\Register\Objectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\server\IServerSystemWarp.hpp">
+      <Filter>Warp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\ScriptServices.h">
+      <Filter>Plugin\Services\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\ISession.h">
+      <Filter>Plugin\Services\Internal\Session</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\SpecificDefined.h">
+      <Filter>Plugin\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\services\IResumer.h">
+      <Filter>Plugin\Services\Resumer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\services\IResumerWarp.hpp">
+      <Filter>Warp\services</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\services\ContextWarp.hpp">
+      <Filter>Warp\services</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\Buffer.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\type\StringBuffer.h">
+      <Filter>Define\Type\Declear</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\RequestHandle.h">
+      <Filter>Plugin\Network\request</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\server\ServerProxy.h">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\server\ServerProxyWarp.hpp">
+      <Filter>Warp\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\socket\SocketProxy.h">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\socket\ISocketSystemWarp.hpp">
+      <Filter>Warp\soket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\RequestPool.h">
+      <Filter>Plugin\Network\request</Filter>
+    </ClInclude>
+    <ClInclude Include="include\script\warp\socket\SocketProxyWarp.hpp">
+      <Filter>Warp\soket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Volatileintpool.h">
+      <Filter>Define\Volatileintpool</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\message\IMessageSystem.h">
+      <Filter>Plugin\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\message\IMessage.h">
+      <Filter>Plugin\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\message\IRawbuffer.h">
+      <Filter>Plugin\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\ObjectPool.hpp">
+      <Filter>Define</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{1c93abb7-999c-4a7f-a1ff-254a90f04575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICore">
+      <UniqueIdentifier>{a97637f6-851b-4918-9035-e1947a247523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ICore\Loader">
+      <UniqueIdentifier>{54dd6377-8b74-432c-a8b1-211e7f799142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\File">
+      <UniqueIdentifier>{b5ae06b9-b81c-4002-9a9b-1b193d59874b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Memory">
+      <UniqueIdentifier>{ceb48763-44f0-4940-9455-b46a727be958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Memory\Allocator">
+      <UniqueIdentifier>{f2285d30-f88a-4bde-b801-600bfed44169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{6ccc080c-1dcf-4bca-8aaf-74a0c85def54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Rtti">
+      <UniqueIdentifier>{f393c534-36b7-4bdc-8916-69b2b7b40cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Delegate">
+      <UniqueIdentifier>{c70e7cfc-c77f-41b0-9bd2-3b278d4a24e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IApplication">
+      <UniqueIdentifier>{d3d073b4-679c-49f8-bc08-3d956c298aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Configure">
+      <UniqueIdentifier>{b37ce523-ba92-403b-8df0-2d9f8ad50ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Thread">
+      <UniqueIdentifier>{2187758c-39c8-4e41-9059-87fc144a2df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Thread\ThreadEntity">
+      <UniqueIdentifier>{75ee633b-2304-4b27-9467-07e995084fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Serialize">
+      <UniqueIdentifier>{53c3566d-42c5-4268-bcf2-a85e1ec6d7e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Keeper">
+      <UniqueIdentifier>{b860ec45-1a4e-48d2-a7ea-6ba5cd1e2fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Keeper\Accessor">
+      <UniqueIdentifier>{b25a34d0-b6dd-4c5a-8b3f-0e7002beb9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script">
+      <UniqueIdentifier>{f8c1d5ad-2e51-4e6a-8a78-0ef05835468e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Machine">
+      <UniqueIdentifier>{8d116253-0833-4e39-b838-a731e47ca9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Register">
+      <UniqueIdentifier>{018e3e5d-70de-4c1c-8c3c-c4c9aa071480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Value">
+      <UniqueIdentifier>{4814c502-b749-4632-9659-f0998ebd5de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Invoker">
+      <UniqueIdentifier>{a014c76c-9224-45a7-ba2b-85a4706d3c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Type">
+      <UniqueIdentifier>{76847bbc-802e-4b11-b00d-e8177fa59a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Log">
+      <UniqueIdentifier>{3164eeb8-2a36-44d2-99ea-7cb1718648cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Serialize\ICoder">
+      <UniqueIdentifier>{3e1c8e5c-7e44-423a-bbb5-d5017bbad8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Keeper\AccessPackage">
+      <UniqueIdentifier>{869ceaee-21fd-4722-8ec6-e1a53ec917fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Track">
+      <UniqueIdentifier>{34050cca-f18c-4807-bcfb-f622c6c6ffc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Serialize\ISerializable">
+      <UniqueIdentifier>{8b4da0a7-6ebb-4743-923f-d20e636c46b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\System">
+      <UniqueIdentifier>{07201773-7222-40b4-bfdb-bbf5bb9e01bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Timer">
+      <UniqueIdentifier>{27dca5bb-9799-425b-8f7f-4fd00644b408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Instance">
+      <UniqueIdentifier>{4e0c6a48-4456-43ac-a856-44c75f9b1415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp">
+      <UniqueIdentifier>{3b1e2500-0e77-4d11-8cd6-5fd5abd116e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Type\Declear">
+      <UniqueIdentifier>{7bd50686-34f0-4b6b-9ac0-a28b386eab4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Coroutine">
+      <UniqueIdentifier>{a25c5dbb-10cb-4e95-9bc7-2333b015e1d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\file">
+      <UniqueIdentifier>{fdc2221e-8fdf-4e10-a86c-668dea9e6485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Network">
+      <UniqueIdentifier>{b35b3bfb-9f70-49e4-8f26-8f79dd52c5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Network\Server">
+      <UniqueIdentifier>{ff10f594-4dd6-461e-9b93-3ba576208459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Network\Socket">
+      <UniqueIdentifier>{af0d11eb-f0bd-4d47-901a-a7c0b8c89249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\soket">
+      <UniqueIdentifier>{90ccbfe9-be78-40f4-8131-d6f9162d383c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\script">
+      <UniqueIdentifier>{d43b0506-bad0-4e59-b481-7ad44982b75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\server">
+      <UniqueIdentifier>{4e0880cb-b024-4ba7-b09e-7b25f4e664c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\timer">
+      <UniqueIdentifier>{ea922178-eee6-4dbe-a31f-b80a9dfd39b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\utility">
+      <UniqueIdentifier>{4a74ee64-3bd1-4dec-92e9-37f291d6f56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\log">
+      <UniqueIdentifier>{19f274e0-65aa-4081-a1aa-d2c678e465ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services">
+      <UniqueIdentifier>{2a77db95-23c8-4196-9919-498b9bf8c691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Arguments">
+      <UniqueIdentifier>{200672fc-9dcc-4e1c-8147-0aec0c2e66e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Protocal">
+      <UniqueIdentifier>{967b4668-c7c2-46ce-87ac-a5541ffaafe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warp\services">
+      <UniqueIdentifier>{fb96c913-89df-483b-9f34-af08da9980e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Services">
+      <UniqueIdentifier>{6b3cd2a5-5ee7-4dea-8a1e-a90162c22a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Script\Register\Objectpool">
+      <UniqueIdentifier>{b15b68f3-a05b-4aab-a005-1d8058a45c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Internal">
+      <UniqueIdentifier>{37f4ea66-7844-459c-a63d-1bce76c125d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Internal\Job">
+      <UniqueIdentifier>{9caeb994-36cb-429e-b268-a37efd8c7ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Internal\Session">
+      <UniqueIdentifier>{125ec45e-068c-4763-bf16-737ce141178f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Services\Resumer">
+      <UniqueIdentifier>{4f4dd91c-4ded-42c0-8584-35b70b6af9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Network\request">
+      <UniqueIdentifier>{dafe4942-e650-4936-a9cd-c8c3d464bc38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define\Volatileintpool">
+      <UniqueIdentifier>{65fd1f6e-04c2-41b1-85d5-10e23866155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\Network\message">
+      <UniqueIdentifier>{afbd5a31-cb4c-4d09-b85a-f5d3cad584b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\Object.cpp">
+      <Filter>Define\Rtti</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Rtti.cpp">
+      <Filter>Define\Rtti</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ICore.cpp">
+      <Filter>ICore</Filter>
+    </ClCompile>
+    <ClCompile Include="core\IPlugin.cpp">
+      <Filter>ICore\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="core\IPluginLoader.cpp">
+      <Filter>ICore\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\file\IFileSystem.cpp">
+      <Filter>Plugin\File</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\memory\IMemorySystem.cpp">
+      <Filter>Plugin\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\memory\Allocator.cpp">
+      <Filter>Plugin\Memory\Allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\configure\IConfigSystem.cpp">
+      <Filter>Plugin\Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\thread\IJob.cpp">
+      <Filter>Plugin\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\thread\IThreadSystem.cpp">
+      <Filter>Plugin\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="core\IApplication.cpp">
+      <Filter>IApplication</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\keeper\IKeeperSystem.cpp">
+      <Filter>Plugin\Keeper</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\keeper\Accessor.cpp">
+      <Filter>Plugin\Keeper\Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IVirtualMachine.cpp">
+      <Filter>Plugin\Script\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\ClassRegister.cpp">
+      <Filter>Plugin\Script\Register</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\FunctionRegister.cpp">
+      <Filter>Plugin\Script\Register</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\ScriptValue.cpp">
+      <Filter>Plugin\Script\Value</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IFunctionInvoker.cpp">
+      <Filter>Plugin\Script\Invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IScriptInstance.cpp">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\log\ILogSystem.cpp">
+      <Filter>Plugin\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\serialize\ISerializeSystem.cpp">
+      <Filter>Plugin\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\serialize\IEncoder.cpp">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\serialize\IDecoder.cpp">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IMemberIterator.cpp">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\keeper\IAccessPackage.cpp">
+      <Filter>Plugin\Keeper\AccessPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\keeper\Accessinfo.cpp">
+      <Filter>Plugin\Keeper\AccessPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Track.cpp">
+      <Filter>Define\Track</Filter>
+    </ClCompile>
+    <ClCompile Include="core\IFunction.cpp">
+      <Filter>ICore\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\serialize\ISerializable.cpp">
+      <Filter>Plugin\Serialize\ISerializable</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\serialize\ISerializer.cpp">
+      <Filter>Plugin\Serialize\ICoder</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IScriptSystem.cpp">
+      <Filter>Plugin\Script\System</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\timer\ITimerSystem.cpp">
+      <Filter>Plugin\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Type.cpp">
+      <Filter>Define\Type\Declear</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\ICoroutineInvoker.cpp">
+      <Filter>Plugin\Script\Coroutine</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\server\IServer.cpp">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\server\IServerSystem.cpp">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\socket\ISocket.cpp">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\socket\ISocketSystem.cpp">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\thread\IJobWokerBase.cpp">
+      <Filter>Plugin\Thread\ThreadEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\IServicesSystem.cpp">
+      <Filter>Plugin\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IFunctionIterator.cpp">
+      <Filter>Plugin\Script\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\IArguments.cpp">
+      <Filter>Plugin\Script\Arguments</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\IAgent.cpp">
+      <Filter>Plugin\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\ExecuteJob.cpp">
+      <Filter>Plugin\Services\Internal\Job</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\IServices.cpp">
+      <Filter>Plugin\Services\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\Protocol.cpp">
+      <Filter>Plugin\Services\Protocal</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\ThreadData.cpp">
+      <Filter>Plugin\Services\Internal\Job</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Bufferpool.cpp">
+      <Filter>ICore</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\script\ScriptObjectpool.cpp">
+      <Filter>Plugin\Script\Register\Objectpool</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\ScriptServices.cpp">
+      <Filter>Plugin\Services\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\ISession.cpp">
+      <Filter>Plugin\Services\Internal\Session</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\services\IResumer.cpp">
+      <Filter>Plugin\Services\Resumer</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\RequestHandle.cpp">
+      <Filter>Plugin\Network\request</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\server\ServerProxy.cpp">
+      <Filter>Plugin\Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\socket\SocketProxy.cpp">
+      <Filter>Plugin\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\RequestPool.cpp">
+      <Filter>Plugin\Network\request</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Volatileintpool.cpp">
+      <Filter>Define\Volatileintpool</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\message\IMessageSystem.cpp">
+      <Filter>Plugin\Network\message</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\message\IMessage.cpp">
+      <Filter>Plugin\Network\message</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\network\message\IRawbuffer.cpp">
+      <Filter>Plugin\Network\message</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

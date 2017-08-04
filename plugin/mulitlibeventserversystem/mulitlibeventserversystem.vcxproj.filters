@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{ab532fa2-b179-4558-a668-f666542289e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerSystem">
+      <UniqueIdentifier>{cc50068f-b0cc-4575-9104-6a48e9f08484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{892964ed-f193-4a96-b418-894ea56db196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Server">
+      <UniqueIdentifier>{98b49142-a9c5-4b66-a30e-6ff54bbe9c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Pool">
+      <UniqueIdentifier>{0650625a-aa88-4796-93fb-787dae3a5bd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventServerSystem.cpp">
+      <Filter>ServerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ListenerJob.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionJob.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventServer.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="LibeventConnection.cpp">
+      <Filter>Server\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Connectionpool.cpp">
+      <Filter>Server\Pool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibeventServerSystem.h">
+      <Filter>ServerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ListenerJob.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionJob.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventServer.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="LibeventConnection.h">
+      <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Connectionpool.h">
+      <Filter>Server\Pool</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

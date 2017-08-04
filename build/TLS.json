@@ -1,0 +1,5 @@
+{
+	"OPENSSL_CRT" : "root:server.crt"
+	,"OPENSSL_KEY" : "root:private.key"
+	,"OPENSSL_CA" : "root:cacert.pem"
+}

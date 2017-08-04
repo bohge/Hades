@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PluginEntry">
+      <UniqueIdentifier>{57a22021-cda4-428a-beb1-438e321864a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerializerSystem">
+      <UniqueIdentifier>{ac4a0123-feca-4555-9efc-da0d9767a70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerializerSystem\Coder">
+      <UniqueIdentifier>{20253638-6164-4131-a632-2fce4715133e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerializerSystem\Serializer">
+      <UniqueIdentifier>{2d675352-0798-4cbd-9ca9-46651ef43463}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>PluginEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatSerializerSystem.cpp">
+      <Filter>SerializerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatDecoder.cpp">
+      <Filter>SerializerSystem\Coder</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatEncoder.cpp">
+      <Filter>SerializerSystem\Coder</Filter>
+    </ClCompile>
+    <ClCompile Include="FlatSerializer.cpp">
+      <Filter>SerializerSystem\Serializer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FlatSerializerSystem.h">
+      <Filter>SerializerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="FlatEncoder.h">
+      <Filter>SerializerSystem\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="FlatDecoder.h">
+      <Filter>SerializerSystem\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_generated.h">
+      <Filter>SerializerSystem\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="FlatSerializer.h">
+      <Filter>SerializerSystem\Serializer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="generic.fbs">
+      <Filter>SerializerSystem\Coder</Filter>
+    </None>
+  </ItemGroup>
+</Project>

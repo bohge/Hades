@@ -1,0 +1,3 @@
+[{"ID":1,"Desc":"场景1的描述1","Name":"场景1","MonsterPos1":"10,0,0","MonsterPos2":"1,1,1","MonsterPos3":"2,2,2"},
+{"ID":2,"Desc":"场景1的描述2","Name":"场景1","MonsterPos1":"1,0,0","MonsterPos2":"1,1,1","MonsterPos3":"2,2,2"},
+{"ID":3,"Desc":"场景1的描述2","Name":"场景1","MonsterPos1":"0,0,0","MonsterPos2":"1,1,1","MonsterPos3":"2,2,2"}]

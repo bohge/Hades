@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{21367fd7-8a6f-4941-81e5-82512d4912c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\warp">
+      <UniqueIdentifier>{768eb782-5986-4bb9-9408-20a244675c03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\soruce">
+      <UniqueIdentifier>{06470340-b175-47fc-b1d4-5cc9140af544}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BehavictreePlugin.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Behavior.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeTemplate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonAgent.cpp">
+      <Filter>source\soruce</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BehavictreePlugin.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="Behavior.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="AllRegister.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="BehavictreeWarp.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorWarp.hpp">
+      <Filter>source\warp</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeTemplate.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonAgent.h">
+      <Filter>source\soruce</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main_win.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="ServicesnodeApplication.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="Commandline.cpp">
+      <Filter>commadline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{8124f450-3728-4fef-a519-950d080031e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{6c0af24a-db8d-4404-a1f4-670c3c73b430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="warp">
+      <UniqueIdentifier>{864d1ef1-6b85-48b6-aa4d-699037bc46b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commadline">
+      <UniqueIdentifier>{f225c931-540b-48ea-beac-f4d076487c3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configure.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="ServicesnodeApplication.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="ServicesnodeApplicationWarp.h">
+      <Filter>warp</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLibraryRegister.h">
+      <Filter>warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Commandline.h">
+      <Filter>commadline</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

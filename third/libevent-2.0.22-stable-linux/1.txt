@@ -1,0 +1,150 @@
+make  all-recursive
+make[1]: Entering directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux'
+Making all in .
+make[2]: Entering directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT event.lo -MD -MP -MF .deps/event.Tpo -c -o event.lo event.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c  -fPIC -DPIC -o .libs/event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c -o event.o >/dev/null 2>&1
+mv -f .deps/event.Tpo .deps/event.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread.lo -MD -MP -MF .deps/evthread.Tpo -c -o evthread.lo evthread.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread.lo -MD -MP -MF .deps/evthread.Tpo -c evthread.c  -fPIC -DPIC -o .libs/evthread.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread.lo -MD -MP -MF .deps/evthread.Tpo -c evthread.c -o evthread.o >/dev/null 2>&1
+mv -f .deps/evthread.Tpo .deps/evthread.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT buffer.lo -MD -MP -MF .deps/buffer.Tpo -c -o buffer.lo buffer.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT buffer.lo -MD -MP -MF .deps/buffer.Tpo -c buffer.c  -fPIC -DPIC -o .libs/buffer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT buffer.lo -MD -MP -MF .deps/buffer.Tpo -c buffer.c -o buffer.o >/dev/null 2>&1
+mv -f .deps/buffer.Tpo .deps/buffer.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent.lo -MD -MP -MF .deps/bufferevent.Tpo -c -o bufferevent.lo bufferevent.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent.lo -MD -MP -MF .deps/bufferevent.Tpo -c bufferevent.c  -fPIC -DPIC -o .libs/bufferevent.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent.lo -MD -MP -MF .deps/bufferevent.Tpo -c bufferevent.c -o bufferevent.o >/dev/null 2>&1
+mv -f .deps/bufferevent.Tpo .deps/bufferevent.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_sock.lo -MD -MP -MF .deps/bufferevent_sock.Tpo -c -o bufferevent_sock.lo bufferevent_sock.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_sock.lo -MD -MP -MF .deps/bufferevent_sock.Tpo -c bufferevent_sock.c  -fPIC -DPIC -o .libs/bufferevent_sock.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_sock.lo -MD -MP -MF .deps/bufferevent_sock.Tpo -c bufferevent_sock.c -o bufferevent_sock.o >/dev/null 2>&1
+mv -f .deps/bufferevent_sock.Tpo .deps/bufferevent_sock.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_filter.lo -MD -MP -MF .deps/bufferevent_filter.Tpo -c -o bufferevent_filter.lo bufferevent_filter.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_filter.lo -MD -MP -MF .deps/bufferevent_filter.Tpo -c bufferevent_filter.c  -fPIC -DPIC -o .libs/bufferevent_filter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_filter.lo -MD -MP -MF .deps/bufferevent_filter.Tpo -c bufferevent_filter.c -o bufferevent_filter.o >/dev/null 2>&1
+mv -f .deps/bufferevent_filter.Tpo .deps/bufferevent_filter.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_pair.lo -MD -MP -MF .deps/bufferevent_pair.Tpo -c -o bufferevent_pair.lo bufferevent_pair.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_pair.lo -MD -MP -MF .deps/bufferevent_pair.Tpo -c bufferevent_pair.c  -fPIC -DPIC -o .libs/bufferevent_pair.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_pair.lo -MD -MP -MF .deps/bufferevent_pair.Tpo -c bufferevent_pair.c -o bufferevent_pair.o >/dev/null 2>&1
+mv -f .deps/bufferevent_pair.Tpo .deps/bufferevent_pair.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT listener.lo -MD -MP -MF .deps/listener.Tpo -c -o listener.lo listener.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT listener.lo -MD -MP -MF .deps/listener.Tpo -c listener.c  -fPIC -DPIC -o .libs/listener.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT listener.lo -MD -MP -MF .deps/listener.Tpo -c listener.c -o listener.o >/dev/null 2>&1
+mv -f .deps/listener.Tpo .deps/listener.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_ratelim.lo -MD -MP -MF .deps/bufferevent_ratelim.Tpo -c -o bufferevent_ratelim.lo bufferevent_ratelim.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_ratelim.lo -MD -MP -MF .deps/bufferevent_ratelim.Tpo -c bufferevent_ratelim.c  -fPIC -DPIC -o .libs/bufferevent_ratelim.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_ratelim.lo -MD -MP -MF .deps/bufferevent_ratelim.Tpo -c bufferevent_ratelim.c -o bufferevent_ratelim.o >/dev/null 2>&1
+mv -f .deps/bufferevent_ratelim.Tpo .deps/bufferevent_ratelim.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evmap.lo -MD -MP -MF .deps/evmap.Tpo -c -o evmap.lo evmap.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evmap.lo -MD -MP -MF .deps/evmap.Tpo -c evmap.c  -fPIC -DPIC -o .libs/evmap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evmap.lo -MD -MP -MF .deps/evmap.Tpo -c evmap.c -o evmap.o >/dev/null 2>&1
+mv -f .deps/evmap.Tpo .deps/evmap.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT log.lo -MD -MP -MF .deps/log.Tpo -c -o log.lo log.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT log.lo -MD -MP -MF .deps/log.Tpo -c log.c  -fPIC -DPIC -o .libs/log.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT log.lo -MD -MP -MF .deps/log.Tpo -c log.c -o log.o >/dev/null 2>&1
+mv -f .deps/log.Tpo .deps/log.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil.lo -MD -MP -MF .deps/evutil.Tpo -c -o evutil.lo evutil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil.lo -MD -MP -MF .deps/evutil.Tpo -c evutil.c  -fPIC -DPIC -o .libs/evutil.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil.lo -MD -MP -MF .deps/evutil.Tpo -c evutil.c -o evutil.o >/dev/null 2>&1
+mv -f .deps/evutil.Tpo .deps/evutil.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil_rand.lo -MD -MP -MF .deps/evutil_rand.Tpo -c -o evutil_rand.lo evutil_rand.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil_rand.lo -MD -MP -MF .deps/evutil_rand.Tpo -c evutil_rand.c  -fPIC -DPIC -o .libs/evutil_rand.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evutil_rand.lo -MD -MP -MF .deps/evutil_rand.Tpo -c evutil_rand.c -o evutil_rand.o >/dev/null 2>&1
+mv -f .deps/evutil_rand.Tpo .deps/evutil_rand.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT strlcpy.lo -MD -MP -MF .deps/strlcpy.Tpo -c -o strlcpy.lo strlcpy.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT strlcpy.lo -MD -MP -MF .deps/strlcpy.Tpo -c strlcpy.c  -fPIC -DPIC -o .libs/strlcpy.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT strlcpy.lo -MD -MP -MF .deps/strlcpy.Tpo -c strlcpy.c -o strlcpy.o >/dev/null 2>&1
+mv -f .deps/strlcpy.Tpo .deps/strlcpy.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT select.lo -MD -MP -MF .deps/select.Tpo -c -o select.lo select.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT select.lo -MD -MP -MF .deps/select.Tpo -c select.c  -fPIC -DPIC -o .libs/select.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT select.lo -MD -MP -MF .deps/select.Tpo -c select.c -o select.o >/dev/null 2>&1
+mv -f .deps/select.Tpo .deps/select.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT poll.lo -MD -MP -MF .deps/poll.Tpo -c -o poll.lo poll.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT poll.lo -MD -MP -MF .deps/poll.Tpo -c poll.c  -fPIC -DPIC -o .libs/poll.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT poll.lo -MD -MP -MF .deps/poll.Tpo -c poll.c -o poll.o >/dev/null 2>&1
+mv -f .deps/poll.Tpo .deps/poll.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT epoll.lo -MD -MP -MF .deps/epoll.Tpo -c -o epoll.lo epoll.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT epoll.lo -MD -MP -MF .deps/epoll.Tpo -c epoll.c  -fPIC -DPIC -o .libs/epoll.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT epoll.lo -MD -MP -MF .deps/epoll.Tpo -c epoll.c -o epoll.o >/dev/null 2>&1
+mv -f .deps/epoll.Tpo .deps/epoll.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT signal.lo -MD -MP -MF .deps/signal.Tpo -c -o signal.lo signal.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT signal.lo -MD -MP -MF .deps/signal.Tpo -c signal.c  -fPIC -DPIC -o .libs/signal.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT signal.lo -MD -MP -MF .deps/signal.Tpo -c signal.c -o signal.o >/dev/null 2>&1
+mv -f .deps/signal.Tpo .deps/signal.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT event_tagging.lo -MD -MP -MF .deps/event_tagging.Tpo -c -o event_tagging.lo event_tagging.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT event_tagging.lo -MD -MP -MF .deps/event_tagging.Tpo -c event_tagging.c  -fPIC -DPIC -o .libs/event_tagging.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT event_tagging.lo -MD -MP -MF .deps/event_tagging.Tpo -c event_tagging.c -o event_tagging.o >/dev/null 2>&1
+mv -f .deps/event_tagging.Tpo .deps/event_tagging.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT http.lo -MD -MP -MF .deps/http.Tpo -c -o http.lo http.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT http.lo -MD -MP -MF .deps/http.Tpo -c http.c  -fPIC -DPIC -o .libs/http.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT http.lo -MD -MP -MF .deps/http.Tpo -c http.c -o http.o >/dev/null 2>&1
+mv -f .deps/http.Tpo .deps/http.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evdns.lo -MD -MP -MF .deps/evdns.Tpo -c -o evdns.lo evdns.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evdns.lo -MD -MP -MF .deps/evdns.Tpo -c evdns.c  -fPIC -DPIC -o .libs/evdns.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evdns.lo -MD -MP -MF .deps/evdns.Tpo -c evdns.c -o evdns.o >/dev/null 2>&1
+mv -f .deps/evdns.Tpo .deps/evdns.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evrpc.lo -MD -MP -MF .deps/evrpc.Tpo -c -o evrpc.lo evrpc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evrpc.lo -MD -MP -MF .deps/evrpc.Tpo -c evrpc.c  -fPIC -DPIC -o .libs/evrpc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evrpc.lo -MD -MP -MF .deps/evrpc.Tpo -c evrpc.c -o evrpc.o >/dev/null 2>&1
+mv -f .deps/evrpc.Tpo .deps/evrpc.Plo
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread -version-info 6:9:1 -release 2.0   -o libevent.la -rpath /usr/local/lib event.lo evthread.lo buffer.lo bufferevent.lo bufferevent_sock.lo bufferevent_filter.lo bufferevent_pair.lo listener.lo bufferevent_ratelim.lo evmap.lo log.lo evutil.lo evutil_rand.lo strlcpy.lo select.lo poll.lo   epoll.lo  signal.lo event_tagging.lo http.lo evdns.lo evrpc.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/event.o .libs/evthread.o .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_sock.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/listener.o .libs/bufferevent_ratelim.o .libs/evmap.o .libs/log.o .libs/evutil.o .libs/evutil_rand.o .libs/strlcpy.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o .libs/event_tagging.o .libs/http.o .libs/evdns.o .libs/evrpc.o    -O2 -pthread   -pthread -Wl,-soname -Wl,libevent-2.0.so.5 -o .libs/libevent-2.0.so.5.1.9
+libtool: link: (cd ".libs" && rm -f "libevent-2.0.so.5" && ln -s "libevent-2.0.so.5.1.9" "libevent-2.0.so.5")
+libtool: link: (cd ".libs" && rm -f "libevent.so" && ln -s "libevent-2.0.so.5.1.9" "libevent.so")
+libtool: link: ar cru .libs/libevent.a  event.o evthread.o buffer.o bufferevent.o bufferevent_sock.o bufferevent_filter.o bufferevent_pair.o listener.o bufferevent_ratelim.o evmap.o log.o evutil.o evutil_rand.o strlcpy.o select.o poll.o epoll.o signal.o event_tagging.o http.o evdns.o evrpc.o
+libtool: link: ranlib .libs/libevent.a
+libtool: link: ( cd ".libs" && rm -f "libevent.la" && ln -s "../libevent.la" "libevent.la" )
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread -version-info 6:9:1 -release 2.0   -o libevent_core.la -rpath /usr/local/lib event.lo evthread.lo buffer.lo bufferevent.lo bufferevent_sock.lo bufferevent_filter.lo bufferevent_pair.lo listener.lo bufferevent_ratelim.lo evmap.lo log.lo evutil.lo evutil_rand.lo strlcpy.lo select.lo poll.lo   epoll.lo  signal.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/event.o .libs/evthread.o .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_sock.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/listener.o .libs/bufferevent_ratelim.o .libs/evmap.o .libs/log.o .libs/evutil.o .libs/evutil_rand.o .libs/strlcpy.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o    -O2 -pthread   -pthread -Wl,-soname -Wl,libevent_core-2.0.so.5 -o .libs/libevent_core-2.0.so.5.1.9
+libtool: link: (cd ".libs" && rm -f "libevent_core-2.0.so.5" && ln -s "libevent_core-2.0.so.5.1.9" "libevent_core-2.0.so.5")
+libtool: link: (cd ".libs" && rm -f "libevent_core.so" && ln -s "libevent_core-2.0.so.5.1.9" "libevent_core.so")
+libtool: link: ar cru .libs/libevent_core.a  event.o evthread.o buffer.o bufferevent.o bufferevent_sock.o bufferevent_filter.o bufferevent_pair.o listener.o bufferevent_ratelim.o evmap.o log.o evutil.o evutil_rand.o strlcpy.o select.o poll.o epoll.o signal.o
+libtool: link: ranlib .libs/libevent_core.a
+libtool: link: ( cd ".libs" && rm -f "libevent_core.la" && ln -s "../libevent_core.la" "libevent_core.la" )
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread -version-info 6:9:1 -release 2.0   -o libevent_extra.la -rpath /usr/local/lib event_tagging.lo http.lo evdns.lo evrpc.lo   
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/event_tagging.o .libs/http.o .libs/evdns.o .libs/evrpc.o    -O2 -pthread   -pthread -Wl,-soname -Wl,libevent_extra-2.0.so.5 -o .libs/libevent_extra-2.0.so.5.1.9
+libtool: link: (cd ".libs" && rm -f "libevent_extra-2.0.so.5" && ln -s "libevent_extra-2.0.so.5.1.9" "libevent_extra-2.0.so.5")
+libtool: link: (cd ".libs" && rm -f "libevent_extra.so" && ln -s "libevent_extra-2.0.so.5.1.9" "libevent_extra.so")
+libtool: link: ar cru .libs/libevent_extra.a  event_tagging.o http.o evdns.o evrpc.o
+libtool: link: ranlib .libs/libevent_extra.a
+libtool: link: ( cd ".libs" && rm -f "libevent_extra.la" && ln -s "../libevent_extra.la" "libevent_extra.la" )
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread_pthread.lo -MD -MP -MF .deps/evthread_pthread.Tpo -c -o evthread_pthread.lo evthread_pthread.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread_pthread.lo -MD -MP -MF .deps/evthread_pthread.Tpo -c evthread_pthread.c  -fPIC -DPIC -o .libs/evthread_pthread.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT evthread_pthread.lo -MD -MP -MF .deps/evthread_pthread.Tpo -c evthread_pthread.c -o evthread_pthread.o >/dev/null 2>&1
+mv -f .deps/evthread_pthread.Tpo .deps/evthread_pthread.Plo
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread -version-info 6:9:1 -release 2.0   -o libevent_pthreads.la -rpath /usr/local/lib evthread_pthread.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/evthread_pthread.o    -O2 -pthread   -pthread -Wl,-soname -Wl,libevent_pthreads-2.0.so.5 -o .libs/libevent_pthreads-2.0.so.5.1.9
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads-2.0.so.5" && ln -s "libevent_pthreads-2.0.so.5.1.9" "libevent_pthreads-2.0.so.5")
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads.so" && ln -s "libevent_pthreads-2.0.so.5.1.9" "libevent_pthreads.so")
+libtool: link: ar cru .libs/libevent_pthreads.a  evthread_pthread.o
+libtool: link: ranlib .libs/libevent_pthreads.a
+libtool: link: ( cd ".libs" && rm -f "libevent_pthreads.la" && ln -s "../libevent_pthreads.la" "libevent_pthreads.la" )
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include    -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_openssl.lo -MD -MP -MF .deps/bufferevent_openssl.Tpo -c -o bufferevent_openssl.lo bufferevent_openssl.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_openssl.lo -MD -MP -MF .deps/bufferevent_openssl.Tpo -c bufferevent_openssl.c  -fPIC -DPIC -o .libs/bufferevent_openssl.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -g -O2 -Wall -fno-strict-aliasing -pthread -MT bufferevent_openssl.lo -MD -MP -MF .deps/bufferevent_openssl.Tpo -c bufferevent_openssl.c -o bufferevent_openssl.o >/dev/null 2>&1
+mv -f .deps/bufferevent_openssl.Tpo .deps/bufferevent_openssl.Plo
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread -version-info 6:9:1 -release 2.0   -o libevent_openssl.la -rpath /usr/local/lib bufferevent_openssl.lo  -lssl  -lcrypto    
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/bufferevent_openssl.o   -lssl -lcrypto  -O2 -pthread   -pthread -Wl,-soname -Wl,libevent_openssl-2.0.so.5 -o .libs/libevent_openssl-2.0.so.5.1.9
+libtool: link: (cd ".libs" && rm -f "libevent_openssl-2.0.so.5" && ln -s "libevent_openssl-2.0.so.5.1.9" "libevent_openssl-2.0.so.5")
+libtool: link: (cd ".libs" && rm -f "libevent_openssl.so" && ln -s "libevent_openssl-2.0.so.5.1.9" "libevent_openssl.so")
+libtool: link: ar cru .libs/libevent_openssl.a  bufferevent_openssl.o
+libtool: link: ranlib .libs/libevent_openssl.a
+libtool: link: ( cd ".libs" && rm -f "libevent_openssl.la" && ln -s "../libevent_openssl.la" "libevent_openssl.la" )
+make[2]: Leaving directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux'
+Making all in include
+make[2]: Entering directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux/include'
+Making all in sample
+make[2]: Entering directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux/sample'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../compat -I../include -I../include   -g -O2 -Wall -fno-strict-aliasing -pthread -c event-test.c
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -fno-strict-aliasing -pthread   -o event-test event-test.o  ../libevent.la 
+libtool: link: gcc -g -O2 -Wall -fno-strict-aliasing -pthread -o .libs/event-test event-test.o  ../.libs/libevent.so -pthread
+Makefile:321: recipe for target 'event-test' failed
+make[2]: Leaving directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux/sample'
+Makefile:864: recipe for target 'all-recursive' failed
+make[1]: Leaving directory '/home/bohge/hades/hades/third/libevent-2.0.22-stable-linux'
+Makefile:595: recipe for target 'all' failed

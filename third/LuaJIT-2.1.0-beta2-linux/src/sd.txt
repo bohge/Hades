@@ -1,0 +1,3746 @@
+
+Dump of file lua51.lib
+
+File Type: LIBRARY
+
+Archive member name at 8: /               
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+    17F2 size
+correct header end
+
+    279 public symbols
+
+     306E __IMPORT_DESCRIPTOR_lua51
+     3290 __NULL_IMPORT_DESCRIPTOR
+     33C4 lua51_NULL_THUNK_DATA
+     554C __imp__lua_newthread
+     554C _lua_newthread
+     50D6 __imp__lua_gettop
+     50D6 _lua_gettop
+     6272 __imp__lua_settop
+     6272 _lua_settop
+     5B86 __imp__lua_pushvalue
+     5B86 _lua_pushvalue
+     5E60 __imp__lua_remove
+     5E60 _lua_remove
+     51A6 __imp__lua_insert
+     51A6 _lua_insert
+     5EC6 __imp__lua_replace
+     5EC6 _lua_replace
+     48B6 __imp__lua_checkstack
+     48B6 _lua_checkstack
+     6898 __imp__lua_xmove
+     6898 _lua_xmove
+     5278 __imp__lua_isnumber
+     5278 _lua_isnumber
+     52E0 __imp__lua_isstring
+     52E0 _lua_isstring
+     520C __imp__lua_iscfunction
+     520C _lua_iscfunction
+     5348 __imp__lua_isuserdata
+     5348 _lua_isuserdata
+     66F6 __imp__lua_type
+     66F6 _lua_type
+     675A __imp__lua_typename
+     675A _lua_typename
+     4B22 __imp__lua_equal
+     4B22 _lua_equal
+     5C5C __imp__lua_rawequal
+     5C5C _lua_rawequal
+     53B2 __imp__lua_lessthan
+     53B2 _lua_lessthan
+     6552 __imp__lua_tonumber
+     6552 _lua_tonumber
+     647E __imp__lua_tointeger
+     647E _lua_tointeger
+     63A8 __imp__lua_toboolean
+     63A8 _lua_toboolean
+     64E8 __imp__lua_tolstring
+     64E8 _lua_tolstring
+     5686 __imp__lua_objlen
+     5686 _lua_objlen
+     6412 __imp__lua_tocfunction
+     6412 _lua_tocfunction
+     668C __imp__lua_touserdata
+     668C _lua_touserdata
+     6624 __imp__lua_tothread
+     6624 _lua_tothread
+     65BA __imp__lua_topointer
+     65BA _lua_topointer
+     59E0 __imp__lua_pushnil
+     59E0 _lua_pushnil
+     5A48 __imp__lua_pushnumber
+     5A48 _lua_pushnumber
+     5896 __imp__lua_pushinteger
+     5896 _lua_pushinteger
+     5974 __imp__lua_pushlstring
+     5974 _lua_pushlstring
+     5AB2 __imp__lua_pushstring
+     5AB2 _lua_pushstring
+     5BF0 __imp__lua_pushvfstring
+     5BF0 _lua_pushvfstring
+     582A __imp__lua_pushfstring
+     582A _lua_pushfstring
+     57BE __imp__lua_pushcclosure
+     57BE _lua_pushcclosure
+     5752 __imp__lua_pushboolean
+     5752 _lua_pushboolean
+     5902 __imp__lua_pushlightuserdata
+     5902 _lua_pushlightuserdata
+     5B1C __imp__lua_pushthread
+     5B1C _lua_pushthread
+     506E __imp__lua_gettable
+     506E _lua_gettable
+     4D22 __imp__lua_getfield
+     4D22 _lua_getfield
+     5CC4 __imp__lua_rawget
+     5CC4 _lua_rawget
+     5D2A __imp__lua_rawgeti
+     5D2A _lua_rawgeti
+     4A52 __imp__lua_createtable
+     4A52 _lua_createtable
+     55B6 __imp__lua_newuserdata
+     55B6 _lua_newuserdata
+     4F9A __imp__lua_getmetatable
+     4F9A _lua_getmetatable
+     4CBA __imp__lua_getfenv
+     4CBA _lua_getfenv
+     620A __imp__lua_settable
+     620A _lua_settable
+     6066 __imp__lua_setfield
+     6066 _lua_setfield
+     5D92 __imp__lua_rawset
+     5D92 _lua_rawset
+     5DF8 __imp__lua_rawseti
+     5DF8 _lua_rawseti
+     619E __imp__lua_setmetatable
+     619E _lua_setmetatable
+     5FFE __imp__lua_setfenv
+     5FFE _lua_setfenv
+     4852 __imp__lua_call
+     4852 _lua_call
+     56EC __imp__lua_pcall
+     56EC _lua_pcall
+     49EC __imp__lua_cpcall
+     49EC _lua_cpcall
+     68FE __imp__lua_yield
+     68FE _lua_yield
+     5F2E __imp__lua_resume
+     5F2E _lua_resume
+     6342 __imp__lua_status
+     6342 _lua_status
+     4BEE __imp__lua_gc
+     4BEE _lua_gc
+     5622 __imp__lua_next
+     5622 _lua_next
+     4986 __imp__lua_concat
+     4986 _lua_concat
+     4C50 __imp__lua_getallocf
+     4C50 _lua_getallocf
+     5F94 __imp__lua_setallocf
+     5F94 _lua_setallocf
+     513C __imp__lua_getupvalue
+     513C _lua_getupvalue
+     62D8 __imp__lua_setupvalue
+     62D8 _lua_setupvalue
+     67C2 __imp__lua_upvalueid
+     67C2 _lua_upvalueid
+     682C __imp__lua_upvaluejoin
+     682C _lua_upvaluejoin
+     3BE2 __imp__luaL_checkstack
+     3BE2 _luaL_checkstack
+     3C4E __imp__luaL_checktype
+     3C4E _luaL_checktype
+     39C4 __imp__luaL_checkany
+     39C4 _luaL_checkany
+     3B0A __imp__luaL_checknumber
+     3B0A _luaL_checknumber
+     443A __imp__luaL_optnumber
+     443A _luaL_optnumber
+     3A2E __imp__luaL_checkinteger
+     3A2E _luaL_checkinteger
+     4362 __imp__luaL_optinteger
+     4362 _luaL_optinteger
+     3A9C __imp__luaL_checklstring
+     3A9C _luaL_checklstring
+     43CE __imp__luaL_optlstring
+     43CE _luaL_optlstring
+     3B76 __imp__luaL_checkoption
+     3B76 _luaL_checkoption
+     41B8 __imp__luaL_newmetatable
+     41B8 _luaL_newmetatable
+     3ECC __imp__luaL_getmetafield
+     3ECC _luaL_getmetafield
+     3CB8 __imp__luaL_checkudata
+     3CB8 _luaL_checkudata
+     395A __imp__luaL_callmeta
+     395A _luaL_callmeta
+     5006 __imp__lua_getstack
+     5006 _lua_getstack
+     4ECA __imp__lua_getinfo
+     4ECA _lua_getinfo
+     4F32 __imp__lua_getlocal
+     4F32 _lua_getlocal
+     6136 __imp__lua_setlocal
+     6136 _lua_setlocal
+     464A __imp__luaL_traceback
+     464A _luaL_traceback
+     60CE __imp__lua_sethook
+     60CE _lua_sethook
+     4D8A __imp__lua_gethook
+     4D8A _lua_gethook
+     4E5E __imp__lua_gethookmask
+     4E5E _lua_gethookmask
+     4DF2 __imp__lua_gethookcount
+     4DF2 _lua_gethookcount
+     3666 __imp__luaJIT_setmode
+     3666 _luaJIT_setmode
+     36D0 __imp__luaJIT_version_2_1_0_beta2
+     36D0 _luaJIT_version_2_1_0_beta2
+     47EA __imp__lua_atpanic
+     47EA _lua_atpanic
+     4B88 __imp__lua_error
+     4B88 _lua_error
+     3886 __imp__luaL_argerror
+     3886 _luaL_argerror
+     46B4 __imp__luaL_typerror
+     46B4 _luaL_typerror
+     4784 __imp__luaL_where
+     4784 _luaL_where
+     3D24 __imp__luaL_error
+     3D24 _luaL_error
+     541A __imp__lua_load
+     541A _lua_load
+     4ABE __imp__lua_dump
+     4ABE _lua_dump
+     547E __imp__lua_loadx
+     547E _lua_loadx
+     4078 __imp__luaL_loadfile
+     4078 _luaL_loadfile
+     3FA0 __imp__luaL_loadbuffer
+     3FA0 _luaL_loadbuffer
+     414C __imp__luaL_loadstring
+     414C _luaL_loadstring
+     40E2 __imp__luaL_loadfilex
+     40E2 _luaL_loadfilex
+     400C __imp__luaL_loadbufferx
+     400C _luaL_loadbufferx
+     3586 __imp__luaJIT_profile_start
+     3586 _luaJIT_profile_start
+     35F6 __imp__luaJIT_profile_stop
+     35F6 _luaJIT_profile_stop
+     3512 __imp__luaJIT_profile_dumpstack
+     3512 _luaJIT_profile_dumpstack
+     54E4 __imp__lua_newstate
+     54E4 _lua_newstate
+     4920 __imp__lua_close
+     4920 _lua_close
+     4290 __imp__luaL_openlib
+     4290 _luaL_openlib
+     45E0 __imp__luaL_register
+     45E0 _luaL_register
+     457C __imp__luaL_ref
+     457C _luaL_ref
+     471E __imp__luaL_unref
+     471E _luaL_unref
+     4226 __imp__luaL_newstate
+     4226 _luaL_newstate
+     3F3A __imp__luaL_gsub
+     3F3A _luaL_gsub
+     3E62 __imp__luaL_findtable
+     3E62 _luaL_findtable
+     3DF6 __imp__luaL_fileresult
+     3DF6 _luaL_fileresult
+     3D8A __imp__luaL_execresult
+     3D8A _luaL_execresult
+     38F0 __imp__luaL_buffinit
+     38F0 _luaL_buffinit
+     44A4 __imp__luaL_prepbuffer
+     44A4 _luaL_prepbuffer
+     3746 __imp__luaL_addlstring
+     3746 _luaL_addlstring
+     37B2 __imp__luaL_addstring
+     37B2 _luaL_addstring
+     381C __imp__luaL_addvalue
+     381C _luaL_addvalue
+     4510 __imp__luaL_pushresult
+     4510 _luaL_pushresult
+     6964 __imp__luaopen_base
+     6964 _luaopen_base
+     69CC __imp__luaopen_bit
+     69CC _luaopen_bit
+     6A34 __imp__luaopen_debug
+     6A34 _luaopen_debug
+     6A9E __imp__luaopen_ffi
+     6A9E _luaopen_ffi
+     42F8 __imp__luaL_openlibs
+     42F8 _luaL_openlibs
+     6B06 __imp__luaopen_io
+     6B06 _luaopen_io
+     6B6C __imp__luaopen_jit
+     6B6C _luaopen_jit
+     6BD4 __imp__luaopen_math
+     6BD4 _luaopen_math
+     6C3C __imp__luaopen_os
+     6C3C _luaopen_os
+     6CA2 __imp__luaopen_package
+     6CA2 _luaopen_package
+     6D0E __imp__luaopen_string
+     6D0E _luaopen_string
+     6D78 __imp__luaopen_table
+     6D78 _luaopen_table
+
+Archive member name at 1836: /               
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+    17FC size
+correct header end
+
+    141 offsets
+
+        1     306E
+        2     3290
+        3     33C4
+        4     554C
+        5     50D6
+        6     6272
+        7     5B86
+        8     5E60
+        9     51A6
+        A     5EC6
+        B     48B6
+        C     6898
+        D     5278
+        E     52E0
+        F     520C
+       10     5348
+       11     66F6
+       12     675A
+       13     4B22
+       14     5C5C
+       15     53B2
+       16     6552
+       17     647E
+       18     63A8
+       19     64E8
+       1A     5686
+       1B     6412
+       1C     668C
+       1D     6624
+       1E     65BA
+       1F     59E0
+       20     5A48
+       21     5896
+       22     5974
+       23     5AB2
+       24     5BF0
+       25     582A
+       26     57BE
+       27     5752
+       28     5902
+       29     5B1C
+       2A     506E
+       2B     4D22
+       2C     5CC4
+       2D     5D2A
+       2E     4A52
+       2F     55B6
+       30     4F9A
+       31     4CBA
+       32     620A
+       33     6066
+       34     5D92
+       35     5DF8
+       36     619E
+       37     5FFE
+       38     4852
+       39     56EC
+       3A     49EC
+       3B     68FE
+       3C     5F2E
+       3D     6342
+       3E     4BEE
+       3F     5622
+       40     4986
+       41     4C50
+       42     5F94
+       43     513C
+       44     62D8
+       45     67C2
+       46     682C
+       47     3BE2
+       48     3C4E
+       49     39C4
+       4A     3B0A
+       4B     443A
+       4C     3A2E
+       4D     4362
+       4E     3A9C
+       4F     43CE
+       50     3B76
+       51     41B8
+       52     3ECC
+       53     3CB8
+       54     395A
+       55     5006
+       56     4ECA
+       57     4F32
+       58     6136
+       59     464A
+       5A     60CE
+       5B     4D8A
+       5C     4E5E
+       5D     4DF2
+       5E     3666
+       5F     36D0
+       60     47EA
+       61     4B88
+       62     3886
+       63     46B4
+       64     4784
+       65     3D24
+       66     541A
+       67     4ABE
+       68     547E
+       69     4078
+       6A     3FA0
+       6B     414C
+       6C     40E2
+       6D     400C
+       6E     3586
+       6F     35F6
+       70     3512
+       71     54E4
+       72     4920
+       73     4290
+       74     45E0
+       75     457C
+       76     471E
+       77     4226
+       78     3F3A
+       79     3E62
+       7A     3DF6
+       7B     3D8A
+       7C     38F0
+       7D     44A4
+       7E     3746
+       7F     37B2
+       80     381C
+       81     4510
+       82     6964
+       83     69CC
+       84     6A34
+       85     6A9E
+       86     42F8
+       87     6B06
+       88     6B6C
+       89     6BD4
+       8A     6C3C
+       8B     6CA2
+       8C     6D0E
+       8D     6D78
+
+    279 public symbols
+
+        1 __IMPORT_DESCRIPTOR_lua51
+        2 __NULL_IMPORT_DESCRIPTOR
+       70 __imp__luaJIT_profile_dumpstack
+       6E __imp__luaJIT_profile_start
+       6F __imp__luaJIT_profile_stop
+       5E __imp__luaJIT_setmode
+       5F __imp__luaJIT_version_2_1_0_beta2
+       7E __imp__luaL_addlstring
+       7F __imp__luaL_addstring
+       80 __imp__luaL_addvalue
+       62 __imp__luaL_argerror
+       7C __imp__luaL_buffinit
+       54 __imp__luaL_callmeta
+       49 __imp__luaL_checkany
+       4C __imp__luaL_checkinteger
+       4E __imp__luaL_checklstring
+       4A __imp__luaL_checknumber
+       50 __imp__luaL_checkoption
+       47 __imp__luaL_checkstack
+       48 __imp__luaL_checktype
+       53 __imp__luaL_checkudata
+       65 __imp__luaL_error
+       7B __imp__luaL_execresult
+       7A __imp__luaL_fileresult
+       79 __imp__luaL_findtable
+       52 __imp__luaL_getmetafield
+       78 __imp__luaL_gsub
+       6A __imp__luaL_loadbuffer
+       6D __imp__luaL_loadbufferx
+       69 __imp__luaL_loadfile
+       6C __imp__luaL_loadfilex
+       6B __imp__luaL_loadstring
+       51 __imp__luaL_newmetatable
+       77 __imp__luaL_newstate
+       73 __imp__luaL_openlib
+       86 __imp__luaL_openlibs
+       4D __imp__luaL_optinteger
+       4F __imp__luaL_optlstring
+       4B __imp__luaL_optnumber
+       7D __imp__luaL_prepbuffer
+       81 __imp__luaL_pushresult
+       75 __imp__luaL_ref
+       74 __imp__luaL_register
+       59 __imp__luaL_traceback
+       63 __imp__luaL_typerror
+       76 __imp__luaL_unref
+       64 __imp__luaL_where
+       60 __imp__lua_atpanic
+       38 __imp__lua_call
+        B __imp__lua_checkstack
+       72 __imp__lua_close
+       40 __imp__lua_concat
+       3A __imp__lua_cpcall
+       2E __imp__lua_createtable
+       67 __imp__lua_dump
+       13 __imp__lua_equal
+       61 __imp__lua_error
+       3E __imp__lua_gc
+       41 __imp__lua_getallocf
+       31 __imp__lua_getfenv
+       2B __imp__lua_getfield
+       5B __imp__lua_gethook
+       5D __imp__lua_gethookcount
+       5C __imp__lua_gethookmask
+       56 __imp__lua_getinfo
+       57 __imp__lua_getlocal
+       30 __imp__lua_getmetatable
+       55 __imp__lua_getstack
+       2A __imp__lua_gettable
+        5 __imp__lua_gettop
+       43 __imp__lua_getupvalue
+        9 __imp__lua_insert
+        F __imp__lua_iscfunction
+        D __imp__lua_isnumber
+        E __imp__lua_isstring
+       10 __imp__lua_isuserdata
+       15 __imp__lua_lessthan
+       66 __imp__lua_load
+       68 __imp__lua_loadx
+       71 __imp__lua_newstate
+        4 __imp__lua_newthread
+       2F __imp__lua_newuserdata
+       3F __imp__lua_next
+       1A __imp__lua_objlen
+       39 __imp__lua_pcall
+       27 __imp__lua_pushboolean
+       26 __imp__lua_pushcclosure
+       25 __imp__lua_pushfstring
+       21 __imp__lua_pushinteger
+       28 __imp__lua_pushlightuserdata
+       22 __imp__lua_pushlstring
+       1F __imp__lua_pushnil
+       20 __imp__lua_pushnumber
+       23 __imp__lua_pushstring
+       29 __imp__lua_pushthread
+        7 __imp__lua_pushvalue
+       24 __imp__lua_pushvfstring
+       14 __imp__lua_rawequal
+       2C __imp__lua_rawget
+       2D __imp__lua_rawgeti
+       34 __imp__lua_rawset
+       35 __imp__lua_rawseti
+        8 __imp__lua_remove
+        A __imp__lua_replace
+       3C __imp__lua_resume
+       42 __imp__lua_setallocf
+       37 __imp__lua_setfenv
+       33 __imp__lua_setfield
+       5A __imp__lua_sethook
+       58 __imp__lua_setlocal
+       36 __imp__lua_setmetatable
+       32 __imp__lua_settable
+        6 __imp__lua_settop
+       44 __imp__lua_setupvalue
+       3D __imp__lua_status
+       18 __imp__lua_toboolean
+       1B __imp__lua_tocfunction
+       17 __imp__lua_tointeger
+       19 __imp__lua_tolstring
+       16 __imp__lua_tonumber
+       1E __imp__lua_topointer
+       1D __imp__lua_tothread
+       1C __imp__lua_touserdata
+       11 __imp__lua_type
+       12 __imp__lua_typename
+       45 __imp__lua_upvalueid
+       46 __imp__lua_upvaluejoin
+        C __imp__lua_xmove
+       3B __imp__lua_yield
+       82 __imp__luaopen_base
+       83 __imp__luaopen_bit
+       84 __imp__luaopen_debug
+       85 __imp__luaopen_ffi
+       87 __imp__luaopen_io
+       88 __imp__luaopen_jit
+       89 __imp__luaopen_math
+       8A __imp__luaopen_os
+       8B __imp__luaopen_package
+       8C __imp__luaopen_string
+       8D __imp__luaopen_table
+       70 _luaJIT_profile_dumpstack
+       6E _luaJIT_profile_start
+       6F _luaJIT_profile_stop
+       5E _luaJIT_setmode
+       5F _luaJIT_version_2_1_0_beta2
+       7E _luaL_addlstring
+       7F _luaL_addstring
+       80 _luaL_addvalue
+       62 _luaL_argerror
+       7C _luaL_buffinit
+       54 _luaL_callmeta
+       49 _luaL_checkany
+       4C _luaL_checkinteger
+       4E _luaL_checklstring
+       4A _luaL_checknumber
+       50 _luaL_checkoption
+       47 _luaL_checkstack
+       48 _luaL_checktype
+       53 _luaL_checkudata
+       65 _luaL_error
+       7B _luaL_execresult
+       7A _luaL_fileresult
+       79 _luaL_findtable
+       52 _luaL_getmetafield
+       78 _luaL_gsub
+       6A _luaL_loadbuffer
+       6D _luaL_loadbufferx
+       69 _luaL_loadfile
+       6C _luaL_loadfilex
+       6B _luaL_loadstring
+       51 _luaL_newmetatable
+       77 _luaL_newstate
+       73 _luaL_openlib
+       86 _luaL_openlibs
+       4D _luaL_optinteger
+       4F _luaL_optlstring
+       4B _luaL_optnumber
+       7D _luaL_prepbuffer
+       81 _luaL_pushresult
+       75 _luaL_ref
+       74 _luaL_register
+       59 _luaL_traceback
+       63 _luaL_typerror
+       76 _luaL_unref
+       64 _luaL_where
+       60 _lua_atpanic
+       38 _lua_call
+        B _lua_checkstack
+       72 _lua_close
+       40 _lua_concat
+       3A _lua_cpcall
+       2E _lua_createtable
+       67 _lua_dump
+       13 _lua_equal
+       61 _lua_error
+       3E _lua_gc
+       41 _lua_getallocf
+       31 _lua_getfenv
+       2B _lua_getfield
+       5B _lua_gethook
+       5D _lua_gethookcount
+       5C _lua_gethookmask
+       56 _lua_getinfo
+       57 _lua_getlocal
+       30 _lua_getmetatable
+       55 _lua_getstack
+       2A _lua_gettable
+        5 _lua_gettop
+       43 _lua_getupvalue
+        9 _lua_insert
+        F _lua_iscfunction
+        D _lua_isnumber
+        E _lua_isstring
+       10 _lua_isuserdata
+       15 _lua_lessthan
+       66 _lua_load
+       68 _lua_loadx
+       71 _lua_newstate
+        4 _lua_newthread
+       2F _lua_newuserdata
+       3F _lua_next
+       1A _lua_objlen
+       39 _lua_pcall
+       27 _lua_pushboolean
+       26 _lua_pushcclosure
+       25 _lua_pushfstring
+       21 _lua_pushinteger
+       28 _lua_pushlightuserdata
+       22 _lua_pushlstring
+       1F _lua_pushnil
+       20 _lua_pushnumber
+       23 _lua_pushstring
+       29 _lua_pushthread
+        7 _lua_pushvalue
+       24 _lua_pushvfstring
+       14 _lua_rawequal
+       2C _lua_rawget
+       2D _lua_rawgeti
+       34 _lua_rawset
+       35 _lua_rawseti
+        8 _lua_remove
+        A _lua_replace
+       3C _lua_resume
+       42 _lua_setallocf
+       37 _lua_setfenv
+       33 _lua_setfield
+       5A _lua_sethook
+       58 _lua_setlocal
+       36 _lua_setmetatable
+       32 _lua_settable
+        6 _lua_settop
+       44 _lua_setupvalue
+       3D _lua_status
+       18 _lua_toboolean
+       1B _lua_tocfunction
+       17 _lua_tointeger
+       19 _lua_tolstring
+       16 _lua_tonumber
+       1E _lua_topointer
+       1D _lua_tothread
+       1C _lua_touserdata
+       11 _lua_type
+       12 _lua_typename
+       45 _lua_upvalueid
+       46 _lua_upvaluejoin
+        C _lua_xmove
+       3B _lua_yield
+       82 _luaopen_base
+       83 _luaopen_bit
+       84 _luaopen_debug
+       85 _luaopen_ffi
+       87 _luaopen_io
+       88 _luaopen_jit
+       89 _luaopen_math
+       8A _luaopen_os
+       8B _luaopen_package
+       8C _luaopen_string
+       8D _luaopen_table
+        3 lua51_NULL_THUNK_DATA
+
+Archive member name at 306E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+     1E5 size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        5775DCB5 time date stamp Fri Jul 01 11:00:05 2016
+             107 file pointer to symbol table
+               8 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      8C file pointer to raw data (0000008C to 000000CA)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 10 00 09 00 00 00 00 00 09 6C 75 61  .............lua
+  00000010: 35 31 2E 64 6C 6C 27 00 13 10 07 00 00 00 03 00  51.dll'.........
+  00000020: 00 00 00 00 00 00 0C 00 00 00 0D 52 12 4D 69 63  ...........R.Mic
+  00000030: 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E 4B     rosoft (R) LINK
+
+SECTION HEADER #2
+.idata$2 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      CB file pointer to raw data (000000CB to 000000DE)
+      DF file pointer to relocation table
+       0 file pointer to line numbers
+       3 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+  00000010: 00 00 00 00                                      ....
+
+RELOCATIONS #2
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 0000000C  DIR32NB                    00000000         3  .idata$6
+ 00000000  DIR32NB                    00000000         4  .idata$4
+ 00000010  DIR32NB                    00000000         5  .idata$5
+
+SECTION HEADER #3
+.idata$6 name
+       0 physical address
+       0 virtual address
+       A size of raw data
+      FD file pointer to raw data (000000FD to 00000106)
+      DF file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0200040 flags
+         Initialized Data
+         2 byte align
+         Read Write
+
+RAW DATA #3
+  00000000: 6C 75 61 35 31 2E 64 6C 6C 00                    lua51.dll.
+
+COFF SYMBOL TABLE
+000 00DD520D ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | __IMPORT_DESCRIPTOR_lua51
+002 C0000040 SECT2  notype       Section      | .idata$2
+003 00000000 SECT3  notype       Static       | .idata$6
+004 C0000040 UNDEF  notype       Section      | .idata$4
+005 C0000040 UNDEF  notype       Section      | .idata$5
+006 00000000 UNDEF  notype       External     | __NULL_IMPORT_DESCRIPTOR
+007 00000000 UNDEF  notype       External     | lua51_NULL_THUNK_DATA
+
+String Table Size = 0x4E bytes
+
+Archive member name at 3290: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      F8 size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               2 number of sections
+        5775DCB5 time date stamp Fri Jul 01 11:00:05 2016
+              B7 file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      64 file pointer to raw data (00000064 to 000000A2)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 10 00 09 00 00 00 00 00 09 6C 75 61  .............lua
+  00000010: 35 31 2E 64 6C 6C 27 00 13 10 07 00 00 00 03 00  51.dll'.........
+  00000020: 00 00 00 00 00 00 0C 00 00 00 0D 52 12 4D 69 63  ...........R.Mic
+  00000030: 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E 4B     rosoft (R) LINK
+
+SECTION HEADER #2
+.idata$3 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      A3 file pointer to raw data (000000A3 to 000000B6)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+  00000010: 00 00 00 00                                      ....
+
+COFF SYMBOL TABLE
+000 00DD520D ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | __NULL_IMPORT_DESCRIPTOR
+
+String Table Size = 0x1D bytes
+
+Archive member name at 33C4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+     112 size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        5775DCB5 time date stamp Fri Jul 01 11:00:05 2016
+              D3 file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      3F size of raw data
+      8C file pointer to raw data (0000008C to 000000CA)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 10 00 09 00 00 00 00 00 09 6C 75 61  .............lua
+  00000010: 35 31 2E 64 6C 6C 27 00 13 10 07 00 00 00 03 00  51.dll'.........
+  00000020: 00 00 00 00 00 00 0C 00 00 00 0D 52 12 4D 69 63  ...........R.Mic
+  00000030: 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E 4B     rosoft (R) LINK
+
+SECTION HEADER #2
+.idata$5 name
+       0 physical address
+       0 virtual address
+       4 size of raw data
+      CB file pointer to raw data (000000CB to 000000CE)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00                                      ....
+
+SECTION HEADER #3
+.idata$4 name
+       0 physical address
+       0 virtual address
+       4 size of raw data
+      CF file pointer to raw data (000000CF to 000000D2)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #3
+  00000000: 00 00 00 00                                      ....
+
+COFF SYMBOL TABLE
+000 00DD520D ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | lua51_NULL_THUNK_DATA
+
+String Table Size = 0x1B bytes
+
+Archive member name at 3512: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      38 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000024
+  DLL name     : lua51.dll
+  Symbol name  : _luaJIT_profile_dumpstack
+  Type         : code
+  Name type    : no prefix
+  Hint         : 0
+  Name         : luaJIT_profile_dumpstack
+
+Archive member name at 3586: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      34 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000020
+  DLL name     : lua51.dll
+  Symbol name  : _luaJIT_profile_start
+  Type         : code
+  Name type    : no prefix
+  Hint         : 1
+  Name         : luaJIT_profile_start
+
+Archive member name at 35F6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      33 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001F
+  DLL name     : lua51.dll
+  Symbol name  : _luaJIT_profile_stop
+  Type         : code
+  Name type    : no prefix
+  Hint         : 2
+  Name         : luaJIT_profile_stop
+
+Archive member name at 3666: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaJIT_setmode
+  Type         : code
+  Name type    : no prefix
+  Hint         : 3
+  Name         : luaJIT_setmode
+
+Archive member name at 36D0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000026
+  DLL name     : lua51.dll
+  Symbol name  : _luaJIT_version_2_1_0_beta2
+  Type         : code
+  Name type    : no prefix
+  Hint         : 4
+  Name         : luaJIT_version_2_1_0_beta2
+
+Archive member name at 3746: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_addlstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 5
+  Name         : luaL_addlstring
+
+Archive member name at 37B2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_addstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 6
+  Name         : luaL_addstring
+
+Archive member name at 381C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_addvalue
+  Type         : code
+  Name type    : no prefix
+  Hint         : 7
+  Name         : luaL_addvalue
+
+Archive member name at 3886: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_argerror
+  Type         : code
+  Name type    : no prefix
+  Hint         : 8
+  Name         : luaL_argerror
+
+Archive member name at 38F0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_buffinit
+  Type         : code
+  Name type    : no prefix
+  Hint         : 9
+  Name         : luaL_buffinit
+
+Archive member name at 395A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_callmeta
+  Type         : code
+  Name type    : no prefix
+  Hint         : 10
+  Name         : luaL_callmeta
+
+Archive member name at 39C4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checkany
+  Type         : code
+  Name type    : no prefix
+  Hint         : 11
+  Name         : luaL_checkany
+
+Archive member name at 3A2E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      31 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001D
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checkinteger
+  Type         : code
+  Name type    : no prefix
+  Hint         : 12
+  Name         : luaL_checkinteger
+
+Archive member name at 3A9C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      31 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001D
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checklstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 13
+  Name         : luaL_checklstring
+
+Archive member name at 3B0A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checknumber
+  Type         : code
+  Name type    : no prefix
+  Hint         : 14
+  Name         : luaL_checknumber
+
+Archive member name at 3B76: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checkoption
+  Type         : code
+  Name type    : no prefix
+  Hint         : 15
+  Name         : luaL_checkoption
+
+Archive member name at 3BE2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checkstack
+  Type         : code
+  Name type    : no prefix
+  Hint         : 16
+  Name         : luaL_checkstack
+
+Archive member name at 3C4E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checktype
+  Type         : code
+  Name type    : no prefix
+  Hint         : 17
+  Name         : luaL_checktype
+
+Archive member name at 3CB8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_checkudata
+  Type         : code
+  Name type    : no prefix
+  Hint         : 18
+  Name         : luaL_checkudata
+
+Archive member name at 3D24: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_error
+  Type         : code
+  Name type    : no prefix
+  Hint         : 19
+  Name         : luaL_error
+
+Archive member name at 3D8A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_execresult
+  Type         : code
+  Name type    : no prefix
+  Hint         : 20
+  Name         : luaL_execresult
+
+Archive member name at 3DF6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_fileresult
+  Type         : code
+  Name type    : no prefix
+  Hint         : 21
+  Name         : luaL_fileresult
+
+Archive member name at 3E62: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_findtable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 22
+  Name         : luaL_findtable
+
+Archive member name at 3ECC: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      31 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001D
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_getmetafield
+  Type         : code
+  Name type    : no prefix
+  Hint         : 23
+  Name         : luaL_getmetafield
+
+Archive member name at 3F3A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_gsub
+  Type         : code
+  Name type    : no prefix
+  Hint         : 24
+  Name         : luaL_gsub
+
+Archive member name at 3FA0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_loadbuffer
+  Type         : code
+  Name type    : no prefix
+  Hint         : 25
+  Name         : luaL_loadbuffer
+
+Archive member name at 400C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_loadbufferx
+  Type         : code
+  Name type    : no prefix
+  Hint         : 26
+  Name         : luaL_loadbufferx
+
+Archive member name at 4078: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_loadfile
+  Type         : code
+  Name type    : no prefix
+  Hint         : 27
+  Name         : luaL_loadfile
+
+Archive member name at 40E2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_loadfilex
+  Type         : code
+  Name type    : no prefix
+  Hint         : 28
+  Name         : luaL_loadfilex
+
+Archive member name at 414C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_loadstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 29
+  Name         : luaL_loadstring
+
+Archive member name at 41B8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      31 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001D
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_newmetatable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 30
+  Name         : luaL_newmetatable
+
+Archive member name at 4226: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_newstate
+  Type         : code
+  Name type    : no prefix
+  Hint         : 31
+  Name         : luaL_newstate
+
+Archive member name at 4290: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_openlib
+  Type         : code
+  Name type    : no prefix
+  Hint         : 32
+  Name         : luaL_openlib
+
+Archive member name at 42F8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_openlibs
+  Type         : code
+  Name type    : no prefix
+  Hint         : 33
+  Name         : luaL_openlibs
+
+Archive member name at 4362: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_optinteger
+  Type         : code
+  Name type    : no prefix
+  Hint         : 34
+  Name         : luaL_optinteger
+
+Archive member name at 43CE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_optlstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 35
+  Name         : luaL_optlstring
+
+Archive member name at 443A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_optnumber
+  Type         : code
+  Name type    : no prefix
+  Hint         : 36
+  Name         : luaL_optnumber
+
+Archive member name at 44A4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_prepbuffer
+  Type         : code
+  Name type    : no prefix
+  Hint         : 37
+  Name         : luaL_prepbuffer
+
+Archive member name at 4510: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_pushresult
+  Type         : code
+  Name type    : no prefix
+  Hint         : 38
+  Name         : luaL_pushresult
+
+Archive member name at 457C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_ref
+  Type         : code
+  Name type    : no prefix
+  Hint         : 39
+  Name         : luaL_ref
+
+Archive member name at 45E0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_register
+  Type         : code
+  Name type    : no prefix
+  Hint         : 40
+  Name         : luaL_register
+
+Archive member name at 464A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_traceback
+  Type         : code
+  Name type    : no prefix
+  Hint         : 41
+  Name         : luaL_traceback
+
+Archive member name at 46B4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_typerror
+  Type         : code
+  Name type    : no prefix
+  Hint         : 42
+  Name         : luaL_typerror
+
+Archive member name at 471E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_unref
+  Type         : code
+  Name type    : no prefix
+  Hint         : 43
+  Name         : luaL_unref
+
+Archive member name at 4784: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _luaL_where
+  Type         : code
+  Name type    : no prefix
+  Hint         : 44
+  Name         : luaL_where
+
+Archive member name at 47EA: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_atpanic
+  Type         : code
+  Name type    : no prefix
+  Hint         : 45
+  Name         : lua_atpanic
+
+Archive member name at 4852: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _lua_call
+  Type         : code
+  Name type    : no prefix
+  Hint         : 46
+  Name         : lua_call
+
+Archive member name at 48B6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_checkstack
+  Type         : code
+  Name type    : no prefix
+  Hint         : 47
+  Name         : lua_checkstack
+
+Archive member name at 4920: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_close
+  Type         : code
+  Name type    : no prefix
+  Hint         : 48
+  Name         : lua_close
+
+Archive member name at 4986: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_concat
+  Type         : code
+  Name type    : no prefix
+  Hint         : 49
+  Name         : lua_concat
+
+Archive member name at 49EC: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_cpcall
+  Type         : code
+  Name type    : no prefix
+  Hint         : 50
+  Name         : lua_cpcall
+
+Archive member name at 4A52: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_createtable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 51
+  Name         : lua_createtable
+
+Archive member name at 4ABE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _lua_dump
+  Type         : code
+  Name type    : no prefix
+  Hint         : 52
+  Name         : lua_dump
+
+Archive member name at 4B22: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_equal
+  Type         : code
+  Name type    : no prefix
+  Hint         : 53
+  Name         : lua_equal
+
+Archive member name at 4B88: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_error
+  Type         : code
+  Name type    : no prefix
+  Hint         : 54
+  Name         : lua_error
+
+Archive member name at 4BEE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      26 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000012
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gc
+  Type         : code
+  Name type    : no prefix
+  Hint         : 55
+  Name         : lua_gc
+
+Archive member name at 4C50: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getallocf
+  Type         : code
+  Name type    : no prefix
+  Hint         : 56
+  Name         : lua_getallocf
+
+Archive member name at 4CBA: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getfenv
+  Type         : code
+  Name type    : no prefix
+  Hint         : 57
+  Name         : lua_getfenv
+
+Archive member name at 4D22: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getfield
+  Type         : code
+  Name type    : no prefix
+  Hint         : 58
+  Name         : lua_getfield
+
+Archive member name at 4D8A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gethook
+  Type         : code
+  Name type    : no prefix
+  Hint         : 59
+  Name         : lua_gethook
+
+Archive member name at 4DF2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gethookcount
+  Type         : code
+  Name type    : no prefix
+  Hint         : 60
+  Name         : lua_gethookcount
+
+Archive member name at 4E5E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gethookmask
+  Type         : code
+  Name type    : no prefix
+  Hint         : 61
+  Name         : lua_gethookmask
+
+Archive member name at 4ECA: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getinfo
+  Type         : code
+  Name type    : no prefix
+  Hint         : 62
+  Name         : lua_getinfo
+
+Archive member name at 4F32: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getlocal
+  Type         : code
+  Name type    : no prefix
+  Hint         : 63
+  Name         : lua_getlocal
+
+Archive member name at 4F9A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getmetatable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 64
+  Name         : lua_getmetatable
+
+Archive member name at 5006: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getstack
+  Type         : code
+  Name type    : no prefix
+  Hint         : 65
+  Name         : lua_getstack
+
+Archive member name at 506E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gettable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 66
+  Name         : lua_gettable
+
+Archive member name at 50D6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_gettop
+  Type         : code
+  Name type    : no prefix
+  Hint         : 67
+  Name         : lua_gettop
+
+Archive member name at 513C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_getupvalue
+  Type         : code
+  Name type    : no prefix
+  Hint         : 68
+  Name         : lua_getupvalue
+
+Archive member name at 51A6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_insert
+  Type         : code
+  Name type    : no prefix
+  Hint         : 69
+  Name         : lua_insert
+
+Archive member name at 520C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_iscfunction
+  Type         : code
+  Name type    : no prefix
+  Hint         : 70
+  Name         : lua_iscfunction
+
+Archive member name at 5278: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_isnumber
+  Type         : code
+  Name type    : no prefix
+  Hint         : 71
+  Name         : lua_isnumber
+
+Archive member name at 52E0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_isstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 72
+  Name         : lua_isstring
+
+Archive member name at 5348: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_isuserdata
+  Type         : code
+  Name type    : no prefix
+  Hint         : 73
+  Name         : lua_isuserdata
+
+Archive member name at 53B2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_lessthan
+  Type         : code
+  Name type    : no prefix
+  Hint         : 74
+  Name         : lua_lessthan
+
+Archive member name at 541A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _lua_load
+  Type         : code
+  Name type    : no prefix
+  Hint         : 75
+  Name         : lua_load
+
+Archive member name at 547E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_loadx
+  Type         : code
+  Name type    : no prefix
+  Hint         : 76
+  Name         : lua_loadx
+
+Archive member name at 54E4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_newstate
+  Type         : code
+  Name type    : no prefix
+  Hint         : 77
+  Name         : lua_newstate
+
+Archive member name at 554C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_newthread
+  Type         : code
+  Name type    : no prefix
+  Hint         : 78
+  Name         : lua_newthread
+
+Archive member name at 55B6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_newuserdata
+  Type         : code
+  Name type    : no prefix
+  Hint         : 79
+  Name         : lua_newuserdata
+
+Archive member name at 5622: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _lua_next
+  Type         : code
+  Name type    : no prefix
+  Hint         : 80
+  Name         : lua_next
+
+Archive member name at 5686: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_objlen
+  Type         : code
+  Name type    : no prefix
+  Hint         : 81
+  Name         : lua_objlen
+
+Archive member name at 56EC: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pcall
+  Type         : code
+  Name type    : no prefix
+  Hint         : 82
+  Name         : lua_pcall
+
+Archive member name at 5752: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushboolean
+  Type         : code
+  Name type    : no prefix
+  Hint         : 83
+  Name         : lua_pushboolean
+
+Archive member name at 57BE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushcclosure
+  Type         : code
+  Name type    : no prefix
+  Hint         : 84
+  Name         : lua_pushcclosure
+
+Archive member name at 582A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushfstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 85
+  Name         : lua_pushfstring
+
+Archive member name at 5896: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushinteger
+  Type         : code
+  Name type    : no prefix
+  Hint         : 86
+  Name         : lua_pushinteger
+
+Archive member name at 5902: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      35 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000021
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushlightuserdata
+  Type         : code
+  Name type    : no prefix
+  Hint         : 87
+  Name         : lua_pushlightuserdata
+
+Archive member name at 5974: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushlstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 88
+  Name         : lua_pushlstring
+
+Archive member name at 59E0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushnil
+  Type         : code
+  Name type    : no prefix
+  Hint         : 89
+  Name         : lua_pushnil
+
+Archive member name at 5A48: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushnumber
+  Type         : code
+  Name type    : no prefix
+  Hint         : 90
+  Name         : lua_pushnumber
+
+Archive member name at 5AB2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 91
+  Name         : lua_pushstring
+
+Archive member name at 5B1C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushthread
+  Type         : code
+  Name type    : no prefix
+  Hint         : 92
+  Name         : lua_pushthread
+
+Archive member name at 5B86: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushvalue
+  Type         : code
+  Name type    : no prefix
+  Hint         : 93
+  Name         : lua_pushvalue
+
+Archive member name at 5BF0: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _lua_pushvfstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 94
+  Name         : lua_pushvfstring
+
+Archive member name at 5C5C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_rawequal
+  Type         : code
+  Name type    : no prefix
+  Hint         : 95
+  Name         : lua_rawequal
+
+Archive member name at 5CC4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_rawget
+  Type         : code
+  Name type    : no prefix
+  Hint         : 96
+  Name         : lua_rawget
+
+Archive member name at 5D2A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_rawgeti
+  Type         : code
+  Name type    : no prefix
+  Hint         : 97
+  Name         : lua_rawgeti
+
+Archive member name at 5D92: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_rawset
+  Type         : code
+  Name type    : no prefix
+  Hint         : 98
+  Name         : lua_rawset
+
+Archive member name at 5DF8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_rawseti
+  Type         : code
+  Name type    : no prefix
+  Hint         : 99
+  Name         : lua_rawseti
+
+Archive member name at 5E60: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_remove
+  Type         : code
+  Name type    : no prefix
+  Hint         : 100
+  Name         : lua_remove
+
+Archive member name at 5EC6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_replace
+  Type         : code
+  Name type    : no prefix
+  Hint         : 101
+  Name         : lua_replace
+
+Archive member name at 5F2E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_resume
+  Type         : code
+  Name type    : no prefix
+  Hint         : 102
+  Name         : lua_resume
+
+Archive member name at 5F94: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setallocf
+  Type         : code
+  Name type    : no prefix
+  Hint         : 103
+  Name         : lua_setallocf
+
+Archive member name at 5FFE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setfenv
+  Type         : code
+  Name type    : no prefix
+  Hint         : 104
+  Name         : lua_setfenv
+
+Archive member name at 6066: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setfield
+  Type         : code
+  Name type    : no prefix
+  Hint         : 105
+  Name         : lua_setfield
+
+Archive member name at 60CE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _lua_sethook
+  Type         : code
+  Name type    : no prefix
+  Hint         : 106
+  Name         : lua_sethook
+
+Archive member name at 6136: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setlocal
+  Type         : code
+  Name type    : no prefix
+  Hint         : 107
+  Name         : lua_setlocal
+
+Archive member name at 619E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      30 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001C
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setmetatable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 108
+  Name         : lua_setmetatable
+
+Archive member name at 620A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_settable
+  Type         : code
+  Name type    : no prefix
+  Hint         : 109
+  Name         : lua_settable
+
+Archive member name at 6272: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_settop
+  Type         : code
+  Name type    : no prefix
+  Hint         : 110
+  Name         : lua_settop
+
+Archive member name at 62D8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_setupvalue
+  Type         : code
+  Name type    : no prefix
+  Hint         : 111
+  Name         : lua_setupvalue
+
+Archive member name at 6342: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _lua_status
+  Type         : code
+  Name type    : no prefix
+  Hint         : 112
+  Name         : lua_status
+
+Archive member name at 63A8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_toboolean
+  Type         : code
+  Name type    : no prefix
+  Hint         : 113
+  Name         : lua_toboolean
+
+Archive member name at 6412: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_tocfunction
+  Type         : code
+  Name type    : no prefix
+  Hint         : 114
+  Name         : lua_tocfunction
+
+Archive member name at 647E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_tointeger
+  Type         : code
+  Name type    : no prefix
+  Hint         : 115
+  Name         : lua_tointeger
+
+Archive member name at 64E8: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_tolstring
+  Type         : code
+  Name type    : no prefix
+  Hint         : 116
+  Name         : lua_tolstring
+
+Archive member name at 6552: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_tonumber
+  Type         : code
+  Name type    : no prefix
+  Hint         : 117
+  Name         : lua_tonumber
+
+Archive member name at 65BA: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_topointer
+  Type         : code
+  Name type    : no prefix
+  Hint         : 118
+  Name         : lua_topointer
+
+Archive member name at 6624: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_tothread
+  Type         : code
+  Name type    : no prefix
+  Hint         : 119
+  Name         : lua_tothread
+
+Archive member name at 668C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _lua_touserdata
+  Type         : code
+  Name type    : no prefix
+  Hint         : 120
+  Name         : lua_touserdata
+
+Archive member name at 66F6: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      28 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000014
+  DLL name     : lua51.dll
+  Symbol name  : _lua_type
+  Type         : code
+  Name type    : no prefix
+  Hint         : 121
+  Name         : lua_type
+
+Archive member name at 675A: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _lua_typename
+  Type         : code
+  Name type    : no prefix
+  Hint         : 122
+  Name         : lua_typename
+
+Archive member name at 67C2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _lua_upvalueid
+  Type         : code
+  Name type    : no prefix
+  Hint         : 123
+  Name         : lua_upvalueid
+
+Archive member name at 682C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _lua_upvaluejoin
+  Type         : code
+  Name type    : no prefix
+  Hint         : 124
+  Name         : lua_upvaluejoin
+
+Archive member name at 6898: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_xmove
+  Type         : code
+  Name type    : no prefix
+  Hint         : 125
+  Name         : lua_xmove
+
+Archive member name at 68FE: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      29 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000015
+  DLL name     : lua51.dll
+  Symbol name  : _lua_yield
+  Type         : code
+  Name type    : no prefix
+  Hint         : 126
+  Name         : lua_yield
+
+Archive member name at 6964: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_base
+  Type         : code
+  Name type    : no prefix
+  Hint         : 127
+  Name         : luaopen_base
+
+Archive member name at 69CC: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_bit
+  Type         : code
+  Name type    : no prefix
+  Hint         : 128
+  Name         : luaopen_bit
+
+Archive member name at 6A34: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_debug
+  Type         : code
+  Name type    : no prefix
+  Hint         : 129
+  Name         : luaopen_debug
+
+Archive member name at 6A9E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_ffi
+  Type         : code
+  Name type    : no prefix
+  Hint         : 130
+  Name         : luaopen_ffi
+
+Archive member name at 6B06: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_io
+  Type         : code
+  Name type    : no prefix
+  Hint         : 131
+  Name         : luaopen_io
+
+Archive member name at 6B6C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000017
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_jit
+  Type         : code
+  Name type    : no prefix
+  Hint         : 132
+  Name         : luaopen_jit
+
+Archive member name at 6BD4: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000018
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_math
+  Type         : code
+  Name type    : no prefix
+  Hint         : 133
+  Name         : luaopen_math
+
+Archive member name at 6C3C: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000016
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_os
+  Type         : code
+  Name type    : no prefix
+  Hint         : 134
+  Name         : luaopen_os
+
+Archive member name at 6CA2: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2F size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001B
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_package
+  Type         : code
+  Name type    : no prefix
+  Hint         : 135
+  Name         : luaopen_package
+
+Archive member name at 6D0E: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2E size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 0000001A
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_string
+  Type         : code
+  Name type    : no prefix
+  Hint         : 136
+  Name         : luaopen_string
+
+Archive member name at 6D78: lua51.dll/      
+5775DCB5 time/date Fri Jul 01 11:00:05 2016
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 5775DCB5 Fri Jul 01 11:00:05 2016
+  SizeOfData   : 00000019
+  DLL name     : lua51.dll
+  Symbol name  : _luaopen_table
+  Type         : code
+  Name type    : no prefix
+  Hint         : 137
+  Name         : luaopen_table
+
+     Exports
+
+       ordinal    name
+
+                  _luaJIT_profile_dumpstack
+                  _luaJIT_profile_start
+                  _luaJIT_profile_stop
+                  _luaJIT_setmode
+                  _luaJIT_version_2_1_0_beta2
+                  _luaL_addlstring
+                  _luaL_addstring
+                  _luaL_addvalue
+                  _luaL_argerror
+                  _luaL_buffinit
+                  _luaL_callmeta
+                  _luaL_checkany
+                  _luaL_checkinteger
+                  _luaL_checklstring
+                  _luaL_checknumber
+                  _luaL_checkoption
+                  _luaL_checkstack
+                  _luaL_checktype
+                  _luaL_checkudata
+                  _luaL_error
+                  _luaL_execresult
+                  _luaL_fileresult
+                  _luaL_findtable
+                  _luaL_getmetafield
+                  _luaL_gsub
+                  _luaL_loadbuffer
+                  _luaL_loadbufferx
+                  _luaL_loadfile
+                  _luaL_loadfilex
+                  _luaL_loadstring
+                  _luaL_newmetatable
+                  _luaL_newstate
+                  _luaL_openlib
+                  _luaL_openlibs
+                  _luaL_optinteger
+                  _luaL_optlstring
+                  _luaL_optnumber
+                  _luaL_prepbuffer
+                  _luaL_pushresult
+                  _luaL_ref
+                  _luaL_register
+                  _luaL_traceback
+                  _luaL_typerror
+                  _luaL_unref
+                  _luaL_where
+                  _lua_atpanic
+                  _lua_call
+                  _lua_checkstack
+                  _lua_close
+                  _lua_concat
+                  _lua_cpcall
+                  _lua_createtable
+                  _lua_dump
+                  _lua_equal
+                  _lua_error
+                  _lua_gc
+                  _lua_getallocf
+                  _lua_getfenv
+                  _lua_getfield
+                  _lua_gethook
+                  _lua_gethookcount
+                  _lua_gethookmask
+                  _lua_getinfo
+                  _lua_getlocal
+                  _lua_getmetatable
+                  _lua_getstack
+                  _lua_gettable
+                  _lua_gettop
+                  _lua_getupvalue
+                  _lua_insert
+                  _lua_iscfunction
+                  _lua_isnumber
+                  _lua_isstring
+                  _lua_isuserdata
+                  _lua_lessthan
+                  _lua_load
+                  _lua_loadx
+                  _lua_newstate
+                  _lua_newthread
+                  _lua_newuserdata
+                  _lua_next
+                  _lua_objlen
+                  _lua_pcall
+                  _lua_pushboolean
+                  _lua_pushcclosure
+                  _lua_pushfstring
+                  _lua_pushinteger
+                  _lua_pushlightuserdata
+                  _lua_pushlstring
+                  _lua_pushnil
+                  _lua_pushnumber
+                  _lua_pushstring
+                  _lua_pushthread
+                  _lua_pushvalue
+                  _lua_pushvfstring
+                  _lua_rawequal
+                  _lua_rawget
+                  _lua_rawgeti
+                  _lua_rawset
+                  _lua_rawseti
+                  _lua_remove
+                  _lua_replace
+                  _lua_resume
+                  _lua_setallocf
+                  _lua_setfenv
+                  _lua_setfield
+                  _lua_sethook
+                  _lua_setlocal
+                  _lua_setmetatable
+                  _lua_settable
+                  _lua_settop
+                  _lua_setupvalue
+                  _lua_status
+                  _lua_toboolean
+                  _lua_tocfunction
+                  _lua_tointeger
+                  _lua_tolstring
+                  _lua_tonumber
+                  _lua_topointer
+                  _lua_tothread
+                  _lua_touserdata
+                  _lua_type
+                  _lua_typename
+                  _lua_upvalueid
+                  _lua_upvaluejoin
+                  _lua_xmove
+                  _lua_yield
+                  _luaopen_base
+                  _luaopen_bit
+                  _luaopen_debug
+                  _luaopen_ffi
+                  _luaopen_io
+                  _luaopen_jit
+                  _luaopen_math
+                  _luaopen_os
+                  _luaopen_package
+                  _luaopen_string
+                  _luaopen_table
+
+  Summary
+
+          BD .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           A .idata$6
