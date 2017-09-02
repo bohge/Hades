@@ -22,8 +22,8 @@ ifeq ($(config),debug)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -g -fPIC -fPIC -Wno-multichar -fshort-wchar -g -rdynamic  -std=gnu99
   ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CFLAGS)
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  LIBS += -lluajit
-  LDDEPS +=
+  LIBS += -Wl,--start-group bin/Debug/libjpeg.a -lluajit -Wl,--end-group
+  LDDEPS += bin/Debug/libjpeg.a
   ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../third/LuaJIT-2.1.0-beta2-linux/src -m64 -shared
   LINKCMD = $(CC) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS
@@ -49,8 +49,8 @@ ifeq ($(config),release)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O2 -fPIC -fPIC -Wno-multichar -fshort-wchar -std=gnu99
   ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CFLAGS)
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  LIBS += -lluajit
-  LDDEPS +=
+  LIBS += -Wl,--start-group bin/Release/libjpeg.a -lluajit -Wl,--end-group
+  LDDEPS += bin/Release/libjpeg.a
   ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../third/LuaJIT-2.1.0-beta2-linux/src -m64 -s -shared
   LINKCMD = $(CC) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS

@@ -49,6 +49,7 @@ namespace hc
 	protected:
 		void _OnReciveMessage(IMessage* msg);
 		void _OnConnected();
+		void _OnDisconnected();
 	public:
 		HADES_FORCEINLINE void SetReciveCallback(SocketCallback::Callback func);
 		HADES_FORCEINLINE void Send(IMessage* msg);

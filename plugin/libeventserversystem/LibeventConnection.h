@@ -21,6 +21,7 @@ namespace hles
 		uint64							m_ID;
 		hc::IRawbuffer*					m_pRawbuffer;
 		ServerJob*						m_rpHost;
+		hc::IThreadRWLock*				m_pIThreadRWLock;
 		struct evbuffer*				m_rpInputBuffer;
 		struct evbuffer*				m_rpOutputBuffer;
 		struct bufferevent*				m_pBufferevent;
@@ -29,6 +30,7 @@ namespace hles
 		virtual ~LibeventConnection(void);
 	public:
 		void Initialize(ServerJob* host, struct event_base* base, evutil_socket_t fd);
+		void DoDisconnect();
 		void OnReceive(struct bufferevent* bev);
 		bool SendBuffer(const byte* buf, uint size);
 	public:
@@ -56,7 +58,7 @@ namespace hles
 		m_rpHost->OnConnect(m_ID);
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void LibeventConnection::Disconnect()
+	HADES_FORCEINLINE void LibeventConnection::Disconnect()
 	{
 		m_rpHost->Disconnect(m_ID);
 	}

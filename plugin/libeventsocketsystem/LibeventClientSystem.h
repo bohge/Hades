@@ -24,22 +24,12 @@ namespace hlec
 			SC_POOL_SIZE = 1000,
 		};
 	private:
-		typedef moodycamel::ConcurrentQueue< eastl::pair< uint64, hc::IMessage* > > SenderQueue;
-		typedef moodycamel::ConcurrentQueue< eastl::pair< uint64, eastl::string > > ConnectQueue;
-		typedef moodycamel::ConcurrentQueue< uint64 > DisconnectQueue;
-		typedef moodycamel::ConcurrentQueue< uint64 > ReconnectQueue;
 		typedef hc::Recycleablevector< hc::SmartPtr<LibeventClient> > Socketpool;
-
 		typedef hc::ObjectPool< LibeventClient > LibeventClientlQueue;
 	private:
 		Socketpool					m_Socketpool;
-		SenderQueue					m_SenderQueue;
-		ConnectQueue				m_ConnectQueue;
-		DisconnectQueue				m_DisconnectQueue;
-		ReconnectQueue				m_ReconnectQueue;
 		LibeventClientlQueue		m_LibeventClientlQueue;
 		event*						m_pInfinityEvent;
-		event*						m_pReconnectEvent;
 		hc::SmartPtr<ClientJob>		m_spClientJob;
 		hc::IJobDispatcher*			m_pClientThread;
 		event_base*					m_pBase;
@@ -53,17 +43,6 @@ namespace hlec
 		virtual void Initialize();
 		virtual void Exit();
 		virtual void Update();
-	private:
-		void _ExecuteSendQueue();
-		void _ExecuteConnectQueue();
-		void _ExecuteDisconnectQueue();
-	public:
-		void PushDisconnectQueue(uint64 id);
-		void PushSendQueue(uint64 id, hc::IMessage* msg);
-		void PushConnectQueue(uint64 id, const eastl::string& ipport);
-		void PushReconnectQueue(uint64 id);
-		void ExecuteQueues();
-		void ExecuteReconnect();
 	public:
 		HADES_FORCEINLINE bool HaveSocket(uint64 key);
 		HADES_FORCEINLINE const hc::SmartPtr<LibeventClient>& GetSocket(uint64 key);

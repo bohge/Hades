@@ -18,7 +18,7 @@ nativelibrary("nativesystem");
 local main = {};
 
 require "pacman"
-require "dqntester"
+--require "dqntester"
 --require "torchdemo"
 require "arclight"
 --require "gnuplot"
@@ -62,9 +62,100 @@ function main:_CmdLineInitialize()
   self.cmd:option("-I --include", "Include locations."):count("*")
 end
 
+local GymClient = require("gym_http_api.gym_http_client")
+
+function log_prob(mu, sigma, action)
+  mu, sigma = mu * 2, sigma + 1e-4
+  return -0.5 * (action - mu)*(action - mu)/(sigma*sigma) - 0.5 * math.log(2 * math.pi) - math.log(sigma);
+end
+
+function entropy(mu, sigma)
+  mu, sigma = mu * 2, sigma + 1e-4
+  return 0.5 * math.log(2 * math.pi * 2.718281828459) + math.log(sigma);
+end
+
+local ENTROPY_BETA = 0.01;
+
+function loss(mu, sigma, action, td)
+  return -(log_prob(mu, sigma, action)*td + ENTROPY_BETA*entropy(mu, sigma));
+end
+
+function grad(mu, sigma, action, td)
+  mu, sigma = mu * 2, sigma + 1e-4
+  local gradmu = -td*(action-mu)/(sigma*sigma) * 2;
+  local gradsigma = td*(1/sigma - (action-mu)*(action-mu)/(sigma*sigma*sigma)) - ENTROPY_BETA*1/sigma;
+  return gradmu, gradsigma;
+end
+
 function main:Initialize()
   _COROUTINES_ON();
-  local seed = 851022;
+  print(log_prob(1, 1, 1));
+  print(log_prob(0, 1, 1));
+  print(log_prob(0, 5, 0.5));
+  print(log_prob(2, 12, 1.5));
+  
+  print(entropy(1, 1, 1));
+  print(entropy(0, 1, 1));
+  print(entropy(0, 5, 0.5));
+  print(entropy(2, 12, 1.5));
+  
+  print(loss(1, 1, 1, 2));
+  print(loss(1, 1, 1, 1));
+  print(loss(0, 5, 0.5, 1));
+  print(loss(2, 12, 1.5, 2));
+  
+  print(grad(1, 1, 1, 2));
+  print(grad(0, 1, 1, 2));
+  print(grad(1, 1, 1, 1));
+  print(grad(0, 15, 1, 2));
+  print(grad(2, 12, 1, 2));
+  print(grad(2, 12, 2, 2));
+  --test = require "sample_normal_tester";
+  --test(100000, 0, 5);
+  
+  --[[
+  -- Set up client
+  base = 'http://127.0.0.1:5000'
+  local client = GymClient.new(base)
+
+  -- Set up environment
+  env_id = 'Pendulum-v0'
+  instance_id = client:env_create(env_id)
+
+  action_space = client:env_action_space_info(env_id)
+
+  -- Run random experiment with monitor
+  outdir = '/tmp/random-agent-results'
+  video_callable = false
+  resume = false
+  force = true
+  client:env_monitor_start(instance_id, outdir, force, resume, video_callable)
+  render = true
+
+  episode_count = 100
+  max_steps = 200
+  reward = 0
+  done = False
+
+  for i = 1,episode_count do
+     obs = client:env_reset(instance_id)
+     for j = 1,max_steps do
+        action = client:env_action_space_sample(instance_id)
+        ob, reward, done, info = client:env_step(instance_id, action, render)
+        if done then
+           break
+        end
+     end
+  end
+
+  -- Dump result info to disk
+  client:env_monitor_close(instance_id)
+
+  -- Upload to the scoreboard. This expects the 'OPENAI_GYM_API_KEY'
+  -- environment variable to be set on the client side.
+  client:upload(outdir)
+  ]]--
+  --[[local seed = 851022;
   local stepcounts = 1000;
   dqntester("docs:dqn/dqn_cnn_1", seed, stepcounts);
   dqntester("docs:dqn/ddodqn_cnn_1", seed, stepcounts);
@@ -83,7 +174,7 @@ function main:Initialize()
   dqntester("docs:dqn/dqn_cnn_1", seed, stepcounts);
   dqntester("docs:dqn/ddodqn_cnn_1", seed, stepcounts);
   dqntester("docs:dqn/ddodqn_cnn_2", seed, stepcounts);
-  dqntester("docs:dqn/ddodqn_cnn_3", seed, stepcounts);
+  dqntester("docs:dqn/ddodqn_cnn_3", seed, stepcounts);]]--
   
   --neuronmaker = IFileSystem:ReadFile("comm:script/arclight/neuronnets/pac_dueling_cnn_lite_1_15_15.lua");
   --loadstring(neuronmaker)();

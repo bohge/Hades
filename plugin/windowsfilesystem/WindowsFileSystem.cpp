@@ -35,19 +35,10 @@ namespace hfw
 	//-------------------------------------------------------------------------------------------------------
 	void WindowsFileSystem::_DoMakeFolder( const eastl::string& path )
 	{
-		string npath;
-		if ( string::npos != path.find( '.' ) )
-		{
-			npath = path.substr( 0, path.find_last_of("/\\") );
-		}
-		else
-		{
-			npath = path;
-		}
 		if( access(path.c_str(),0) == -1 ) //如果文件夹不存在
 		{
-			HADESLOG("make folder %s\n", npath.c_str());
-			mkdir(npath.c_str());
+			HADESLOG("make folder %s\n", path.c_str());
+			mkdir(path.c_str());
 		}
 	}
 	//-------------------------------------------------------------------------------------------------------

@@ -287,7 +287,7 @@ project "ijpeg"
 			"../../third/torch7/lib/image/",
 			"../../third/LuaJIT-2.1.0-beta2-linux/src/",
 		}
-	links{"luajit"}
+	links{"luajit", "jpeg"}
 	buildoptions { "-std=gnu99" }	
 	libdirs{"../../third/LuaJIT-2.1.0-beta2-linux/src/"}	
 	targetdir (_OPTIONS["targetdir"].."/dependency/")
@@ -420,6 +420,28 @@ project "THNN"
 		"../../third/LuaJIT-2.1.0-beta2-linux/src/",
 	}
 	linkoptions { "-fopenmp" }
+	targetdir (_OPTIONS["targetdir"].."/dependency/")
+	
+project "randomkit"
+	kind "SharedLib"
+	language "C"	
+	files
+		{
+			"../../third/torch-randomkit/randomkit/*.c",
+			"../../third/torch-randomkit/randomkit/*.h",
+		}
+	includedirs
+		{
+			"../../third/torch7/lib/TH/",
+			"../../third/torch-randomkit/randomkit/",
+		}
+	links{"TH"}
+	buildoptions { "-std=gnu99" }
+	libdirs
+	{
+		"../../build/dependency/",
+		"../../third/LuaJIT-2.1.0-beta2-linux/src/",
+	}
 	targetdir (_OPTIONS["targetdir"].."/dependency/")
 	
 project "torch"
@@ -661,10 +683,10 @@ project "libeventserversystem"
 		}
 	includedirs
 		{
-			"../../third/libevent-2.0.22-stable-linux/include/",
+			"../../third/libevent-2.1.8-stable-linux/include/",
 		}
 	links{"core", "event", "event_pthreads", "pthread"}	
-	libdirs {"../../third/libevent-2.0.22-stable-linux/.libs/", "../../build/"}
+	libdirs {"../../third/libevent-2.1.8-stable-linux/.libs/", "../../build/"}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/plugin/")
 	
@@ -678,10 +700,10 @@ project "libeventsocketsystem"
 		}
 	includedirs
 		{
-			"../../third/libevent-2.0.22-stable-linux/include/",
+			"../../third/libevent-2.1.8-stable-linux/include/",
 		}
 	links{"core", "event", "event_pthreads", "pthread"}
-	libdirs {"../../third/libevent-2.0.22-stable-linux/.libs/", "../../build/"}
+	libdirs {"../../third/libevent-2.1.8-stable-linux/.libs/", "../../build/"}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/plugin/")
 	
@@ -722,14 +744,14 @@ project "mulitlibeventserversystem"
 	includedirs
 		{
 			"../../third/openssl-1.0.2k-linux/include/",
-			"../../third/libevent-2.0.22-stable-linux/include/",
+			"../../third/libevent-2.1.8-stable-linux/include/",
 		}
 	links{"core", "ssl", "crypto", "event", "event_pthreads", "event_openssl", "pthread"}
 	libdirs
 		{
 			"../../build/",
 			"../../third/openssl-1.0.2k-linux/",
-			"../../third/libevent-2.0.22-stable-linux/.libs/"
+			"../../third/libevent-2.1.8-stable-linux/.libs/",
 		}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/plugin/")
@@ -761,10 +783,10 @@ project "libeventtimersystem"
 		}
 	includedirs
 		{
-			"../../third/libevent-2.0.22-stable-linux/include/",
+			"../../third/libevent-2.1.8-stable-linux/include/",
 		}
 	links{"core", "event", "event_pthreads", "pthread"}
-	libdirs {"../../third/libevent-2.0.22-stable-linux/.libs/", "../../build/"}
+	libdirs {"../../third/libevent-2.1.8-stable-linux/.libs/", "../../build/"}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/plugin/")
 	
@@ -872,7 +894,7 @@ project "libeventhttpserver"
 		{
 			"../../build/",
 			"../../third/openssl-1.0.2k-linux/",
-			"../../third/libevent-2.1.8-stable-linux/.libs/"
+			"../../third/libevent-2.1.8-stable-linux/.libs/",
 		}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/function/")
@@ -895,7 +917,7 @@ project "libeventmulithttpserver"
 		{
 			"../../build/",
 			"../../third/openssl-1.0.2k-linux/",
-			"../../third/libevent-2.1.8-stable-linux/.libs/"
+			"../../third/libevent-2.1.8-stable-linux/.libs/",
 		}
 	buildoptions { "-std=c++11" }
 	targetdir (_OPTIONS["targetdir"].."/function/")
@@ -923,9 +945,23 @@ project "machinestatus"
 	language "C++"
 	files
 		{
-			"../../plugin/machinestatus/*.h",
-			"../../plugin/machinestatus/*.cpp",
+			"../../function/machinestatus/PluginEntry.cpp",
+			"../../function/machinestatus/MachinestatusFunctionPluginLinux.cpp",
 		}
+	links{"core"}
+	libdirs{ "../../build/" }
+	buildoptions { "-std=c++11" }
+	targetdir (_OPTIONS["targetdir"].."/function/")
+	
+project "thulacfunction"
+	kind "SharedLib"
+	language "C++"
+	files
+		{
+			"../../function/thulacfunction/*.h",
+			"../../function/thulacfunction/*.cpp",
+		}
+	includedirs{ "../../third/THULAC_lite_c++_v1/include/" }		
 	links{"core"}
 	libdirs{ "../../build/" }
 	buildoptions { "-std=c++11" }

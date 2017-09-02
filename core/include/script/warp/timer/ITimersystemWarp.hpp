@@ -19,7 +19,7 @@ namespace hc
 		return 1;
 	}
 	//-------------------------------------------------------------------------------------------------------
-	static int ITimerSystem_RegisterTimer(hc::IVirtualMachine* vm, hc::FunctionRegister* func, ITimerSystem* self, hc::IAgent* agent, uint* freq, hc::StringBuffer* str)
+	static int ITimerSystem_RegisterTimer(hc::IVirtualMachine* vm, hc::FunctionRegister* func, ITimerSystem* self, hc::IAgent* agent, float* freq, hc::StringBuffer* str)
 	{
 		eastl::string sstr(static_cast<const char*>(str->pBuffer), str->Length);
 		self->RegisterTimer(agent, *freq, sstr);
@@ -39,7 +39,7 @@ namespace hc
 		}
 		{
 			FunctionRegister sf;
-			sf.Arguments(&IAgent::RTTI(), &UInt::RTTI(), &String::RTTI());
+			sf.Arguments(&IAgent::RTTI(), &Float::RTTI(), &String::RTTI());
 			sf.Function(&ITimerSystem_RegisterTimer, "RegisterTimer");
 			sc.ClassFunction(sf);
 		}

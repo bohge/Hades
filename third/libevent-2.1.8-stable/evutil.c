@@ -381,7 +381,8 @@ evutil_make_listen_socket_reuseable_port(evutil_socket_t sock)
 	return setsockopt(sock, SOL_SOCKET, SO_REUSEPORT, (void*) &one,
 	    (ev_socklen_t)sizeof(one));
 #else
-	return 0;
+	fprintf(stderr, "platform does not support reuse ports\r\n");
+	return 1;
 #endif
 }
 

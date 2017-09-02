@@ -418,6 +418,16 @@ evthread_setup_global_lock_(void *lock_, unsigned locktype, int enable_locks)
 	}
 }
 
+int evthread_use_depend_threads(void)
+{
+#if (defined(WIN32) && !defined(_EVENT_DISABLE_THREAD_SUPPORT)) || defined(_EVENT_IN_DOXYGEN)
+	return evthread_use_windows_threads();
+#endif
+
+#if defined(_EVENT_HAVE_PTHREADS) || defined(_EVENT_IN_DOXYGEN)
+	return evthread_use_pthreads();
+#endif
+}
 
 #ifndef EVTHREAD_EXPOSE_STRUCTS
 unsigned long

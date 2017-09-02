@@ -26,14 +26,14 @@ namespace hc
 
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void IApplication::Initialize(const eastl::string& root, const eastl::string& args)
+	void IApplication::Initialize(bool daemon, const eastl::string& root, const eastl::string& args)
 	{
 		m_pICore = CreateCore();
 		if (m_pICore->Initialize(root, _Configurepath()))
 		{
 			IConfigSystem::Instance()->SetDefualtConfigure(_Configurepath());
 			Bufferpool::Create();
-			_OnInitialize(args);			
+			_OnInitialize(m_pICore->GetPID(), daemon, args);
 		}
 	}
 	//---------------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ namespace hc
 #ifdef _PLATFORM_WINDOWS
 			Sleep(100);
 #else
-			usleep(100 * 1000);
+			usleep(100000);
 #endif
 		}
 	}

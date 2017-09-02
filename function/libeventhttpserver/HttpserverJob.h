@@ -32,15 +32,15 @@ namespace hlhsp
 	public:
 		enum RequestCommand
 		{
-			RC_REQ_GET		= 1 << 0,
-			RC_REQ_POST		= 1 << 1,
-			RC_REQ_HEAD		= 1 << 2,
-			RC_REQ_PUT		= 1 << 3,
-			RC_REQ_DELETE	= 1 << 4,
-			RC_REQ_OPTIONS	= 1 << 5,
-			RC_REQ_TRACE	= 1 << 6,
-			RC_REQ_CONNECT	= 1 << 7,
-			RC_REQ_PATCH	= 1 << 8
+			RC_REQ_GET = 1 << 0,
+			RC_REQ_POST = 1 << 1,
+			RC_REQ_HEAD = 1 << 2,
+			RC_REQ_PUT = 1 << 3,
+			RC_REQ_DELETE = 1 << 4,
+			RC_REQ_OPTIONS = 1 << 5,
+			RC_REQ_TRACE = 1 << 6,
+			RC_REQ_CONNECT = 1 << 7,
+			RC_REQ_PATCH = 1 << 8
 		};
 	private:
 		struct Httprequest

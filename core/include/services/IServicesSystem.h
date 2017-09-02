@@ -45,7 +45,6 @@ namespace hc
 		ProtocolQueue*				m_pProtocolQueue;
 		IServicesArray*				m_pIServicesArray;
 		IJobDispatcher*				m_pWorkThread;
-		IJobDispatcher*				m_pDispatchThread;
 		IThreadRWLock*				m_pIThreadRWLock;
 		uint						m_ServiceCacheSize;
 		bool						m_isOptimization;

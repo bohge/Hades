@@ -14,5 +14,7 @@ namespace hcw
 	private:
 		virtual hc::IPluginLoader* _CreateLoader();
 		virtual void _ReleaseLoader(hc::IPluginLoader* loder);
+	public:
+		virtual uint GetPID();
 	};
 }

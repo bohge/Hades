@@ -4351,6 +4351,8 @@ bind_socket_ai(struct evutil_addrinfo *ai, int reuse)
 	if (reuse) {
 		if (evutil_make_listen_socket_reuseable(fd) < 0)
 			goto out;
+		if (evutil_make_listen_socket_reuseable_port(fd) < 0)
+			goto out;
 	}
 
 	if (ai != NULL) {

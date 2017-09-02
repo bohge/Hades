@@ -409,6 +409,7 @@ namespace hlhsp
 				}
 				catch (MPFD::Exception e)
 				{
+					HADESERROR("Parse post fail, error message:%s", e.GetError().c_str());
 					_FreeParser(parser);
 					if (request.req && request.evb)
 					{

@@ -46,6 +46,10 @@ namespace hles
 	//---------------------------------------------------------------------------------------------------------
 	bool LibeventServer::_OnStart(int connectthread, int port)
 	{
+		if (connectthread > 1)
+		{
+			HADESWARNING("libeventserversystem is single thread server system");
+		}
 		bool res = m_spServerJob->Initialize(port);
 		if (res)
 		{

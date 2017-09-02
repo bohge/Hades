@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4647fa9d-dda0-49c9-96f8-ff88f140bf2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginEntry.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ThulacFunction.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ThulacFunction.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="AllRegister.hpp">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="ThulacFunctionWrap.hpp">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

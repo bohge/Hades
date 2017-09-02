@@ -2,7 +2,7 @@
 // Author: Gorelov Grigory (gorelov@grigory.info)
 //
 // Contacts and other info are on the WEB page:  grigory.info/MPFDParser
-
+#include "file/IFileSystem.h"
 #include "Field.h"
 #include "Parser.h"
 #include <cstdio>
@@ -63,30 +63,31 @@ void MPFD::Field::AcceptSomeData(char *data, long length) {
     } else if (type == FileType) {
         if (WhereToStoreUploadedFiles == Parser::StoreUploadedFilesInFilesystem) {
             if (TempDir.length() > 0) {
+				std::string tempfile;
                 if (!file.is_open()) {
                     std::ifstream testfile;
-                    std::string tempfile;
                     do {
                         if (testfile.is_open()) {
                             testfile.close();
                         }
 
 						TempFile = std::tmpnam(NULL);
+						tempfile.append(TempDir.c_str(), TempDir.size() - 1);
+						tempfile.append(TempFile);
 
-                        tempfile = TempDir + "/" + TempFile;
-
-                        testfile.open(tempfile.c_str(), std::ios::in);
+                        testfile.open(tempfile, std::ios::in);
                     } while (testfile.is_open());
 
+					eastl::string dir = tempfile.substr(0, tempfile.find_last_of("/\\")).c_str();
+					hc::IFileSystem::Instance()->MakeFolder(dir);
                     file.open(tempfile.c_str(), std::ios::out | std::ios::binary | std::ios_base::trunc);
                 }
-
                 if (file.is_open()) {
                     file.write(data, length);
                     file.flush();
 					file.close();
                 } else {
-                    throw Exception(std::string("Cannot write to file ") + TempDir + "/" + TempFile);
+					throw Exception(std::string("Cannot write to file ") + tempfile);
                 }
             } else {
                 throw MPFD::Exception("Trying to AcceptSomeData for a file but no TempDir is set.");

@@ -25,10 +25,9 @@ using namespace hc;
 namespace hles
 {
 	//---------------------------------------------------------------------------------------------------------
-	static void sendqueue_func(evutil_socket_t fd, short what, void *arg)
+	void infinity_func(evutil_socket_t fd, short what, void *arg)
 	{
-		ConnectionJob* host = (ConnectionJob*)arg;
-		host->ExecuteSchedule();
+		printf("infinity_func\r\n");
 	}
 	//---------------------------------------------------------------------------------------------------------	
 	ConnectionJob::ConnectionJob()
@@ -36,18 +35,12 @@ namespace hles
 		, m_pConnectionCount(0)
 		, m_ThreadIndex(nullhandle)
 		, m_pInfinityEvent(NEW event)
-		, m_pSenderSchedule(NEW SenderQueue)
-		, m_pDisconnectSchedule(NEW DisconnectQueue)
-		, m_pConnectQueue(NEW ConnectQueue)
 	{
 	}
 	//---------------------------------------------------------------------------------------------------------
 	ConnectionJob::~ConnectionJob()
 	{
 		SAFE_DELETE(m_pInfinityEvent);
-		SAFE_DELETE(m_pSenderSchedule);
-		SAFE_DELETE(m_pConnectQueue);
-		SAFE_DELETE(m_pDisconnectSchedule);
 	}
 	//---------------------------------------------------------------------------------------------------------
 	void ConnectionJob::_DoYieldJob()
@@ -72,55 +65,14 @@ namespace hles
 			fprintf(stderr, "Could not initialize libevent!\n");
 			return false;
 		}
+		//没有EVLOOP_NO_EXIT_ON_EMPTY只能添加一个无限时间任务
 		{
 			struct timeval tv;
 			evutil_timerclear(&tv);
-			tv.tv_sec = 0;
-			tv.tv_usec = 10000;//每十毫秒check一次堆栈防止有没有发出去的数据
-			event_assign(m_pInfinityEvent, m_pBase, -1, EV_PERSIST, sendqueue_func, this);
+			tv.tv_sec = (long)(((uint)-1) >> 3);
+			event_assign(m_pInfinityEvent, m_pBase, -1, EV_PERSIST, infinity_func, NULL);
 			event_add(m_pInfinityEvent, &tv);
 		}
 		return true;
-	}
-	//---------------------------------------------------------------------------------------------------------
-	void ConnectionJob::ExecuteSchedule()
-	{
-		ConnectData tocon;
-		while (m_pConnectQueue->try_dequeue(tocon))
-		{
-			tocon.first->Connect(m_rpHost, this, m_pBase, tocon.second);
-		}
-		SenderData tosend;
-		while (m_pSenderSchedule->try_dequeue(tosend))
-		{
-			if (tosend.first.isValid())
-			{
-				tosend.first->SendBuffer(tosend.second->GetRawBuffer(), tosend.second->GetRawLength());
-			}
-			ISerializeSystem::Instance()->FreeSerializable(tosend.second);
-		}
-		hc::SmartPtr< LibeventConnection > todis;
-		while (m_pDisconnectSchedule->try_dequeue(todis))
-		{
-			todis->Disconnect();
-		}
-	}
-	//---------------------------------------------------------------------------------------------------------
-	void ConnectionJob::ScheduleSender(hc::SmartPtr< LibeventConnection >& lc, hc::IMessage* msg)
-	{
-		IMessage* tosend = static_cast<IMessage*>(hc::ISerializeSystem::Instance()
-			->GetSerializable(IMessage::RTTI().GetFactor()));
-		*tosend = *msg;
-		m_pSenderSchedule->enqueue(eastl::make_pair(lc, tosend));
-	}
-	//---------------------------------------------------------------------------------------------------------
-	void ConnectionJob::ScheduleDisconnect(hc::SmartPtr< LibeventConnection >& lc)
-	{
-		m_pDisconnectSchedule->enqueue(lc);
-	}
-	//---------------------------------------------------------------------------------------------------------
-	void ConnectionJob::ScheduleConnect(hc::SmartPtr< LibeventConnection >& lc, evutil_socket_t fd)
-	{
-		m_pConnectQueue->enqueue(eastl::make_pair(lc, fd));
 	}
 }

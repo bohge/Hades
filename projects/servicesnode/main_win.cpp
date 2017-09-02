@@ -33,7 +33,7 @@ void main(int argc, char *argv[])
 	(strrchr(strFilePath, ('\\')))[1] = 0;
 	SetCurrentDirectoryA( strFilePath );
 	string path(strFilePath);
-	app.Initialize(path, args);
+	app.Initialize(false, path, args);
 	app.Dowork();
 	app.Exit();
 #ifdef _TRACK_MEMORY

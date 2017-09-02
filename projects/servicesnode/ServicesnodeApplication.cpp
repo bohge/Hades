@@ -46,7 +46,7 @@ namespace hsna
 		return m_ConfigureName;
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void ServicesnodeApplication::_OnInitialize(const eastl::string& args)
+	void ServicesnodeApplication::_OnInitialize(uint pid, bool daemon, const eastl::string& args)
 	{
 		IConfigure* conf = IConfigSystem::Instance()->GetDefualtConfigure();
 		uint buffersize = conf->GetInt(Configure::MAX_NET_BUFFER_SIZE);
@@ -62,7 +62,7 @@ namespace hsna
 		Bufferpool::Instance()->SetMaxBUfferSize(buffersize);
 		IServerSystem::Instance()->SetMaxBUfferSize(buffersize);
 		IServicesSystem::Instance()->SetRPCOptimization(isopt);
-		ILogSystem::Instance()->SetLogFile(filesize, logfile);
+		ILogSystem::Instance()->SetLogFile(filesize, daemon ? pid : 0, logfile);
 		ISerializeSystem::Instance()->PrepareSerializable(IMessage::RTTI().GetFactor(), SNAC_MESSAGE_CACHE_SIZE);
 		IFileSystem::Instance()->SetDocumentPath(docs);
 		IFileSystem::Instance()->SetScriptPath(scrs);
@@ -75,7 +75,7 @@ namespace hsna
 		{
 			m_FuncInitIndex = m_pIAgent->GetFunctionIndex(Configure::INITALIZE_FUNCTION);
 			m_FuncCommandlineIndex = m_pIAgent->GetFunctionIndex(Configure::COMMANDLINE_FUNCTION);
-			_InitializeCommandline();
+			if (!daemon)_InitializeCommandline();
 			Protocol* ptc = IServicesSystem::Instance()->AllocProtocol();
 			ptc->SetFunction(m_FuncInitIndex);
 			IArguments* argus = IScriptSystem::Instance()->AllocArguments();

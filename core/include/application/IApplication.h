@@ -17,11 +17,11 @@ namespace hc
 		virtual ~IApplication(void);
 	private:
 		virtual eastl::string _Configurepath() = 0;
-		virtual void _OnInitialize(const eastl::string& args) = 0;
+		virtual void _OnInitialize(uint pid, bool daemon, const eastl::string& args) = 0;
 		virtual bool _OnDowork() = 0;
 		virtual void _OnExit() = 0;
 	public:
-		void Initialize(const eastl::string& root, const eastl::string& args);
+		void Initialize(bool daemon, const eastl::string& root, const eastl::string& args);
 		void Dowork();
 		void Exit();
 	};

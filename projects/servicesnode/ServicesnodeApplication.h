@@ -31,7 +31,7 @@ namespace hsna
 		virtual ~ServicesnodeApplication(void);
 	private:
 		virtual eastl::string _Configurepath();
-		virtual void _OnInitialize(const eastl::string& args);
+		virtual void _OnInitialize(uint pid, bool daemon, const eastl::string& args);
 		virtual bool _OnDowork();
 		virtual void _OnExit();
 	private:

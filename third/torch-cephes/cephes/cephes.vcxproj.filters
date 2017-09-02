@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{a6fb39e3-8cf6-4637-ac7e-95ed8769a728}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="torch_mtherr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\airy.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\hyp2f1.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\hyperg.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\i0.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\i1.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\iv.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\j0.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\j1.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\jn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\jv.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\k0.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\k1.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\kn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\psi.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\struve.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bessel\yn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\acosh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\asin.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\asinh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\atan.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\atanh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\cbrt.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\chbevl.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\clog.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\cmplx.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\const.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\cosh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\drand.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\dtestvec.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\exp.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\exp2.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\exp10.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\fabs.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\floor.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\isnan.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\log.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\log2.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\log10.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\mod2pi.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\mtst.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\polevl.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\pow.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\powi.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\round.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\setprec.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\sin.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\sincos.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\sindg.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\sinh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\sqrt.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\tan.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\tandg.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\tanh.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmath\unity.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\bdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\btdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\chdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\expx2.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\fdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\gamma.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\gdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\igam.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\igami.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\incbet.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\incbi.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\kolmogorov.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\nbdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\ndtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\ndtri.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\pdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="cprob\stdtr.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellf.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellie.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellik.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellpe.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellpj.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ellf\ellpk.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\beta.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\dawsn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\ei.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\expn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\fac.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\fresnl.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\planck.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\polylog.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\rgamma.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\shichi.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\sici.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\simpsn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\spence.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\zeta.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\zetac.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="polyn\euclid.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="polyn\polmisc.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="polyn\polrt.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="polyn\polyn.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="polyn\revers.c">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bessel\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="cmath\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="cmath\protos.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="cprob\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="ellf\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="ellf\protos.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="polyn\mconf.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

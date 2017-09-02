@@ -92,7 +92,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_DYNAMIC_PLUGIN;_DEBUG;_WINDOWS;_USRDLL;LIBEVENTSERVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.0.22-stable\include;..\..\third\libevent-2.0.22-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.1.8-stable\include;..\..\third\libevent-2.1.8-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -107,7 +107,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_DYNAMIC_PLUGIN;_DEBUG;_WINDOWS;_USRDLL;LIBEVENTSERVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.0.22-stable\include;..\..\third\libevent-2.0.22-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.1.8-stable\include;..\..\third\libevent-2.1.8-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -124,7 +124,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_DYNAMIC_PLUGIN;NDEBUG;_WINDOWS;_USRDLL;LIBEVENTSERVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.0.22-stable\include;..\..\third\libevent-2.0.22-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.1.8-stable\include;..\..\third\libevent-2.1.8-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -143,7 +143,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_PLATFORM_WINDOWS;_DYNAMIC_PLUGIN;NDEBUG;_WINDOWS;_USRDLL;LIBEVENTSERVER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.0.22-stable\include;..\..\third\libevent-2.0.22-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\core\include;..\..\third\EASTL\include;..\..\third\libevent-2.1.8-stable\include;..\..\third\libevent-2.1.8-stable\WIN32-Code;..\..\third\concurrentqueue\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Connectionpool.cpp" />
     <ClCompile Include="LibeventConnection.cpp" />
     <ClCompile Include="LibeventServer.cpp" />
     <ClCompile Include="LibeventServerSystem.cpp" />
@@ -167,11 +168,12 @@
     <ProjectReference Include="..\..\third\EASTL\win\eastl.vcxproj">
       <Project>{5b220262-f0fc-42a4-84ff-51e41f5a9481}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\third\libevent-2.0.22-stable\libevent.vcxproj">
-      <Project>{4d49cab4-38ed-4894-bcf5-8028356355e5}</Project>
+    <ProjectReference Include="..\..\third\libevent-2.1.8-stable\libevent218.vcxproj">
+      <Project>{c417a76f-4342-4423-8432-be7a5511e549}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Connectionpool.h" />
     <ClInclude Include="LibeventConnection.h" />
     <ClInclude Include="LibeventServer.h" />
     <ClInclude Include="LibeventServerSystem.h" />

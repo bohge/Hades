@@ -25,6 +25,8 @@ namespace hc
 	private:
 		virtual IPluginLoader* _CreateLoader() = 0;
 		virtual void _ReleaseLoader( IPluginLoader* loder ) = 0;
+	public:
+		virtual uint GetPID() = 0;
 	private:
 		void _PushPlugin( IPlugin* plugin );						// 加载插件
 		bool _ParseConfig( const eastl::string& root, const eastl::string& confname );		// 解析配置表Config.json

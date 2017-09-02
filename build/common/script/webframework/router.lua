@@ -106,7 +106,7 @@ function router:_OnPost(uid, url, handler)
     if nil == handler.create then
       Httpserver:Reply(uid, 404, "Missing...");
     else
-      local res = handler:create(self);
+      local res = handler:create(self, uid);
       Httpserver:Reply(uid, 200, tostring(res));
     end    
   end  

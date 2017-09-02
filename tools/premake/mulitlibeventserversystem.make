@@ -16,7 +16,7 @@ ifeq ($(config),debug)
   TARGET = $(TARGETDIR)/libmulitlibeventserversystem.so
   OBJDIR = obj/Debug/mulitlibeventserversystem
   DEFINES += -DDEBUG
-  INCLUDES += -I../../core/include -I../../third/concurrentqueue -I../../third/EASTL/include -I../../third/openssl-1.0.2k-linux/include -I../../third/libevent-2.0.22-stable-linux/include
+  INCLUDES += -I../../core/include -I../../third/concurrentqueue -I../../third/EASTL/include -I../../third/openssl-1.0.2k-linux/include -I../../third/libevent-2.1.8-stable-linux/include
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MMD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -g -fPIC -fPIC -Wno-multichar -fshort-wchar -g -rdynamic  -std=c++11
@@ -24,7 +24,7 @@ ifeq ($(config),debug)
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
   LIBS += -Wl,--start-group -lcore -lssl -lcrypto -levent -levent_pthreads -levent_openssl -lpthread -Wl,--end-group
   LDDEPS +=
-  ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../build -L../../third/openssl-1.0.2k-linux -L../../third/libevent-2.0.22-stable-linux/.libs -m64 -shared
+  ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../build -L../../third/openssl-1.0.2k-linux -L../../third/libevent-2.1.8-stable-linux/.libs -m64 -shared
   LINKCMD = $(CXX) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS
   endef
@@ -43,7 +43,7 @@ ifeq ($(config),release)
   TARGET = $(TARGETDIR)/libmulitlibeventserversystem.so
   OBJDIR = obj/Release/mulitlibeventserversystem
   DEFINES += -DNDEBUG
-  INCLUDES += -I../../core/include -I../../third/concurrentqueue -I../../third/EASTL/include -I../../third/openssl-1.0.2k-linux/include -I../../third/libevent-2.0.22-stable-linux/include
+  INCLUDES += -I../../core/include -I../../third/concurrentqueue -I../../third/EASTL/include -I../../third/openssl-1.0.2k-linux/include -I../../third/libevent-2.1.8-stable-linux/include
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MMD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O2 -fPIC -fPIC -Wno-multichar -fshort-wchar -std=c++11
@@ -51,7 +51,7 @@ ifeq ($(config),release)
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
   LIBS += -Wl,--start-group -lcore -lssl -lcrypto -levent -levent_pthreads -levent_openssl -lpthread -Wl,--end-group
   LDDEPS +=
-  ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../build -L../../third/openssl-1.0.2k-linux -L../../third/libevent-2.0.22-stable-linux/.libs -m64 -s -shared
+  ALL_LDFLAGS += $(LDFLAGS) -L/usr/lib64 -L../../build -L../../third/openssl-1.0.2k-linux -L../../third/libevent-2.1.8-stable-linux/.libs -m64 -s -shared
   LINKCMD = $(CXX) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS
   endef

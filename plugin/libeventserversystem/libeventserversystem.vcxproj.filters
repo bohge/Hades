@@ -16,6 +16,9 @@
     <Filter Include="Server\Client">
       <UniqueIdentifier>{b41f1a9d-ea86-4b51-b85d-5b42ab9ddcb6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\Pool">
+      <UniqueIdentifier>{b5d32b42-a2a3-439a-a7d4-c8b3ed36f774}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PluginEntry.cpp">
@@ -33,6 +36,9 @@
     <ClCompile Include="LibeventServer.cpp">
       <Filter>Server\Server</Filter>
     </ClCompile>
+    <ClCompile Include="Connectionpool.cpp">
+      <Filter>Server\Pool</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LibeventServerSystem.h">
@@ -46,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="LibeventServer.h">
       <Filter>Server\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Connectionpool.h">
+      <Filter>Server\Pool</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

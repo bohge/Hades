@@ -18,6 +18,7 @@
 #include <event2/event.h>
 #include <event2/thread.h>
 #include <openssl/ssl.h>
+#include <signal.h>
 
 using namespace hc;
 using namespace eastl;
@@ -98,11 +99,11 @@ namespace hles
 		case hc::IServerSystem::ST_COMMON_TL: res = NEW LibeventServer(st); break;
 		case hc::IServerSystem::ST_OPENSSL_TLS: res = NEW LibeventServer(st); break;
 		default:ASSERT(false); break;
-		}		
+		}
 		return res;
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void LibeventServerSystem::_DoRecycleBin( hc::IServer* is ) const
+	void LibeventServerSystem::_DoRecycleBin(hc::IServer* is) const
 	{
 		SAFE_DELETE(is);
 	}
@@ -113,7 +114,7 @@ namespace hles
 		IServerSystem::Initialize();
 		//event_enable_debug_mode();
 		//event_set_log_callback(event_log_cb);
-		//evthread_use_depend_threads();
+		evthread_use_depend_threads();
 		event_set_mem_functions(
 			&IMemorySystem::AllocMemory,
 			&IMemorySystem::ReallocMemory,
@@ -122,6 +123,8 @@ namespace hles
 #ifdef WIN32
 		WSADATA wsa_data;
 		WSAStartup(0x0201, &wsa_data);
+#else
+		signal(SIGPIPE, SIG_IGN);
 #endif
 		IConfigure* conf = IConfigSystem::Instance()->ConfigureFactory(Configure::TLS_CONFING_PATH);
 		string crt = conf->GetString("OPENSSL_CRT");

@@ -192,6 +192,8 @@ EVENT2_EXPORT_SYMBOL
 void evthread_set_id_callback(
     unsigned long (*id_fn)(void));
 
+EVENT2_EXPORT_SYMBOL int evthread_use_depend_threads(void);
+
 #if (defined(_WIN32) && !defined(EVENT__DISABLE_THREAD_SUPPORT)) || defined(EVENT_IN_DOXYGEN_)
 /** Sets up Libevent for use with Windows builtin locking and thread ID
     functions.  Unavailable if Libevent is not built for Windows.

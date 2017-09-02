@@ -31,7 +31,7 @@ namespace hc
 		virtual ~ILogSystem(void);
 	private:
 		virtual void _DoLog(LogType lt, double time, char* str) = 0;
-		virtual void _OnSetFile(uint size, const eastl::string& file) = 0;
+		virtual void _OnSetFile(uint size, uint pid, const eastl::string& file) = 0;
 	public:
 		virtual void Initialize();
 		virtual void Exit();
@@ -47,13 +47,13 @@ namespace hc
 		void ScriptWarning(const char* str, uint len);
 		void ScriptError(const char* str, uint len);
 	public:
-		HADES_FORCEINLINE void SetLogFile(uint size, const eastl::string& name);
+		HADES_FORCEINLINE void SetLogFile(uint size, uint pid, const eastl::string& name);
 	};
 
 	//---------------------------------------------------------------------------------------------------------
-	HADES_FORCEINLINE void ILogSystem::SetLogFile(uint size, const eastl::string& name)
+	HADES_FORCEINLINE void ILogSystem::SetLogFile(uint size, uint pid, const eastl::string& name)
 	{
-		_OnSetFile(size, name);
+		_OnSetFile(size, pid, name);
 	}
 }
 

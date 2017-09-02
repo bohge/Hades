@@ -59,6 +59,15 @@ namespace hc
 		}
 	}
 	//---------------------------------------------------------------------------------------------------------
+	void ISocket::_OnDisconnected()
+	{
+		if (m_DefualtHandleArray.size() > 0)
+		{
+			Protocol* ptc = IServicesSystem::Instance()->AllocProtocol();
+			_RemoteInvoke(ptc, DISCONNECTINDX);
+		}
+	}
+	//---------------------------------------------------------------------------------------------------------
 	void ISocket::_RemoteInvoke(Protocol* ptc, uint func)
 	{
 		SmartPtr<RequestHandle> prh;

@@ -11,6 +11,7 @@ namespace hc
 {
 	class IMessage;
 	class IRawbuffer;
+	class IThreadRWLock;
 }
 struct ssl_st;
 typedef struct ssl_st SSL;
@@ -24,9 +25,8 @@ namespace hles
 		uint64							m_Specific;
 		uint64							m_ID;
 		hc::IRawbuffer*					m_pRawbuffer;
+		hc::IThreadRWLock*				m_pIThreadRWLock;
 		ListenerJob*					m_rpHost;
-		struct evbuffer*				m_rpInputBuffer;
-		struct evbuffer*				m_rpOutputBuffer;
 		struct bufferevent*				m_pBufferevent;
 		SSL*							m_pSSL;
 		uint							m_ThreadIndex;
@@ -34,7 +34,7 @@ namespace hles
 		LibeventConnection(void);
 		virtual ~LibeventConnection(void);
 	public:
-		void Connect(ListenerJob* host, ConnectionJob* conn, struct event_base* base, evutil_socket_t fd);
+		void Connect(ListenerJob* host, ConnectionJob* conn, evutil_socket_t fd);
 		void Disconnect();
 		void OnReceive(struct bufferevent* bev);
 		bool SendBuffer(const byte* buf, uint size);

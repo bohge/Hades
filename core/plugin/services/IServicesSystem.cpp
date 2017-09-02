@@ -18,7 +18,6 @@ namespace hc
 	//---------------------------------------------------------------------------------------------------------
 	IServicesSystem::IServicesSystem(void)
 		: m_pWorkThread(NULL)
-		, m_pDispatchThread(NULL)
 		, m_pProtocolQueue(NULL)
 		, m_ServiceCacheSize(0)
 		, m_pScriptServicesCacheMap(NULL)
@@ -69,12 +68,6 @@ namespace hc
 			MEMBER_FUNC_PTR(&IServicesSystem::OnThreadCreate),
 			MEMBER_FUNC_PTR(&IServicesSystem::OnThreadDestory));
 		m_pWorkThread->SetName("Services");
-
-		m_pDispatchThread =
-			static_cast<IJobDispatcher*>(
-			IThreadSystem::Instance()->ThreadEntityFactory(ThreadProperty::ET_JOB_DISPATCHER));
-		m_pDispatchThread->SetSortType(ThreadProperty::ST_UNSORT);
-		m_pDispatchThread->SetName("Distribute");
 	}
 	//---------------------------------------------------------------------------------------------------------
 	void IServicesSystem::Update()
@@ -84,10 +77,8 @@ namespace hc
 	//---------------------------------------------------------------------------------------------------------
 	void IServicesSystem::Exit()
 	{
-		m_pDispatchThread->Stop();
 		m_pWorkThread->Stop();
 		IThreadSystem::Instance()->RecycleBin(m_pIThreadRWLock);
-		IThreadSystem::Instance()->RecycleBin(m_pDispatchThread);
 		IThreadSystem::Instance()->RecycleBin(m_pWorkThread);
 		{
 			Protocol* req = NULL;
@@ -240,8 +231,6 @@ namespace hc
 		_OnServicesStart();
 		m_pWorkThread->SetThreadCount(threadcount);
 		m_pWorkThread->Start();
-		m_pDispatchThread->SetThreadCount(1);
-		m_pDispatchThread->Start();
 	}
 	//---------------------------------------------------------------------------------------------------------
 	bool IServicesSystem::RemoteCallBack(Protocol* ptc)

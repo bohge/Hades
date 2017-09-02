@@ -15,8 +15,7 @@ namespace hc
 {
 	class IMessage;
 	class IRawbuffer;
-	class IThreadEvent;
-	class IJobDispatcher;
+	class IThreadRWLock;
 }
 
 struct evbuffer;
@@ -34,13 +33,10 @@ namespace hlec
 		event_base*					m_rpBase;
 		evconnlistener*				m_pListener;
 		bufferevent*				m_pBufferevent;
-		evbuffer*					m_rpInputBuffer;
-		evbuffer*					m_rpOutputBuffer;
 		hc::IRawbuffer*				m_pRawbuffer;
+		hc::IThreadRWLock*			m_pIThreadRWLock;
 		struct sockaddr_in			m_sSin;
 		int							m_Port;
-		volatile bool				m_isSuccess;
-		volatile bool				m_isDisconnect;
 	public:
 		LibeventClient(void);
 		virtual ~LibeventClient(void);
@@ -53,10 +49,6 @@ namespace hlec
 	public:
 		void OnReceive(bufferevent* bev);
 		void ConnectReslut(bool res);
-		void RealDisconnect();
-		void RealConnect(const eastl::string& ipport);
-		void Reconnect();
-		void SendBuffer(const byte* buf, uint size);
 	private:
 		HADES_FORCEINLINE void _SetIP(const eastl::string& str);
 		HADES_FORCEINLINE void _SetPort(int port);

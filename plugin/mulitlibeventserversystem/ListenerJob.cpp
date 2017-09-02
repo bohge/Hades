@@ -56,7 +56,7 @@ namespace hles
 		pclient->SetIndex(key);
 		uint index = connjob->GetThreadIndex();
 		pclient->SetThreadIndex(index);
-		connjob->ScheduleConnect(clinet, fd);
+		pclient->Connect(server, connjob, fd);
 		//HADESLOG("connection fd %d uuid %llu", fd, key);
 	}
 	//---------------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ namespace hles
 		sin.sin_port = htons(port);
 
 		m_pListener = evconnlistener_new_bind(m_pBase, listener_cb, (void *)this,
-			LEV_OPT_REUSEABLE | LEV_OPT_CLOSE_ON_FREE, -1,
+			LEV_OPT_REUSEABLE | LEV_OPT_CLOSE_ON_FREE | LEV_OPT_REUSEABLE_PORT | BEV_OPT_THREADSAFE, -1,
 			(struct sockaddr*)&sin,
 			sizeof(sin));
 
@@ -190,11 +190,6 @@ namespace hles
 		}
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void ListenerJob::OnDisconnect(uint64 id)
-	{
-		m_OnReceiveCallback.Multicast(m_rpHost, id, CallbackType::SCT_DISCONNECT, NULL);
-	}
-	//---------------------------------------------------------------------------------------------------------
 	bool ListenerJob::SendBuffer(uint64 id, hc::IMessage* msg)
 	{
 		bool res(false);
@@ -203,13 +198,7 @@ namespace hles
 			hc::SmartPtr< LibeventConnection > client = m_pClientpool->Get(id);
 			if (client.isValid())
 			{
-				//client->SendBuffer(msg->FullData(), msg->GetRawLength());
-				uint index = client->GetThreadIndex();
-				if (index >= 0 && index < m_pConnecSendArray->size())
-				{
-					ConnectionJob* target = m_pConnecSendArray->at(index).GetUnsafePointer();
-					target->ScheduleSender(client, msg);
-				}
+				client->SendBuffer(msg->GetRawBuffer(), msg->GetRawLength());
 			}
 		}
 		return res;
@@ -226,13 +215,7 @@ namespace hles
 				{
 					if (client->GetIndex() != id)
 					{
-						//client->SendBuffer(msg->FullData(), msg->GetRawLength());
-						uint index = client->GetThreadIndex();
-						if (index > 0 && index < m_pConnecSendArray->size())
-						{
-							ConnectionJob* target = m_pConnecSendArray->at(index).GetUnsafePointer();
-							target->ScheduleSender(client, msg);
-						}
+						client->SendBuffer(msg->GetRawBuffer(), msg->GetRawLength());
 					}
 				}
 			}
@@ -246,14 +229,10 @@ namespace hles
 			hc::SmartPtr< LibeventConnection > client = m_pClientpool->Get(id);
 			if (client.isValid())
 			{
-				uint index = client->GetThreadIndex();
-				if (index >= 0 && index < m_pConnecSendArray->size())
-				{
-					ConnectionJob* target = m_pConnecSendArray->at(index).GetUnsafePointer();
-					target->ScheduleDisconnect(client);
-				}
+				client->Disconnect();
 			}
 			m_pClientpool->Remove(id);
+			m_OnReceiveCallback.Multicast(m_rpHost, id, CallbackType::SCT_DISCONNECT, NULL);
 		}
 	}
 	//---------------------------------------------------------------------------------------------------------

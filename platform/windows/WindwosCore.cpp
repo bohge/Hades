@@ -31,4 +31,9 @@ namespace hcw
 	{
 		SAFE_DELETE( loder );
 	}
+	//---------------------------------------------------------------------------------------------------------
+	uint WindowsCore::GetPID()
+	{
+		return GetCurrentProcessId();
+	}
 }

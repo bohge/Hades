@@ -35,6 +35,7 @@ namespace hfcl
 		uint				m_MaxSize;
 		uint				m_Filesize;
 		uint				m_Index;
+		uint				m_Pid;
 #ifdef _PLATFORM_WINDOWS
 		HANDLE			m_hConsole;
 #endif
@@ -43,7 +44,7 @@ namespace hfcl
 		virtual ~FileconsoleSystem();
 	private:
 		virtual void _DoLog(hc::ILogSystem::LogType lt, double time, char* str);
-		virtual void _OnSetFile(uint size, const eastl::string& file);
+		virtual void _OnSetFile(uint size, uint pid, const eastl::string& file);
 	public:
 		virtual void Initialize();
 		virtual void Update();

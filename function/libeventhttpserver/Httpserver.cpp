@@ -31,7 +31,6 @@ namespace hlhsp
 			hc::IScriptSystem* sys = hc::IScriptSystem::Instance();
 			Register_All("httpserver", *sys);
 		}
-
 		event_set_mem_functions(
 			&IMemorySystem::AllocMemory,
 			&IMemorySystem::ReallocMemory,

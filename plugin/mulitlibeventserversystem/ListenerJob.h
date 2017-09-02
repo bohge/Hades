@@ -48,7 +48,6 @@ namespace hles
 		void Initialize();
 		ConnectionJob* GetFewestConnectionJob();
 		void OnConnect(uint64 id);
-		void OnDisconnect(uint64 id);
 		bool SendBuffer(uint64 id, hc::IMessage* msg);
 		void Broadcast(uint64 id, hc::IMessage* msg);
 		void Disconnect(uint64 id);

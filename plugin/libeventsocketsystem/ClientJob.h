@@ -19,7 +19,6 @@ namespace hlec
 		bool Initialize(const eastl::string& IP, const int& Port);
 	private:
 		event_base*			m_pBase;
-		bufferevent*		m_pBufferevent;
 	private:
 		virtual void _DoYieldJob();
 		virtual void _DoJob(hc::SmartPtr<hc::IJob>& self, Object* userdata);

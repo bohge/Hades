@@ -220,6 +220,7 @@ local formatTime = xlua.formatTime
 ----------------------------------------------------------------------
 -- progress bar
 ----------------------------------------------------------------------
+--[[这段代码回造成linux多次加载的时候卡死，暂时删除
 do
    local function getTermLength()
       if sys.uname() == 'windows' then return 80 end
@@ -304,7 +305,7 @@ do
       end
    end
 end
-
+]]--
 --------------------------------------------------------------------------------
 -- prints an error with nice formatting. If domain is provided, it is used as
 -- following: <domain> msg

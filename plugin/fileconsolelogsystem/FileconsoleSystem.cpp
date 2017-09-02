@@ -38,6 +38,7 @@ namespace hfcl
 		, m_Filesize(0)
 		, m_Index(0)
 		, m_MaxSize(0)
+		, m_Pid(0)
 	{
 	}
 	//---------------------------------------------------------------------------------------------------------
@@ -53,9 +54,10 @@ namespace hfcl
 		m_LogQueue.enqueue(LogData(lt, time, str));
 	}
 	//---------------------------------------------------------------------------------------------------------
-	void FileconsoleSystem::_OnSetFile(uint size, const eastl::string& file)
+	void FileconsoleSystem::_OnSetFile(uint size, uint pid, const eastl::string& file)
 	{
 		m_MaxSize = size;
+		m_Pid = pid;
 		m_Fileext = file.substr(file.find_last_of("."));
 		m_Filename = file.substr(0, file.find_last_of("."));
 		_CreateFile();
@@ -68,14 +70,18 @@ namespace hfcl
 	{
 		m_Filesize = 0;
 		std::stringstream ss;
-		ss << m_Filename.c_str() << "_" << m_Index++ << m_Fileext.c_str();
+		ss << m_Filename.c_str() << "_" << m_Pid << "_" << m_Index++ << m_Fileext.c_str();
 		if (m_pLogFile)
 		{
 			m_pLogFile->CloseFile();
 			IFileSystem::Instance()->RecycleBin(m_pLogFile);
 		}
 		m_pLogFile = IFileSystem::Instance()->FileFactory(ss.str().c_str());
-		if (m_pLogFile)
+		if (!m_pLogFile)
+		{
+			HADESERROR("can not open log file %s", ss.str().c_str());
+		}
+		else
 		{
 			if (!m_pLogFile->OpenFile(IFile::AT_WRITE))
 			{

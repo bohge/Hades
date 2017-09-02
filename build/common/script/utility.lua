@@ -35,6 +35,22 @@ function Print_Table(root)
   print(_dump(root, "",""))
 end
 
+function Utility_CapnpDecoder(serializer, buffer)
+  local cbuff = buffer:GetMessageBuffer();
+  local len = buffer:GetMessageLength();
+  local strbuf = ffi.string(cbuff, len);
+  local restable = serializer.parse(strbuf);
+  return restable;
+end
+
+function Utility_CapnpEncoder(serializer, id, datatable)
+  local msg = IMessage();
+  local size = serializer.calc_size(datatable);
+  local cbuff = msg:PrepareMessage(id, size);
+  serializer.serialize(datatable, cbuff, size);
+  return msg;
+end
+
 function Utility_StringDecoder(msg)
   local cbuff = msg:GetMessageBuffer();
   local len = msg:GetMessageLength();
@@ -43,7 +59,7 @@ function Utility_StringDecoder(msg)
 end
 
 function Utility_StringEncoder(id, str)
-  local msg = Message();
+  local msg = IMessage();
   local cbuff = msg:PrepareMessage(id, #str);
   ffi.copy(cbuff, str, #str);
   return msg;

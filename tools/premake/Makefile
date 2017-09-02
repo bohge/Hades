@@ -30,6 +30,7 @@ ifeq ($(config),debug)
   torchluaT_config = debug
   torchTH_config = debug
   THNN_config = debug
+  randomkit_config = debug
   torch_config = debug
   nnx_config = debug
   mime_config = debug
@@ -59,6 +60,7 @@ ifeq ($(config),debug)
   libeventhttpserver_config = debug
   libeventmulithttpserver_config = debug
   recastnavigation_config = debug
+  thulacfunction_config = debug
 endif
 ifeq ($(config),release)
   blas_config = release
@@ -80,6 +82,7 @@ ifeq ($(config),release)
   torchluaT_config = release
   torchTH_config = release
   THNN_config = release
+  randomkit_config = release
   torch_config = release
   nnx_config = release
   mime_config = release
@@ -109,9 +112,10 @@ ifeq ($(config),release)
   libeventhttpserver_config = release
   libeventmulithttpserver_config = release
   recastnavigation_config = release
+  thulacfunction_config = release
 endif
 
-PROJECTS := blas f2c lapack lfs lbase64 cjson luasec luaxml zlib jpeg png ipng ijpeg image paths sys torchluaT torchTH THNN torch nnx mime socket eastl crowd detour platform hadescore servicesnode linuxfilesystem fileconsolelogsystem jsonconfiguresystem libeventserversystem libeventsocketsystem hadesmessagesystem idipmessagesystem mulitlibeventserversystem flatserializesystem libeventtimersystem localservicessystem remoteservicessystem pthreadsystem luascritpsystem mathfunction machinestatus libeventhttpserver libeventmulithttpserver recastnavigation
+PROJECTS := blas f2c lapack lfs lbase64 cjson luasec luaxml zlib jpeg png ipng ijpeg image paths sys torchluaT torchTH THNN randomkit torch nnx mime socket eastl crowd detour platform hadescore servicesnode linuxfilesystem fileconsolelogsystem jsonconfiguresystem libeventserversystem libeventsocketsystem hadesmessagesystem idipmessagesystem mulitlibeventserversystem flatserializesystem libeventtimersystem localservicessystem remoteservicessystem pthreadsystem luascritpsystem mathfunction machinestatus libeventhttpserver libeventmulithttpserver recastnavigation thulacfunction
 
 .PHONY: all clean help $(PROJECTS) 
 
@@ -189,7 +193,7 @@ ifneq (,$(ipng_config))
 	@${MAKE} --no-print-directory -C . -f ipng.make config=$(ipng_config)
 endif
 
-ijpeg:
+ijpeg: jpeg
 ifneq (,$(ijpeg_config))
 	@echo "==== Building ijpeg ($(ijpeg_config)) ===="
 	@${MAKE} --no-print-directory -C . -f ijpeg.make config=$(ijpeg_config)
@@ -229,6 +233,12 @@ THNN:
 ifneq (,$(THNN_config))
 	@echo "==== Building THNN ($(THNN_config)) ===="
 	@${MAKE} --no-print-directory -C . -f THNN.make config=$(THNN_config)
+endif
+
+randomkit:
+ifneq (,$(randomkit_config))
+	@echo "==== Building randomkit ($(randomkit_config)) ===="
+	@${MAKE} --no-print-directory -C . -f randomkit.make config=$(randomkit_config)
 endif
 
 torch:
@@ -405,6 +415,12 @@ ifneq (,$(recastnavigation_config))
 	@${MAKE} --no-print-directory -C . -f recastnavigation.make config=$(recastnavigation_config)
 endif
 
+thulacfunction:
+ifneq (,$(thulacfunction_config))
+	@echo "==== Building thulacfunction ($(thulacfunction_config)) ===="
+	@${MAKE} --no-print-directory -C . -f thulacfunction.make config=$(thulacfunction_config)
+endif
+
 clean:
 	@${MAKE} --no-print-directory -C . -f blas.make clean
 	@${MAKE} --no-print-directory -C . -f f2c.make clean
@@ -425,6 +441,7 @@ clean:
 	@${MAKE} --no-print-directory -C . -f torchluaT.make clean
 	@${MAKE} --no-print-directory -C . -f torchTH.make clean
 	@${MAKE} --no-print-directory -C . -f THNN.make clean
+	@${MAKE} --no-print-directory -C . -f randomkit.make clean
 	@${MAKE} --no-print-directory -C . -f torch.make clean
 	@${MAKE} --no-print-directory -C . -f nnx.make clean
 	@${MAKE} --no-print-directory -C . -f mime.make clean
@@ -454,6 +471,7 @@ clean:
 	@${MAKE} --no-print-directory -C . -f libeventhttpserver.make clean
 	@${MAKE} --no-print-directory -C . -f libeventmulithttpserver.make clean
 	@${MAKE} --no-print-directory -C . -f recastnavigation.make clean
+	@${MAKE} --no-print-directory -C . -f thulacfunction.make clean
 
 help:
 	@echo "Usage: make [config=name] [target]"
@@ -484,6 +502,7 @@ help:
 	@echo "   torchluaT"
 	@echo "   torchTH"
 	@echo "   THNN"
+	@echo "   randomkit"
 	@echo "   torch"
 	@echo "   nnx"
 	@echo "   mime"
@@ -513,5 +532,6 @@ help:
 	@echo "   libeventhttpserver"
 	@echo "   libeventmulithttpserver"
 	@echo "   recastnavigation"
+	@echo "   thulacfunction"
 	@echo ""
 	@echo "For more information, see http://industriousone.com/premake/quick-start"

@@ -2,6 +2,7 @@
 #include "network/message/IMessage.h"
 #include "LibeventConnection.h"
 #include "core/SmartPtr.hpp"
+#include "Connectionpool.h"
 #include "ServerJob.h"
 
 #include <event2/bufferevent.h>
@@ -14,21 +15,25 @@
 
 
 using namespace hc;
-
-//---------------------------------------------------------------------------------------------------------
-static void	listener_cb(struct evconnlistener *listener, evutil_socket_t fd, struct sockaddr *sa, int socklen, void *user_data)
-{
-	hles::ServerJob* server = (hles::ServerJob*)user_data;
-	struct event_base *base = server->GetEventbase();
-	hles::LibeventConnection* pclient = NEW hles::LibeventConnection;
-	hc::SmartPtr< hles::LibeventConnection > clinet = hc::SmartPtr< hles::LibeventConnection >(pclient);
-	pclient->Initialize(server, base, fd);
-	uint64 key = server->PushClient(clinet);
-	pclient->SetIndex(key);
-	pclient->OnConnect();
-}
 namespace hles
 {
+	//---------------------------------------------------------------------------------------------------------
+	static void RecycleLibeventConnection(void* obj)
+	{
+		Connectionpool::Instance()->FreeLibeventConnection(static_cast<LibeventConnection*>(obj));
+	}
+	//---------------------------------------------------------------------------------------------------------
+	static void	listener_cb(struct evconnlistener *listener, evutil_socket_t fd, struct sockaddr *sa, int socklen, void *user_data)
+	{
+		hles::ServerJob* server = (hles::ServerJob*)user_data;
+		struct event_base *base = server->GetEventbase();
+		hles::LibeventConnection* pclient = Connectionpool::Instance()->GetLibeventConnection();
+		hc::SmartPtr< hles::LibeventConnection > clinet = hc::SmartPtr< hles::LibeventConnection >(pclient, &RecycleLibeventConnection);
+		pclient->Initialize(server, base, fd);
+		uint64 key = server->PushClient(clinet);
+		pclient->SetIndex(key);
+		pclient->OnConnect();
+	}
 	//---------------------------------------------------------------------------------------------------------
 	ServerJob::ServerJob(IServer* h)
 		:m_rpHost(h)
@@ -68,7 +73,7 @@ namespace hles
 		sin.sin_port = htons(port);
 
 		m_pListener = evconnlistener_new_bind(m_pBase, listener_cb, (void *)this,
-			LEV_OPT_REUSEABLE | LEV_OPT_CLOSE_ON_FREE, -1,
+			LEV_OPT_REUSEABLE | LEV_OPT_CLOSE_ON_FREE | LEV_OPT_REUSEABLE_PORT, -1,
 			(struct sockaddr*)&sin,
 			sizeof(sin));
 
@@ -132,6 +137,11 @@ namespace hles
 	{
 		if (HaveClient(id))
 		{
+			hc::SmartPtr< LibeventConnection > client = m_pClientpool->Get(id);
+			if (client.isValid())
+			{
+				client->DoDisconnect();
+			}
 			m_OnReceiveCallback.Multicast(m_rpHost, id, CallbackType::SCT_DISCONNECT, NULL);
 			m_pClientpool->Remove(id);
 		}

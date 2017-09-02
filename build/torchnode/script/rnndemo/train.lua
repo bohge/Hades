@@ -84,7 +84,7 @@ function lstmtrain(opt)
       local loss = 0
 
       for t=1,opt.seq_length do
-          embeddings[t] = clones.embed[t]:forward(x[{{}, t}])
+          embeddings[t] = clones.embed[t]:forward(x[{{}, t}]);
 
           -- we're feeding the *correct* things in here, alternatively
           -- we could sample from the previous timestep and embed that, but that's

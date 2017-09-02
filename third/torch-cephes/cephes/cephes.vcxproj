@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DC3C84E-81DA-4CCA-9926-B893E7C11978}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cephes</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\build\dependency\</OutDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\build\dependency\</OutDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\build\dependency\</OutDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\build\dependency\</OutDir>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE=1;TH_EXPORTS;CEPHES_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;CEPHES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\torch7\lib\TH;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE=1;TH_EXPORTS;CEPHES_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;CEPHES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\torch7\lib\TH;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE=1;TH_EXPORTS;CEPHES_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;CEPHES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\torch7\lib\TH;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE=1;TH_EXPORTS;CEPHES_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;CEPHES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\torch7\lib\TH;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\torch7\lib\TH\TH.vcxproj">
+      <Project>{dcef8e68-a003-4d7a-8a66-14b60c0c48e9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bessel\airy.c" />
+    <ClCompile Include="bessel\hyp2f1.c" />
+    <ClCompile Include="bessel\hyperg.c" />
+    <ClCompile Include="bessel\i0.c" />
+    <ClCompile Include="bessel\i1.c" />
+    <ClCompile Include="bessel\iv.c" />
+    <ClCompile Include="bessel\j0.c" />
+    <ClCompile Include="bessel\j1.c" />
+    <ClCompile Include="bessel\jn.c" />
+    <ClCompile Include="bessel\jv.c" />
+    <ClCompile Include="bessel\k0.c" />
+    <ClCompile Include="bessel\k1.c" />
+    <ClCompile Include="bessel\kn.c" />
+    <ClCompile Include="bessel\psi.c" />
+    <ClCompile Include="bessel\struve.c" />
+    <ClCompile Include="bessel\yn.c" />
+    <ClCompile Include="cmath\acosh.c" />
+    <ClCompile Include="cmath\asin.c" />
+    <ClCompile Include="cmath\asinh.c" />
+    <ClCompile Include="cmath\atan.c" />
+    <ClCompile Include="cmath\atanh.c" />
+    <ClCompile Include="cmath\cbrt.c" />
+    <ClCompile Include="cmath\chbevl.c" />
+    <ClCompile Include="cmath\clog.c" />
+    <ClCompile Include="cmath\cmplx.c" />
+    <ClCompile Include="cmath\const.c" />
+    <ClCompile Include="cmath\cosh.c" />
+    <ClCompile Include="cmath\drand.c" />
+    <ClCompile Include="cmath\dtestvec.c" />
+    <ClCompile Include="cmath\exp.c" />
+    <ClCompile Include="cmath\exp10.c" />
+    <ClCompile Include="cmath\exp2.c" />
+    <ClCompile Include="cmath\fabs.c" />
+    <ClCompile Include="cmath\floor.c" />
+    <ClCompile Include="cmath\isnan.c" />
+    <ClCompile Include="cmath\log.c" />
+    <ClCompile Include="cmath\log10.c" />
+    <ClCompile Include="cmath\log2.c" />
+    <ClCompile Include="cmath\mod2pi.c" />
+    <ClCompile Include="cmath\mtst.c" />
+    <ClCompile Include="cmath\polevl.c" />
+    <ClCompile Include="cmath\pow.c" />
+    <ClCompile Include="cmath\powi.c" />
+    <ClCompile Include="cmath\round.c" />
+    <ClCompile Include="cmath\setprec.c" />
+    <ClCompile Include="cmath\sin.c" />
+    <ClCompile Include="cmath\sincos.c" />
+    <ClCompile Include="cmath\sindg.c" />
+    <ClCompile Include="cmath\sinh.c" />
+    <ClCompile Include="cmath\sqrt.c" />
+    <ClCompile Include="cmath\tan.c" />
+    <ClCompile Include="cmath\tandg.c" />
+    <ClCompile Include="cmath\tanh.c" />
+    <ClCompile Include="cmath\unity.c" />
+    <ClCompile Include="cprob\bdtr.c" />
+    <ClCompile Include="cprob\btdtr.c" />
+    <ClCompile Include="cprob\chdtr.c" />
+    <ClCompile Include="cprob\expx2.c" />
+    <ClCompile Include="cprob\fdtr.c" />
+    <ClCompile Include="cprob\gamma.c" />
+    <ClCompile Include="cprob\gdtr.c" />
+    <ClCompile Include="cprob\igam.c" />
+    <ClCompile Include="cprob\igami.c" />
+    <ClCompile Include="cprob\incbet.c" />
+    <ClCompile Include="cprob\incbi.c" />
+    <ClCompile Include="cprob\kolmogorov.c" />
+    <ClCompile Include="cprob\nbdtr.c" />
+    <ClCompile Include="cprob\ndtr.c" />
+    <ClCompile Include="cprob\ndtri.c" />
+    <ClCompile Include="cprob\pdtr.c" />
+    <ClCompile Include="cprob\stdtr.c" />
+    <ClCompile Include="ellf\ellf.c" />
+    <ClCompile Include="ellf\ellie.c" />
+    <ClCompile Include="ellf\ellik.c" />
+    <ClCompile Include="ellf\ellpe.c" />
+    <ClCompile Include="ellf\ellpj.c" />
+    <ClCompile Include="ellf\ellpk.c" />
+    <ClCompile Include="misc\beta.c" />
+    <ClCompile Include="misc\dawsn.c" />
+    <ClCompile Include="misc\ei.c" />
+    <ClCompile Include="misc\expn.c" />
+    <ClCompile Include="misc\fac.c" />
+    <ClCompile Include="misc\fresnl.c" />
+    <ClCompile Include="misc\planck.c" />
+    <ClCompile Include="misc\polylog.c" />
+    <ClCompile Include="misc\rgamma.c" />
+    <ClCompile Include="misc\shichi.c" />
+    <ClCompile Include="misc\sici.c" />
+    <ClCompile Include="misc\simpsn.c" />
+    <ClCompile Include="misc\spence.c" />
+    <ClCompile Include="misc\zeta.c" />
+    <ClCompile Include="misc\zetac.c" />
+    <ClCompile Include="polyn\euclid.c" />
+    <ClCompile Include="polyn\polmisc.c" />
+    <ClCompile Include="polyn\polrt.c" />
+    <ClCompile Include="polyn\polyn.c" />
+    <ClCompile Include="polyn\revers.c" />
+    <ClCompile Include="torch_mtherr.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bessel\mconf.h" />
+    <ClInclude Include="cmath\mconf.h" />
+    <ClInclude Include="cmath\protos.h" />
+    <ClInclude Include="cprob\mconf.h" />
+    <ClInclude Include="ellf\mconf.h" />
+    <ClInclude Include="ellf\protos.h" />
+    <ClInclude Include="misc\mconf.h" />
+    <ClInclude Include="polyn\mconf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
