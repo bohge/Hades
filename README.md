@@ -1,4 +1,5 @@
 # Hades
+#license: GLPv3
 Cross-platform distributed server framework
 
 for windows
